@@ -1,0 +1,127 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+Process ID: 9588
+
+Current time: 	12/4/16 2:28:39 PM MST
+Time zone: 	Mountain Standard Time (America/Phoenix)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	D:/Vivado/2016.2/tps/win64/jre
+
+User name: 	violi
+User home directory: C:/Users/violi
+User working directory: E:/button_switch
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI Base root directory: D:/Vivado
+RDI Data directory: D:/Vivado/2016.2/data
+RDI Bin directory: D:/Vivado/2016.2/bin
+
+Vivado preferences path: C:/Users/violi/AppData/Roaming/Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: C:/Users/violi/AppData/Roaming/Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	158 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 397 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bL:g (cv:JFrame):  Open Project : addNotify
+// Opening Vivado Project: E:\button_switch\button_switch.xpr. Version: Vivado v2016.2 
+// [GUI Memory]: 32 MB (+31326kb) [00:00:09]
+// [Engine Memory]: 384 MB (+251492kb) [00:00:09]
+// Tcl Message: open_project E:/button_switch/button_switch.xpr 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project E:/button_switch/button_switch.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 404 MB. GUI used memory: 24 MB. Current time: 12/4/16 2:28:41 PM MST
+// [Engine Memory]: 405 MB (+1349kb) [00:00:14]
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 441 MB (+16587kb) [00:00:17]
+// [GUI Memory]: 50 MB (+17426kb) [00:00:17]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 479 MB (+16784kb) [00:00:20]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: button_switch; location: E:/button_switch; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 701.109 ; gain = 99.910 
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// [GUI Memory]: 54 MB (+896kb) [00:00:27]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 28 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, button_fsm - Behavioral (button_fsm.vhd)]", 1, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, button_fsm - Behavioral (button_fsm.vhd)]", 1, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 484 MB. GUI used memory: 29 MB. Current time: 12/4/16 2:29:26 PM MST
+// Elapsed time: 20 seconds
+selectCodeEditor("button_fsm.vhd", 234, 404); // bH:N (JPanel:JComponent, cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 526 MB. GUI used memory: 35 MB. Current time: 12/4/16 2:29:46 PM MST
+// [Engine Memory]: 526 MB (+23959kb) [00:01:19]
+selectCodeEditor("button_fsm.vhd", 600, 315); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("button_fsm.vhd", 21, 40); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("button_fsm.vhd", 44, 95); // bH:N (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 57 MB (+654kb) [00:01:28]
+selectCodeEditor("button_fsm.vhd", 338, 244); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("button_fsm.vhd", 23, 248); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("button_fsm.vhd", 303, 263); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "button_fsm.vhd", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("button_fsm.vhd", 276, 240); // bH:N (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 61 MB (+1124kb) [00:02:13]
+// [GUI Memory]: 64 MB (+148kb) [00:02:23]
+// Elapsed time: 71 seconds
+selectCodeEditor("button_fsm.vhd", 309, 245); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("button_fsm.vhd", 63, 263); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 26 seconds
+selectCodeEditor("button_fsm.vhd", 302, 274); // bH:N (JPanel:JComponent, cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 536 MB. GUI used memory: 36 MB. Current time: 12/4/16 2:32:11 PM MST
+// Elapsed time: 37 seconds
+selectCodeEditor("button_fsm.vhd", 80, 199); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("button_fsm.vhd", 183, 210); // bH:N (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 68 MB (+152kb) [00:04:25]
+// Elapsed time: 22 seconds
+selectCodeEditor("button_fsm.vhd", 248, 265); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 52 seconds
+selectCodeEditor("button_fsm.vhd", 34, 7); // bH:N (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 72 MB (+386kb) [00:05:55]
+// [GUI Memory]: 80 MB (+4521kb) [00:06:20]
+// Elapsed time: 70 seconds
+selectCodeEditor("button_fsm.vhd", 458, 5); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("button_fsm.vhd", 648, 26); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 10 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 84 MB (+575kb) [00:25:11]
+// HMemoryUtils.trashcanNow. Engine heap size: 544 MB. GUI used memory: 38 MB. Current time: 12/4/16 3:02:13 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 544 MB. GUI used memory: 35 MB. Current time: 12/4/16 3:32:13 PM MST

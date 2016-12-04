@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Fri Dec 02 08:41:49 2016">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="d753430edb98426cb76bd96790f6d558" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="NewProject" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="BACK,  Back" value="1" type="GuiResourceData"/>
+<property name="NEXT, Next " value="8" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, button" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, VHDL, 3" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_NEW_PROJECT, New Project..." value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, button_fsm - Behavioral (button_fsm.vhd" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_FILE, File" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PartChooser_FAMILY_CHOOSER, Artix-7, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PartChooser_PARTS, xc7a35tcpg236-1 ; 236 ; 50 ; 90 ; 41600 ; 2 ; 2 ; 106 ; 20800 ; 5 ; 1 ; 85 ; 0 ; 85 ; C ; 1.05 ; 0.95 ; 0.95, 1, xc7a35tcpg236-1, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PartChooser_PART_PACKAGE_CHOOSER, cpg236, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PartChooser_PART_SPEED_CHOOSER, -1, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, (String" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, button" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SaveProjectUtils_SAVE, Save" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_CREATE_FILE, Create File" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="1" type="GuiResourceData"/>
+<property name="button_fsm.vhd, 109, 124" value="1" type="GuiResourceData"/>
+<property name="button_fsm.vhd, 110, 350" value="1" type="GuiResourceData"/>
+<property name="button_fsm.vhd, 111, 126" value="1" type="GuiResourceData"/>
+<property name="button_fsm.vhd, 111, 483" value="1" type="GuiResourceData"/>
+<property name="button_fsm.vhd, 113, 126" value="1" type="GuiResourceData"/>
+<property name="button_fsm.vhd, 118, 465" value="1" type="GuiResourceData"/>
+<property name="button_fsm.vhd, 129, 570" value="1" type="GuiResourceData"/>
+<property name="button_fsm.vhd, 133, 97" value="1" type="GuiResourceData"/>
+<property name="button_fsm.vhd, 148, 120" value="1" type="GuiResourceData"/>
+<property name="button_fsm.vhd, 151, 297" value="1" type="GuiResourceData"/>
+<property name="button_fsm.vhd, 155, 143" value="1" type="GuiResourceData"/>
+<property name="button_fsm.vhd, 155, 575" value="1" type="GuiResourceData"/>
+<property name="button_fsm.vhd, 233, 293" value="1" type="GuiResourceData"/>
+<property name="button_fsm.vhd, 243, 107" value="1" type="GuiResourceData"/>
+<property name="button_fsm.vhd, 243, 465" value="1" type="GuiResourceData"/>
+<property name="button_fsm.vhd, 246, 462" value="1" type="GuiResourceData"/>
+<property name="button_fsm.vhd, 248, 335" value="1" type="GuiResourceData"/>
+<property name="button_fsm.vhd, 254, 469" value="1" type="GuiResourceData"/>
+<property name="button_fsm.vhd, 256, 304" value="1" type="GuiResourceData"/>
+<property name="button_fsm.vhd, 258, 433" value="1" type="GuiResourceData"/>
+<property name="button_fsm.vhd, 278, 181" value="1" type="GuiResourceData"/>
+<property name="button_fsm.vhd, 292, 124" value="1" type="GuiResourceData"/>
+<property name="button_fsm.vhd, 313, 118" value="1" type="GuiResourceData"/>
+<property name="button_fsm.vhd, 364, 330" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="6" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="4" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>
