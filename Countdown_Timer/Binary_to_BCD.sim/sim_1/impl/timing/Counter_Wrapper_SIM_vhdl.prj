@@ -1,0 +1,5 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../../Binary_to_BCD.srcs/sim_1/new/Counter_Wrapper_SIM.vhd"
+
+# Do not sort compile order
+nosort

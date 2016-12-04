@@ -1,0 +1,35 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /home/brett/Builds/vivado/Vivado/2016.2/bin/unwrapped/lnx64.o/xelab -wto 2f17d5f280b3405ebc1bf2f5da894be1 --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot Binary_to_BCD_SIM_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 xil_defaultlib.Binary_to_BCD_SIM xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "Binary_to_BCD_SIM_time_impl.sdf", for root module "Binary_to_BCD_SIM/UUT".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "Binary_to_BCD_SIM_time_impl.sdf", for root module "Binary_to_BCD_SIM/UUT".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.sffsrce_fdre
+Compiling module simprims_ver.FDRE
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.x_lut3_mux4
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.sffsrce_fdse
+Compiling module simprims_ver.FDSE
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.LUT5
+Compiling module xil_defaultlib.Binary_to_BCD
+Compiling architecture behavioral of entity xil_defaultlib.binary_to_bcd_sim
+Built simulation snapshot Binary_to_BCD_SIM_time_impl
