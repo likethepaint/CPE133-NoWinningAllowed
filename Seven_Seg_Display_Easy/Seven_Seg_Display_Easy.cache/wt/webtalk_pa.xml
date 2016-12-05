@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Sun Dec 04 20:51:02 2016">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="4f44bc1dda3548d5b018b34efb828514" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="1" type="JavaHandler"/>
+<property name="NewProject" value="3" type="JavaHandler"/>
+<property name="RunSynthesis" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="Display_Key.vhd, 169, 177" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 178, 281" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 185, 177" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 208, 206" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 209, 59" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 210, 247" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 211, 278" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 211, 404" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 211, 74" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 213, 25" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 221, 31" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 238, 26" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 247, 450" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 248, 400" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 249, 417" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 249, 481" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 250, 282" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 250, 378" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 250, 398" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 250, 533" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 251, 245" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 251, 279" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 251, 346" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 251, 363" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 252, 247" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 252, 449" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 253, 31" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 281, 26" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 318, 22" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 341, 30" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 348, 107" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 356, 27" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 357, 182" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 388, 330" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 404, 25" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 427, 129" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 441, 24" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 482, 128" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 505, 74" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 537, 56" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 539, 213" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 557, 61" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 566, 207" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 577, 200" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 577, 202" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 582, 194" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 604, 201" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 605, 208" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 610, 191" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 678, 213" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 693, 32" value="1" type="GuiResourceData"/>
+<property name="Display_Key.vhd, 725, 214" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_SAVE_FILE, (String" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="62" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="38" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>
