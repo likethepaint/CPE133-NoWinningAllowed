@@ -6,7 +6,8 @@
 --     setup for D Flip Flops
 --     can be pulsed for JK Flip Flops
 
--- TODO: Change to LFSR based generator 
+-- TODO: Change to LFSR based generator
+--       Implement reset?
 ----------------------------------------------------------------------------------
 
 
