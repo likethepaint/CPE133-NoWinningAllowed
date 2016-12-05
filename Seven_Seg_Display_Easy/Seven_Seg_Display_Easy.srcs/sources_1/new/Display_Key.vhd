@@ -57,7 +57,7 @@ begin
     
     SSEG_SCROLL_METHOD : Process(clk)
         --possible error here double check if problem occurs-----------------------------------------------------
-        variable placeholder : STD_LOGIC_VECTOR(47 downto 0):= "0";
+        variable placeholder : STD_LOGIC_VECTOR(47 downto 0):= "000000000000000000000000000000000000000000000000";
         variable clock_divider: integer range 0 to 10000000 := 0;
     begin
         if rising_edge(clk) then
