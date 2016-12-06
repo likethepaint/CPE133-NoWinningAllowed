@@ -2,81 +2,22 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Sun Dec 04 22:55:21 2016
-# Process ID: 5440
-# Current directory: C:/Users/violi/Desktop/CPE 133 Project/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2952 C:\Users\violi\Desktop\CPE 133 Project\CPE133-NoWinningAllowed\Seven_Seg_Display_Easy\Seven_Seg_Display_Easy.xpr
-# Log file: C:/Users/violi/Desktop/CPE 133 Project/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/vivado.log
-# Journal file: C:/Users/violi/Desktop/CPE 133 Project/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy\vivado.jou
+# Start of session at: Mon Dec 05 18:52:16 2016
+# Process ID: 18260
+# Current directory: E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3432 E:\CPE133-NoWinningAllowed-master\Seven_Seg_Display_Easy\Seven_Seg_Display_Easy.xpr
+# Log file: E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/vivado.log
+# Journal file: E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project {C:/Users/violi/Desktop/CPE 133 Project/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.xpr}
-INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'C:/Users/violi/Desktop/CPE 133 Project/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy'
+open_project E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.xpr
 Scanning sources...
 Finished scanning sources
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.ip_user_files'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 778.879 ; gain = 133.020
 update_compile_order -fileset sources_1
-synth_design -rtl -name rtl_1
-Command: synth_design -rtl -name rtl_1
-Starting synth_design
-Using part: xc7a35tcpg236-1
-Top: Display_Key
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:25 ; elapsed = 00:00:43 . Memory (MB): peak = 763.719 ; gain = 556.684
----------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Display_Key' [C:/Users/violi/Desktop/CPE 133 Project/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd:24]
-ERROR: [Synth 8-421] mismatched array sizes in rhs and lhs of assignment [C:/Users/violi/Desktop/CPE 133 Project/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd:60]
-ERROR: [Synth 8-285] failed synthesizing module 'Display_Key' [C:/Users/violi/Desktop/CPE 133 Project/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd:24]
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:25 ; elapsed = 00:00:44 . Memory (MB): peak = 790.441 ; gain = 583.406
----------------------------------------------------------------------------------
-RTL Elaboration failed
-1 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
-synth_design failed
-ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
-synth_design -rtl -name rtl_1
-Command: synth_design -rtl -name rtl_1
-Starting synth_design
-Using part: xc7a35tcpg236-1
-Top: Display_Key
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:40 ; elapsed = 00:01:47 . Memory (MB): peak = 804.996 ; gain = 597.961
----------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Display_Key' [C:/Users/violi/Desktop/CPE 133 Project/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd:24]
-WARNING: [Synth 8-614] signal 'cen' is read in the process but is not in the sensitivity list [C:/Users/violi/Desktop/CPE 133 Project/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd:108]
-WARNING: [Synth 8-614] signal 'digit_input' is read in the process but is not in the sensitivity list [C:/Users/violi/Desktop/CPE 133 Project/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd:108]
-INFO: [Synth 8-256] done synthesizing module 'Display_Key' (1#1) [C:/Users/violi/Desktop/CPE 133 Project/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd:24]
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:40 ; elapsed = 00:01:47 . Memory (MB): peak = 804.996 ; gain = 597.961
----------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:40 ; elapsed = 00:01:48 . Memory (MB): peak = 804.996 ; gain = 597.961
----------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-
-Processing XDC Constraints
-Initializing timing engine
-Completed Processing XDC Constraints
-
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-RTL Elaboration Complete:  : Time (s): cpu = 00:00:49 ; elapsed = 00:01:58 . Memory (MB): peak = 1099.754 ; gain = 892.719
-6 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1099.754 ; gain = 294.758
-close_design
 exit
-INFO: [Common 17-206] Exiting Vivado at Sun Dec 04 22:57:44 2016...
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 05 18:55:31 2016...

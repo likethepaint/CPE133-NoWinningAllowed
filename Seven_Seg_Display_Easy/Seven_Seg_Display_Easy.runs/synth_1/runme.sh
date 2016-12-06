@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/violi/Desktop/CPE 133 Project/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.runs/synth_1'
+HD_PWD='E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log Display_Key.vds -m64 -mode batch -messageDb vivado.pb -notrace -source Display_Key.tcl
+EAStep vivado -log Display_Source.vds -m64 -mode batch -messageDb vivado.pb -notrace -source Display_Source.tcl

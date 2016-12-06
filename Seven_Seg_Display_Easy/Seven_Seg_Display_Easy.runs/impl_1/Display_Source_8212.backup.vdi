@@ -1,0 +1,98 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Dec 05 09:50:41 2016
+# Process ID: 8212
+# Current directory: C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.runs/impl_1
+# Command line: vivado.exe -log Display_Source.vdi -applog -messageDb vivado.pb -mode batch -source Display_Source.tcl -notrace
+# Log file: C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.runs/impl_1/Display_Source.vdi
+# Journal file: C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Display_Source.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'binary_in[0]'. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'binary_in[0]'. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'binary_in[1]'. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'binary_in[1]'. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'binary_in[2]'. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'binary_in[2]'. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[0]'. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[0]'. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[1]'. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[1]'. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:128]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:128]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[2]'. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[2]'. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[3]'. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:133]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[3]'. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:134]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc:134]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 450.879 ; gain = 5.504
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Dec 05 09:51:37 2016
+# Process ID: 8428
+# Current directory: C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.runs/impl_1
+# Command line: vivado.exe -log Display_Source.vdi -applog -messageDb vivado.pb -mode batch -source Display_Source.tcl -notrace
+# Log file: C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.runs/impl_1/Display_Source.vdi
+# Journal file: C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Display_Source.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
