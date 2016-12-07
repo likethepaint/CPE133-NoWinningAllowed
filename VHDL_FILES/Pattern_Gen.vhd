@@ -28,14 +28,19 @@ end Pattern_Gen;
 architecture arch_Pattern_Gen of Pattern_Gen is
     
     -- the value of count will be the pattern
-    signal count : STD_LOGIC_VECTOR(15 downto 0) := x"0000";
+    -- cannot ever be 0000
+    signal count : STD_LOGIC_VECTOR(15 downto 0) := x"0001";
     
 begin
 
     simpleCounter : process (clk)
     begin
         if (rising_edge(clk)) then
-            count <= STD_LOGIC_VECTOR(unsigned(count) + 1);
+            if (count = x"FFFF") then
+                count <= x"0001";
+            else
+                count <= STD_LOGIC_VECTOR(unsigned(count) + 1);
+            end if;
         end if;
     end process;
 
