@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date             : Mon Dec 05 18:48:43 2016
-| Host             : Collins-PC running 64-bit major release  (build 9200)
+| Tool Version     : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date             : Tue Dec  6 12:21:58 2016
+| Host             : zoidberg running 64-bit Ubuntu 16.04.1 LTS
 | Command          : report_power -file Display_Source_power_routed.rpt -pb Display_Source_power_summary_routed.pb -rpx Display_Source_power_routed.rpx
 | Design           : Display_Source
 | Device           : xc7a35tcpg236-1
@@ -50,13 +50,13 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |       47 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       16 |     20800 |            0.08 |
-|   Register     |    <0.001 |       23 |     41600 |            0.06 |
-|   CARRY4       |    <0.001 |        5 |      8150 |            0.06 |
-|   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |    <0.001 |       43 |       --- |             --- |
-| I/O            |    <0.001 |       14 |       106 |           13.21 |
+| Slice Logic    |    <0.001 |      174 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       72 |     20800 |            0.35 |
+|   CARRY4       |    <0.001 |       12 |      8150 |            0.15 |
+|   Register     |    <0.001 |       83 |     41600 |            0.20 |
+|   Others       |     0.000 |        4 |       --- |             --- |
+| Signals        |    <0.001 |      135 |       --- |             --- |
+| I/O            |    <0.001 |       16 |       106 |           15.09 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.073 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
@@ -68,7 +68,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.010 |       0.001 |      0.010 |
+| Vccint    |       1.000 |     0.011 |       0.001 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |

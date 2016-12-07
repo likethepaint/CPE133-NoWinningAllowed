@@ -35,12 +35,13 @@ begin
     
     SSEG_80Hz_Refresh: Process(clk)
         variable count: integer range 0 to 250000 := 0;
+         --variable count : integer range 0 to 10000 := 0;
     begin
        if rising_edge(clk) then
                 if (cen = '1') then
                     -- Change the input to sample @ 200Hz
                     if (count = 250000) then
-                        if ((sseg_an_wire) = "0111" OR (sseg_an_wire = "1111")) then
+                        if ((sseg_an_wire = "0111") OR (sseg_an_wire = "1111")) then
                             sseg_an_wire <= "1110";
                             current_input <= bin_in1;
                         elsif (sseg_an_wire = "1110") then
@@ -87,14 +88,14 @@ begin
                         when "001110" => sseg_cat <= "01100001"; --E
                         when "001111" => sseg_cat <= "01110001"; --F
                         when "010000" => sseg_cat <= "01000011"; --G
-                        when "010001" => sseg_cat <= "11010001"; --H
+                        when "010001" => sseg_cat <= "10010001"; --H
                         when "010010" => sseg_cat <= "11110011"; --I
                         when "010011" => sseg_cat <= "10000111"; --J
                         when "010100" => sseg_cat <= "01010001"; --K
                         when "010101" => sseg_cat <= "11100011"; --L
                         when "010111" => sseg_cat <= "01010111"; --M
                         when "011000" => sseg_cat <= "11010101"; --N
-                        when "011001" => sseg_cat <= "11000101"; --O
+                        when "011001" => sseg_cat <= "00000011"; --O
                         when "011010" => sseg_cat <= "00110001"; --P
                         when "011011" => sseg_cat <= "00011001"; --Q
                         when "011100" => sseg_cat <= "00110011"; --R

@@ -1,0 +1,92 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Word_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Word_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Source
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Word_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Word_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Source
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sim_1/new/Test_Bench_DS.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Test_Bench_DS
+ERROR: [VRFC 10-91] clock is not declared [/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sim_1/new/Test_Bench_DS.vhd:56]
+ERROR: [VRFC 10-1412] syntax error near signal [/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sim_1/new/Test_Bench_DS.vhd:62]
+ERROR: [VRFC 10-1412] syntax error near => [/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sim_1/new/Test_Bench_DS.vhd:65]
+WARNING: [VRFC 10-1256] possible infinite loop; process does not have a wait statement [/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sim_1/new/Test_Bench_DS.vhd:60]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sim_1/new/Test_Bench_DS.vhd:38]
+INFO: [VRFC 10-240] VHDL file /home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sim_1/new/Test_Bench_DS.vhd ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Word_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Word_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Source
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sim_1/new/Test_Bench_DS.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Test_Bench_DS
+ERROR: [VRFC 10-91] clock is not declared [/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sim_1/new/Test_Bench_DS.vhd:56]
+ERROR: [VRFC 10-1412] syntax error near signal [/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sim_1/new/Test_Bench_DS.vhd:62]
+WARNING: [VRFC 10-1256] possible infinite loop; process does not have a wait statement [/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sim_1/new/Test_Bench_DS.vhd:60]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sim_1/new/Test_Bench_DS.vhd:38]
+INFO: [VRFC 10-240] VHDL file /home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sim_1/new/Test_Bench_DS.vhd ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Word_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Word_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Source
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sim_1/new/Test_Bench_DS.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Test_Bench_DS
+ERROR: [VRFC 10-91] clock is not declared [/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sim_1/new/Test_Bench_DS.vhd:56]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sim_1/new/Test_Bench_DS.vhd:38]
+INFO: [VRFC 10-240] VHDL file /home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sim_1/new/Test_Bench_DS.vhd ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Word_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Word_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Source
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sim_1/new/Test_Bench_DS.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Test_Bench_DS
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Word_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Word_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Source
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sim_1/new/Test_Bench_DS.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Test_Bench_DS
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Word_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Word_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Source
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sim_1/new/Test_Bench_DS.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Test_Bench_DS
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Word_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Word_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Source
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sim_1/new/Test_Bench_DS.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Test_Bench_DS
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Word_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Word_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Source
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sim_1/new/Test_Bench_DS.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Test_Bench_DS
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Word_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Word_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Source
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sim_1/new/Test_Bench_DS.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Test_Bench_DS

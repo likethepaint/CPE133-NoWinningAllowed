@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc rfile:../../../Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc rfile:../../../Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports clk]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
