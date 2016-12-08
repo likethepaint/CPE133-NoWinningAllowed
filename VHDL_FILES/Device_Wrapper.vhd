@@ -11,14 +11,20 @@ entity Device_Wrapper is
          btn_left : in STD_LOGIC;
          btn_right : in STD_LOGIC;
          btn_center : in STD_LOGIC;
-         sseg_out0 : out STD_LOGIC_VECTOR(5 downto 0);
-         sseg_out1 : out STD_LOGIC_VECTOR(5 downto 0);
-         sseg_out2 : out STD_LOGIC_VECTOR(5 downto 0);
-         sseg_out3 : out STD_LOGIC_VECTOR(5 downto 0));
+         sseg_cat : out STD_LOGIC_VECTOR(7 downto 0);
+         sseg_an : out STD_LOGIC_VECTOR(3 downto 0));
 end Device_Wrapper;
 
 architecture arch_Device_Wrapper of Device_Wrapper is  
 
+    component Init_Driver is
+      Port ( clk : in STD_LOGIC;
+             sseg_out0 : out STD_LOGIC_VECTOR(5 downto 0);
+             sseg_out1 : out STD_LOGIC_VECTOR(5 downto 0);
+             sseg_out2 : out STD_LOGIC_VECTOR(5 downto 0);
+             sseg_out3 : out STD_LOGIC_VECTOR(5 downto 0));
+    end component;
+    
     component State_Controller is
       Port ( clk : in STD_LOGIC;
              reset : in STD_LOGIC;
@@ -70,6 +76,41 @@ architecture arch_Device_Wrapper of Device_Wrapper is
               debounced_output : out STD_LOGIC);
     end component;
 
+    component SSEG_Select is
+        Port (clk : in STD_LOGIC;
+              state : in STD_LOGIC_VECTOR(3 downto 0);
+              init_sseg0 : in STD_LOGIC_VECTOR(5 downto 0);
+              init_sseg1 : in STD_LOGIC_VECTOR(5 downto 0);
+              init_sseg2 : in STD_LOGIC_VECTOR(5 downto 0);
+              init_sseg3 : in STD_LOGIC_VECTOR(5 downto 0);
+              difficulty_sseg0 : in STD_LOGIC_VECTOR(5 downto 0);
+              difficulty_sseg1 : in STD_LOGIC_VECTOR(5 downto 0);
+              difficulty_sseg2 : in STD_LOGIC_VECTOR(5 downto 0);
+              difficulty_sseg3 : in STD_LOGIC_VECTOR(5 downto 0);
+              game_sseg0 : in STD_LOGIC_VECTOR(5 downto 0);
+              game_sseg1 : in STD_LOGIC_VECTOR(5 downto 0);
+              game_sseg2 : in STD_LOGIC_VECTOR(5 downto 0);
+              game_sseg3 : in STD_LOGIC_VECTOR(5 downto 0);
+              end_sseg0 : in STD_LOGIC_VECTOR(5 downto 0);
+              end_sseg1 : in STD_LOGIC_VECTOR(5 downto 0);
+              end_sseg2 : in STD_LOGIC_VECTOR(5 downto 0);
+              end_sseg3 : in STD_LOGIC_VECTOR(5 downto 0);
+              to_display0 : out STD_LOGIC_VECTOR(5 downto 0);
+              to_display1 : out STD_LOGIC_VECTOR(5 downto 0);
+              to_display2 : out STD_LOGIC_VECTOR(5 downto 0);
+              to_display3 : out STD_LOGIC_VECTOR(5 downto 0));
+    end component;
+
+    component SSEG_Driver is
+      Port (   clk : in STD_LOGIC;
+               sseg_in0 : in STD_LOGIC_VECTOR(5 downto 0);
+               sseg_in1 : in STD_LOGIC_VECTOR(5 downto 0);
+               sseg_in2 : in STD_LOGIC_VECTOR(5 downto 0);
+               sseg_in3 : in STD_LOGIC_VECTOR(5 downto 0); 
+               sseg_an : out STD_LOGIC_VECTOR(3 downto 0);
+               sseg_cat : out STD_LOGIC_VECTOR(7 downto 0));
+    end component;
+
     signal btn_valid_top, btn_valid_bottom, btn_valid_right, btn_valid_left, btn_valid_center : STD_LOGIC;
     
     -- State Controller signals
@@ -86,9 +127,21 @@ architecture arch_Device_Wrapper of Device_Wrapper is
     signal game_sseg0, game_sseg1, game_sseg2, game_sseg3 : STD_LOGIC_VECTOR(5 downto 0); 
     signal pattern_debug : STD_LOGIC_VECTOR(15 downto 0);
     
+    -- Init Driver signals
+    signal init_sseg0, init_sseg1, init_sseg2, init_sseg3 : STD_LOGIC_VECTOR(5 downto 0);
+    
+    -- End Driver signals
+    signal end_sseg0, end_sseg1, end_sseg2, end_sseg3 : STD_LOGIC_VECTOR(5 downto 0);
+    
+    -- SSEG Select signals
+    signal to_display0, to_display1, to_display2, to_display3 : STD_LOGIC_VECTOR(5 downto 0);
+    
 begin
-
-    -- Start button instance definitions
+    
+    -- Intermediate logic between signals
+    game_over <= win OR lose;
+    
+    -- Begin button instance definitions
     TopButton : Button port map (raw_input => btn_top,
                                  clk => clk,
                                  debounced_output => btn_valid_top);
@@ -138,5 +191,60 @@ begin
                                        win => win,
                                        lose => lose,
                                        pattern => pattern_debug);
-                                       
+    -- End Game Driver instance --
+    
+    -- Begin Init Driver instance --
+    InitDriver : Init_Driver port map (clk => clk,
+                                       sseg_out0 => init_sseg0,
+                                       sseg_out1 => init_sseg1,
+                                       sseg_out2 => init_sseg2,
+                                       sseg_out3 => init_sseg3);
+    -- End Init Driver instance --
+    
+    -- Begin End Driver instance --
+    EndDriver : End_Driver port map (clk => clk,
+                                     win => win,
+                                     lose => lose,
+                                     state => state,
+                                     sseg_out0 => end_sseg0,
+                                     sseg_out1 => end_sseg1,
+                                     sseg_out2 => end_sseg2,
+                                     sseg_out3 => end_sseg3);
+    -- End End Driver instance -- haha
+    
+    -- Begin SSEG Select instance --
+    SSEGSelect : SSEG_Select port map (clk => clk,
+                                       state => state,
+                                       init_sseg0 => init_sseg0,
+                                       init_sseg1 => init_sseg1,
+                                       init_sseg2 => init_sseg2,
+                                       init_sseg3 => init_sseg3,
+                                       difficulty_sseg0 => difficulty_sseg0,
+                                       difficulty_sseg1 => difficulty_sseg1,
+                                       difficulty_sseg2 => difficulty_sseg2,
+                                       difficulty_sseg3 => difficulty_sseg3,
+                                       game_sseg0 => game_sseg0,
+                                       game_sseg1 => game_sseg1,
+                                       game_sseg2 => game_sseg2,
+                                       game_sseg3 => game_sseg3,
+                                       end_sseg0 => end_sseg0,
+                                       end_sseg1 => end_sseg1,
+                                       end_sseg2 => end_sseg2,
+                                       end_sseg3 => end_sseg3,
+                                       to_display0 => to_display0,
+                                       to_display1 => to_display1,
+                                       to_display2 => to_display2,
+                                       to_display3 => to_display3);
+    -- End SSEG Select instance --
+    
+    -- Begin SSEG Driver instance --
+    SSEGDriver : SSEG_Driver port map (clk => clk,
+                                       sseg_in0 => to_display0,
+                                       sseg_in1 => to_display1,
+                                       sseg_in2 => to_display2,
+                                       sseg_in3 => to_display3,
+                                       sseg_an => sseg_an,
+                                       sseg_cat => sseg_cat);
+    -- End SSEG Drive instance --
+
 end arch_Device_Wrapper;
