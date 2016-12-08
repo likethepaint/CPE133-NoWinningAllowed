@@ -37,7 +37,7 @@ begin
     adjusted_input <= user_input AND bitmask;
     adjusted_pattern <= pattern AND bitmask;
     
-    compareInputs : process (adjusted_input, adjusted_pattern) 
+    compareInputs : process (adjusted_input, adjusted_pattern, reset) 
     begin
         if (reset = '1') then
             cmp_flag <= '0';

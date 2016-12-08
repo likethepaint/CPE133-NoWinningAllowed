@@ -18,22 +18,21 @@ use IEEE.NUMERIC_STD.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity Game_Module is
+entity Game_Driver is
     Port (clk : in STD_LOGIC;
-          reset : in STD_LOGIC;
-          bitmask : in STD_LOGIC_VECTOR(15 downto 0);
+          state : in STD_LOGIC_VECTOR(3 downto 0);
+          difficulty : in STD_LOGIC_VECTOR(15 downto 0);
           user_input : in STD_LOGIC_VECTOR(15 downto 0);
-          timer_out_0 : out STD_LOGIC_VECTOR(5 downto 0);
-          timer_out_1 : out STD_LOGIC_VECTOR(5 downto 0);
-          timer_out_2 : out STD_LOGIC_VECTOR(5 downto 0);
-          timer_out_3 : out STD_LOGIC_VECTOR(5 downto 0);
+          sseg_out0 : out STD_LOGIC_VECTOR(5 downto 0);
+          sseg_out1 : out STD_LOGIC_VECTOR(5 downto 0);
+          sseg_out2 : out STD_LOGIC_VECTOR(5 downto 0);
+          sseg_out3 : out STD_LOGIC_VECTOR(5 downto 0);
           win : out STD_LOGIC;
           lose : out STD_LOGIC;
-          game_over : out STD_LOGIC;
-          pattern_adj : out STD_LOGIC_VECTOR(15 downto 0));
-end Game_Module;
+          pattern : out STD_LOGIC_VECTOR(15 downto 0));
+end Game_Driver;
 
-architecture arch_Game_Module of Game_Module is
+architecture arch_Game_Driver of Game_Driver is
 
 component Pattern_Gen is
     Port (clk: in STD_LOGIC;
@@ -76,31 +75,42 @@ component Timer is
           out_of_time : out STD_LOGIC);
 end component;
 
-signal pattern : STD_LOGIC_VECTOR(15 downto 0);
+
+signal reset : STD_LOGIC;
+signal pattern_adj : STD_LOGIC_VECTOR(15 downto 0);
 signal trap_clk_out : STD_LOGIC;
 signal sseg_enable : STD_LOGIC;
 signal ones, tens, hundreds, thousands : STD_LOGIC_VECTOR(5 downto 0);
 signal time_remaining : STD_LOGIC_VECTOR(11 downto 0);
 signal win_state, lose_state : STD_LOGIC;
 
+
+
 begin
 
+    ValidState : process (clk)
+    begin
+        if (rising_edge(clk)) then
+            if (state = "0100") then
+                reset <= '0';
+            else 
+                reset <= '1';
+            end if;
+        end if;
+    end process;
+    
 -- NEED TO KNOW HOW SSEG DISPLAY DRIVER WILL WORK
-    PatternSystem : Pattern_Gen port map (clk => clk, reset => reset, pattern => pattern);
-    TrapSystem : Trap port map (reset => reset, clk => clk, user_input => unsigned(user_input), bitmask => unsigned(bitmask), pattern => unsigned(pattern), clk_out => trap_clk_out); 
-    CompareSystem : Comparator port map (reset => reset, user_input => user_input, pattern => pattern, bitmask => bitmask, result => win_state);
+    PatternSystem : Pattern_Gen port map (clk => clk, reset => reset, pattern => pattern_adj);
+    TrapSystem : Trap port map (reset => reset, clk => clk, user_input => unsigned(user_input), bitmask => unsigned(difficulty), pattern => unsigned(pattern_adj), clk_out => trap_clk_out); 
+    CompareSystem : Comparator port map (reset => reset, user_input => user_input, pattern => pattern_adj, bitmask => difficulty, result => win_state);
     ConvertToBCD : Binary_To_BCD port map (clk =>  clk, binary_in => time_remaining, ones => ones, tens => tens, hundreds => hundreds, thousands => thousands, sseg_enable => sseg_enable); 
-    CountdownTimer : Timer port map (clk => trap_clk_out, reset => reset, difficulty => bitmask, time_remaining => time_remaining, out_of_time => lose_state);
+    CountdownTimer : Timer port map (clk => trap_clk_out, reset => reset, difficulty => difficulty, time_remaining => time_remaining, out_of_time => lose_state);
     
-    timer_out_0 <= ones;
-    timer_out_1 <= tens;
-    timer_out_2 <= hundreds;
-    timer_out_3 <= thousands;
+    sseg_out0 <= ones;
+    sseg_out1 <= tens;
+    sseg_out2 <= hundreds;
+    sseg_out3 <= thousands;
     
-    pattern_adj <= pattern AND bitmask;
+    pattern <= pattern_adj AND difficulty;
     
-    game_over <= win_state OR lose_state;
-    win <= win_state;
-    lose <= lose_state;
-
-end arch_Game_Module;
+end arch_Game_Driver;

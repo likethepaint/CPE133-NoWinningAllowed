@@ -1,0 +1,17 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /home/brett/Builds/vivado/Vivado/2016.2/bin/unwrapped/lnx64.o/xelab -wto a6de33d6223f433e8e1ec502fcb7cc1b --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot End_Driver_Sim_behav xil_defaultlib.End_Driver_Sim -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling architecture behavioral of entity xil_defaultlib.Word_Key [word_key_default]
+Compiling architecture arch_display_word of entity xil_defaultlib.Display_Word [display_word_default]
+Compiling architecture behavioral of entity xil_defaultlib.End_Driver [end_driver_default]
+Compiling architecture behavioral of entity xil_defaultlib.end_driver_sim
+Built simulation snapshot End_Driver_Sim_behav
