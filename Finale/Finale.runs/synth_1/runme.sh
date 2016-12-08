@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log Physical_Game_Test.vds -m64 -mode batch -messageDb vivado.pb -notrace -source Physical_Game_Test.tcl
+EAStep vivado -log Device_Wrapper.vds -m64 -mode batch -messageDb vivado.pb -notrace -source Device_Wrapper.tcl

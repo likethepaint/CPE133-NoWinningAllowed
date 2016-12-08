@@ -26,7 +26,8 @@ architecture arch_Difficulty_Driver of Difficulty_Driver is
     end component;
 
     type state_type is (easy, medium, hard);
-    signal PS, NS : state_type;
+    signal PS : state_type := easy;
+    signal NS : state_type := easy;
     
     signal difficulty_word_select : STD_LOGIC_VECTOR(2 downto 0);
     
@@ -38,14 +39,12 @@ begin
     
     sync_proc : process (clk, NS)
     begin
-        if (state /= "0010") then
-            PS <= easy;
-        elsif (rising_edge(clk)) then
+        if (rising_edge(clk)) then
             PS <= NS;
         end if;    
     end process;
     
-    comb_proc : process(PS, right_btn, left_btn)
+    comb_proc : process(right_btn, left_btn)
     begin
         case PS is
             when easy =>
@@ -53,29 +52,39 @@ begin
                     NS <= medium;
                 elsif (left_btn = '1') then
                     NS <= hard;
+                else
+                    NS <= easy;
+                    difficulty <= easy_bitmask;
                 end if;
             when medium =>
                 if (right_btn = '1') then
                     NS <= hard;
                 elsif (left_btn = '1') then
                     NS <= easy;
+                else
+                    NS <= medium;
+                    difficulty <= medium_bitmask;
                 end if;
             when hard =>
                 if (right_btn = '1') then
                     NS <= easy;
                 elsif (left_btn = '1') then
                     NS <= medium;
+                else
+                    NS <= hard;
+                    difficulty <= hard_bitmask;
                 end if;
             when others =>
                 NS <= easy;
+                difficulty <= easy_bitmask;
         end case;
     end process;
     
-    with PS select
-        difficulty <= easy_bitmask when easy,
-                      medium_bitmask when medium,
-                      hard_bitmask when hard,
-                      easy_bitmask when others;
+    --with PS select
+        --difficulty <= easy_bitmask when easy,
+                      --medium_bitmask when medium,
+                      --hard_bitmask when hard,
+                      --easy_bitmask when others;
     
     with PS select
           difficulty_word_select <= "010" when easy,    -- Display EASY

@@ -38,9 +38,8 @@ end SSEG_Select;
 architecture arch_SSEG_Select of SSEG_Select is
     
 begin
-    ToDisplay : process (clk)
+    ToDisplay : process (state)
     begin
-        if (rising_edge(clk)) then
             if (state = "0001") then
                 to_display0 <= init_sseg0;
                 to_display1 <= init_sseg1;
@@ -68,6 +67,26 @@ begin
                 to_display2 <= "001110"; -- E
                 to_display3 <= "111111"; -- nothing
             end if;
-        end if;
+            --if ((state AND "0001") = "0001") then
+                --to_display0 <= "000001";
+            --else
+                --to_display0 <= "000000";
+            --end if;
+            --if ((state AND "0010") = "0010") then
+                --to_display1 <= "000001";
+            --else
+                --to_display1 <= "000000";
+            --end if;
+            --if ((state AND "0100") = "0100") then
+                --to_display2 <= "000001";
+            --else
+                --to_display2 <= "000000";
+            --end if;
+            --if ((state AND "1000") = "1000") then
+                --to_display3 <= "000001";
+            --else
+                --to_display3 <= "000000";
+            --end if;
+        
     end process;    
 end arch_SSEG_Select;

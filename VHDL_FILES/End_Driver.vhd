@@ -38,15 +38,12 @@ begin
 
     GenWinLoss : process (clk) 
     begin
-        if (state = "1000") then
-            if (win = '1') then
-                end_word_select <= "101";
-            elsif (lose = '0') then
-                end_word_select <= "110";
-            end if;
-        else
-            -- Shows Err if displayed
-            end_word_select <= "001";
+        if (win = '1') then
+            end_word_select <= "101";
+        elsif (lose = '1') then
+            end_word_select <= "110";
+        else 
+            end_word_select <= "111";
         end if;
     end process;
 

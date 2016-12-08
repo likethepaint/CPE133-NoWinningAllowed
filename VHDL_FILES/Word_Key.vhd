@@ -66,13 +66,13 @@ begin
            Letter_Out2 <= "111111";
            Letter_Out1 <= "111111";
         elsif(bin_in = "101") then -- Defused
-           Letter_Out8 <= "001101";
+           Letter_Out8 <= "000000";
            Letter_Out7 <= "001110";
            Letter_Out6 <= "001111";
            Letter_Out5 <= "011111";
            Letter_Out4 <= "011101";
            Letter_Out3 <= "001110";
-           Letter_Out2 <= "001101";
+           Letter_Out2 <= "000000";
            Letter_Out1 <= "111111";
         elsif(bin_in = "110") then --LOSER
            Letter_Out8 <= "010101";

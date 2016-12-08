@@ -11,6 +11,7 @@ entity Device_Wrapper is
          btn_left : in STD_LOGIC;
          btn_right : in STD_LOGIC;
          btn_center : in STD_LOGIC;
+         pattern_debug : out STD_LOGIC_VECTOR(15 downto 0);
          sseg_cat : out STD_LOGIC_VECTOR(7 downto 0);
          sseg_an : out STD_LOGIC_VECTOR(3 downto 0));
 end Device_Wrapper;
@@ -125,7 +126,7 @@ architecture arch_Device_Wrapper of Device_Wrapper is
     signal win : STD_LOGIC;
     signal lose : STD_LOGIC;
     signal game_sseg0, game_sseg1, game_sseg2, game_sseg3 : STD_LOGIC_VECTOR(5 downto 0); 
-    signal pattern_debug : STD_LOGIC_VECTOR(15 downto 0);
+    --signal pattern_debug : STD_LOGIC_VECTOR(15 downto 0);
     
     -- Init Driver signals
     signal init_sseg0, init_sseg1, init_sseg2, init_sseg3 : STD_LOGIC_VECTOR(5 downto 0);
@@ -136,7 +137,24 @@ architecture arch_Device_Wrapper of Device_Wrapper is
     -- SSEG Select signals
     signal to_display0, to_display1, to_display2, to_display3 : STD_LOGIC_VECTOR(5 downto 0);
     
+    
+    signal pattern : STD_LOGIC_VECTOR(15 downto 0);
+    signal debug_flag : STD_LOGIC := '0';
 begin
+
+    GameResult : process (state, btn_valid_top, debug_flag) 
+    begin
+        if (rising_edge(btn_valid_top)) then
+            debug_flag <= not debug_flag;
+        end if;
+        if (debug_flag = '1') then
+            pattern_debug <= pattern;
+        elsif (state = "1000") then
+            pattern_debug <= pattern;
+        else
+            pattern_debug <= x"0000";
+        end if;
+    end process;
     
     -- Intermediate logic between signals
     game_over <= win OR lose;
@@ -190,7 +208,7 @@ begin
                                        sseg_out3 => game_sseg3,
                                        win => win,
                                        lose => lose,
-                                       pattern => pattern_debug);
+                                       pattern => pattern);
     -- End Game Driver instance --
     
     -- Begin Init Driver instance --

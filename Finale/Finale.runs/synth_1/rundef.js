@@ -27,7 +27,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log Physical_Game_Test.vds -m64 -mode batch -messageDb vivado.pb -notrace -source Physical_Game_Test.tcl" );
+         "-log Device_Wrapper.vds -m64 -mode batch -messageDb vivado.pb -notrace -source Device_Wrapper.tcl" );
 
 
 

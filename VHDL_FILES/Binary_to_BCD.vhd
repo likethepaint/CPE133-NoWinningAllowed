@@ -18,8 +18,7 @@ entity Binary_to_BCD is
           ones : out STD_LOGIC_VECTOR(5 downto 0);
           tens : out STD_LOGIC_VECTOR(5 downto 0);
           hundreds : out STD_LOGIC_VECTOR(5 downto 0);
-          thousands : out STD_LOGIC_VECTOR(5 downto 0);
-          sseg_enable : out STD_LOGIC);
+          thousands : out STD_LOGIC_VECTOR(5 downto 0));
 end Binary_to_BCD;
 
 architecture arch_Binary_to_BCD of Binary_to_BCD is

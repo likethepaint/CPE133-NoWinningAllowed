@@ -6,4 +6,4 @@
 # Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 #
 
-vivado -log Physical_Game_Test.vdi -applog -m64 -messageDb vivado.pb -mode batch -source Physical_Game_Test.tcl -notrace
+vivado -log Device_Wrapper.vdi -applog -m64 -messageDb vivado.pb -mode batch -source Device_Wrapper.tcl -notrace

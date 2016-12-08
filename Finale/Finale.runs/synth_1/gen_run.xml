@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1481130544">
-  <File Type="PA-TCL" Name="Physical_Game_Test.tcl"/>
-  <File Type="RDS-RDS" Name="Physical_Game_Test.vds"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Physical_Game_Test_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Physical_Game_Test_timing_summary_synth.pb"/>
-  <File Type="RDS-DCP" Name="Physical_Game_Test.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="Physical_Game_Test_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="Physical_Game_Test_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="Physical_Game_Test_drc_synth.rpt"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1481170199">
+  <File Type="VDS-TIMING-PB" Name="Device_Wrapper_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Device_Wrapper_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="Device_Wrapper.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="Device_Wrapper_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="Device_Wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="Device_Wrapper_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="Device_Wrapper.vds"/>
+  <File Type="PA-TCL" Name="Device_Wrapper.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../VHDL_FILES/Word_Key.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../VHDL_FILES/Display_Word.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/../VHDL_FILES/Timer.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -46,6 +58,36 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/../VHDL_FILES/SSEG_Select.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../VHDL_FILES/End_Driver.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../VHDL_FILES/Init_Driver.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../VHDL_FILES/State_Controller.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../VHDL_FILES/Difficulty_Driver.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/../VHDL_FILES/Button.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -58,15 +100,22 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../VHDL_FILES/Physical_Game_Test.vhd">
+    <File Path="$PPRDIR/../VHDL_FILES/Device_Wrapper.vhd">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/End_Driver_Sim.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="Physical_Game_Test"/>
+      <Option Name="TopModule" Val="Device_Wrapper"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
@@ -79,6 +128,7 @@
       </FileInfo>
     </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/../VHDL_FILES/Game_Test_Const.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>

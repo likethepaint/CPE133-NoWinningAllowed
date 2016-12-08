@@ -63,8 +63,7 @@ component Binary_to_BCD is
           ones : out STD_LOGIC_VECTOR(5 downto 0);
           tens : out STD_LOGIC_VECTOR(5 downto 0);
           hundreds : out STD_LOGIC_VECTOR(5 downto 0);
-          thousands : out STD_LOGIC_VECTOR(5 downto 0);
-          sseg_enable : out STD_LOGIC);
+          thousands : out STD_LOGIC_VECTOR(5 downto 0));
 end component;
 
 component Timer is 
@@ -79,10 +78,8 @@ end component;
 signal reset : STD_LOGIC;
 signal pattern_adj : STD_LOGIC_VECTOR(15 downto 0);
 signal trap_clk_out : STD_LOGIC;
-signal sseg_enable : STD_LOGIC;
 signal ones, tens, hundreds, thousands : STD_LOGIC_VECTOR(5 downto 0);
 signal time_remaining : STD_LOGIC_VECTOR(11 downto 0);
-signal win_state, lose_state : STD_LOGIC;
 
 
 
@@ -91,7 +88,7 @@ begin
     ValidState : process (clk)
     begin
         if (rising_edge(clk)) then
-            if (state = "0100") then
+            if ((state = "0100") OR (state = "1000")) then
                 reset <= '0';
             else 
                 reset <= '1';
@@ -102,9 +99,9 @@ begin
 -- NEED TO KNOW HOW SSEG DISPLAY DRIVER WILL WORK
     PatternSystem : Pattern_Gen port map (clk => clk, reset => reset, pattern => pattern_adj);
     TrapSystem : Trap port map (reset => reset, clk => clk, user_input => unsigned(user_input), bitmask => unsigned(difficulty), pattern => unsigned(pattern_adj), clk_out => trap_clk_out); 
-    CompareSystem : Comparator port map (reset => reset, user_input => user_input, pattern => pattern_adj, bitmask => difficulty, result => win_state);
-    ConvertToBCD : Binary_To_BCD port map (clk =>  clk, binary_in => time_remaining, ones => ones, tens => tens, hundreds => hundreds, thousands => thousands, sseg_enable => sseg_enable); 
-    CountdownTimer : Timer port map (clk => trap_clk_out, reset => reset, difficulty => difficulty, time_remaining => time_remaining, out_of_time => lose_state);
+    CompareSystem : Comparator port map (reset => reset, user_input => user_input, pattern => pattern_adj, bitmask => difficulty, result => win);
+    ConvertToBCD : Binary_To_BCD port map (clk =>  clk, binary_in => time_remaining, ones => ones, tens => tens, hundreds => hundreds, thousands => thousands); 
+    CountdownTimer : Timer port map (clk => trap_clk_out, reset => reset, difficulty => difficulty, time_remaining => time_remaining, out_of_time => lose);
     
     sseg_out0 <= ones;
     sseg_out1 <= tens;

@@ -29,7 +29,7 @@ eval( EAInclude(ISEJScriptLib) );
 // pre-commands:
 ISETouchFile( "init_design", "begin" );
 ISEStep( "vivado",
-         "-log Physical_Game_Test.vdi -applog -m64 -messageDb vivado.pb -mode batch -source Physical_Game_Test.tcl -notrace" );
+         "-log Device_Wrapper.vdi -applog -m64 -messageDb vivado.pb -mode batch -source Device_Wrapper.tcl -notrace" );
 
 
 
