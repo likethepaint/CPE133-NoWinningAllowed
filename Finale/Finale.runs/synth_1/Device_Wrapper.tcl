@@ -16,6 +16,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 read_vhdl -library xil_defaultlib {
   /home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/VHDL_FILES/Word_Key.vhd
+  /home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/VHDL_FILES/Buzzer.vhd
   /home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/VHDL_FILES/Display_Word.vhd
   /home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/VHDL_FILES/Timer.vhd
   /home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/VHDL_FILES/Pattern_Gen.vhd

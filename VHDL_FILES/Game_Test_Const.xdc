@@ -102,3 +102,6 @@ set_property IOSTANDARD LVCMOS33 [get_ports btn_right]
 set_property IOSTANDARD LVCMOS33 [get_ports btn_left]
 set_property IOSTANDARD LVCMOS33 [get_ports btn_center]
 set_property IOSTANDARD LVCMOS33 [get_ports btn_bottom]
+
+set_property PACKAGE_PIN P18 [get_ports buzz]
+set_property IOSTANDARD LVCMOS33 [get_ports buzz]

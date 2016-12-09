@@ -13,7 +13,8 @@ entity Device_Wrapper is
          btn_center : in STD_LOGIC;
          pattern_debug : out STD_LOGIC_VECTOR(15 downto 0);
          sseg_cat : out STD_LOGIC_VECTOR(7 downto 0);
-         sseg_an : out STD_LOGIC_VECTOR(3 downto 0));
+         sseg_an : out STD_LOGIC_VECTOR(3 downto 0);
+         buzz : out STD_LOGIC);
 end Device_Wrapper;
 
 architecture arch_Device_Wrapper of Device_Wrapper is  
@@ -68,7 +69,8 @@ architecture arch_Device_Wrapper of Device_Wrapper is
               sseg_out3 : out STD_LOGIC_VECTOR(5 downto 0);
               win : out STD_LOGIC;
               lose : out STD_LOGIC;
-              pattern : out STD_LOGIC_VECTOR(15 downto 0));
+              pattern : out STD_LOGIC_VECTOR(15 downto 0);
+              buzz : out STD_LOGIC);
     end component;
     
     component Button is
@@ -208,7 +210,8 @@ begin
                                        sseg_out3 => game_sseg3,
                                        win => win,
                                        lose => lose,
-                                       pattern => pattern);
+                                       pattern => pattern,
+                                       buzz => buzz);
     -- End Game Driver instance --
     
     -- Begin Init Driver instance --

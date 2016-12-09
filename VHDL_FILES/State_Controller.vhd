@@ -50,7 +50,7 @@ begin
                 end if;
             when finish =>
                 if (center_btn = '1') then
-                    NS <= init;
+                    NS <= difficulty;
                 else 
                     NS <= finish;
                 end if;

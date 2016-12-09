@@ -29,7 +29,8 @@ entity Game_Driver is
           sseg_out3 : out STD_LOGIC_VECTOR(5 downto 0);
           win : out STD_LOGIC;
           lose : out STD_LOGIC;
-          pattern : out STD_LOGIC_VECTOR(15 downto 0));
+          pattern : out STD_LOGIC_VECTOR(15 downto 0);
+          buzz : out STD_LOGIC);
 end Game_Driver;
 
 architecture arch_Game_Driver of Game_Driver is
@@ -74,6 +75,13 @@ component Timer is
           out_of_time : out STD_LOGIC);
 end component;
 
+component Buzzer is
+    Port (clk: in STD_LOGIC;
+          countdown : in STD_LOGIC;
+          reset: in STD_LOGIC;
+          buzz: out STD_LOGIC);
+end component;
+
 
 signal reset : STD_LOGIC;
 signal pattern_adj : STD_LOGIC_VECTOR(15 downto 0);
@@ -102,6 +110,8 @@ begin
     CompareSystem : Comparator port map (reset => reset, user_input => user_input, pattern => pattern_adj, bitmask => difficulty, result => win);
     ConvertToBCD : Binary_To_BCD port map (clk =>  clk, binary_in => time_remaining, ones => ones, tens => tens, hundreds => hundreds, thousands => thousands); 
     CountdownTimer : Timer port map (clk => trap_clk_out, reset => reset, difficulty => difficulty, time_remaining => time_remaining, out_of_time => lose);
+    CountdownBuzzer : Buzzer port map(clk => clk, countdown => trap_clk_out, reset => reset, buzz => buzz);
+    
     
     sseg_out0 <= ones;
     sseg_out1 <= tens;
