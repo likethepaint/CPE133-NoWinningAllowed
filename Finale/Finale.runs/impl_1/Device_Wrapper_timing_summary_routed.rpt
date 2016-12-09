@@ -1,0 +1,2506 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Fri Dec  9 07:17:04 2016
+| Host         : zoidberg running 64-bit Ubuntu 16.04.1 LTS
+| Command      : report_timing_summary -warn_on_violation -max_paths 10 -file Device_Wrapper_timing_summary_routed.rpt -rpx Device_Wrapper_timing_summary_routed.rpx
+| Design       : Device_Wrapper
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.14 2014-09-11
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 2 register/latch pins with no clock driven by root clock pin: DifficultyDriver/PS_reg[0]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: DifficultyDriver/PS_reg[1]/C (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: DifficultyDriver/difficulty_reg[15]/G (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: DifficultyDriver/difficulty_reg[7]/G (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: GameDriver/CountdownTimer/out_of_time_reg/C (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: GameDriver/TrapSystem/clk_out_flag_reg/C (HIGH)
+
+ There are 19 register/latch pins with no clock driven by root clock pin: GameDriver/reset_reg/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: LeftButton/control_out_reg/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: RightButton/control_out_reg/C (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: TopButton/control_out_reg/C (HIGH)
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 95 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 21 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 28 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      4.295        0.000                      0                 1159        0.086        0.000                      0                 1159        4.500        0.000                       0                   490  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock        Waveform(ns)       Period(ns)      Frequency(MHz)
+-----        ------------       ----------      --------------
+sys_clk_pin  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sys_clk_pin         4.295        0.000                      0                 1078        0.086        0.000                      0                 1078        4.500        0.000                       0                   490  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group         From Clock         To Clock               WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------         ----------         --------               -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+**async_default**  sys_clk_pin        sys_clk_pin              5.477        0.000                      0                   81        0.205        0.000                      0                   81  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk_pin
+  To Clock:  sys_clk_pin
+
+Setup :            0  Failing Endpoints,  Worst Slack        4.295ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.086ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             4.295ns  (required time - arrival time)
+  Source:                 StateController/PS_reg[1]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            SSEGDriver/current_input_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        5.664ns  (logic 1.546ns (27.297%)  route 4.118ns (72.703%))
+  Logic Levels:           5  (LUT2=1 LUT4=1 LUT5=1 LUT6=2)
+  Clock Path Skew:        -0.035ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.774ns = ( 14.774 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.069ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.548     5.069    StateController/clk_IBUF_BUFG
+    SLICE_X40Y26         FDCE                                         r  StateController/PS_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y26         FDCE (Prop_fdce_C_Q)         0.456     5.525 r  StateController/PS_reg[1]/Q
+                         net (fo=51, routed)          1.379     6.904    StateController/PS_reg[1]_0[1]
+    SLICE_X45Y21         LUT2 (Prop_lut2_I1_O)        0.150     7.054 r  StateController/current_input[2]_i_3/O
+                         net (fo=2, routed)           0.423     7.477    StateController/state[3]
+    SLICE_X45Y20         LUT4 (Prop_lut4_I3_O)        0.332     7.809 f  StateController/current_input[5]_i_6/O
+                         net (fo=21, routed)          1.254     9.063    StateController/current_input_reg[0]
+    SLICE_X42Y23         LUT5 (Prop_lut5_I0_O)        0.153     9.216 r  StateController/current_input[3]_i_7/O
+                         net (fo=1, routed)           0.505     9.721    SSEGDriver/to_display3[2]
+    SLICE_X42Y23         LUT6 (Prop_lut6_I5_O)        0.331    10.052 r  SSEGDriver/current_input[3]_i_3/O
+                         net (fo=1, routed)           0.557    10.609    SSEGDriver/current_input[3]_i_3_n_0
+    SLICE_X47Y23         LUT6 (Prop_lut6_I4_O)        0.124    10.733 r  SSEGDriver/current_input[3]_i_1/O
+                         net (fo=1, routed)           0.000    10.733    SSEGDriver/current_input[3]_i_1_n_0
+    SLICE_X47Y23         FDRE                                         r  SSEGDriver/current_input_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.433    14.774    SSEGDriver/clk_IBUF_BUFG
+    SLICE_X47Y23         FDRE                                         r  SSEGDriver/current_input_reg[3]/C
+                         clock pessimism              0.260    15.034    
+                         clock uncertainty           -0.035    14.999    
+    SLICE_X47Y23         FDRE (Setup_fdre_C_D)        0.029    15.028    SSEGDriver/current_input_reg[3]
+  -------------------------------------------------------------------
+                         required time                         15.028    
+                         arrival time                         -10.733    
+  -------------------------------------------------------------------
+                         slack                                  4.295    
+
+Slack (MET) :             4.725ns  (required time - arrival time)
+  Source:                 DifficultyDriver/GenExpression/clock_divider_reg[22]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            DifficultyDriver/GenExpression/clock_divider_reg[25]/R
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        4.791ns  (logic 1.076ns (22.459%)  route 3.715ns (77.540%))
+  Logic Levels:           5  (LUT2=1 LUT4=1 LUT5=1 LUT6=2)
+  Clock Path Skew:        -0.020ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.773ns = ( 14.773 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.067ns
+    Clock Pessimism Removal (CPR):    0.274ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.546     5.067    DifficultyDriver/GenExpression/clk_IBUF_BUFG
+    SLICE_X41Y25         FDRE                                         r  DifficultyDriver/GenExpression/clock_divider_reg[22]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y25         FDRE (Prop_fdre_C_Q)         0.456     5.523 r  DifficultyDriver/GenExpression/clock_divider_reg[22]/Q
+                         net (fo=2, routed)           0.912     6.436    DifficultyDriver/GenExpression/clock_divider[22]
+    SLICE_X40Y24         LUT4 (Prop_lut4_I2_O)        0.124     6.560 f  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_8/O
+                         net (fo=1, routed)           0.444     7.004    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_8_n_0
+    SLICE_X40Y24         LUT5 (Prop_lut5_I4_O)        0.124     7.128 f  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_7/O
+                         net (fo=1, routed)           0.303     7.430    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_7_n_0
+    SLICE_X40Y23         LUT6 (Prop_lut6_I5_O)        0.124     7.554 f  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_4/O
+                         net (fo=1, routed)           0.440     7.995    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_4_n_0
+    SLICE_X40Y21         LUT6 (Prop_lut6_I0_O)        0.124     8.119 f  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_3/O
+                         net (fo=2, routed)           0.576     8.695    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_3_n_0
+    SLICE_X40Y19         LUT2 (Prop_lut2_I0_O)        0.124     8.819 r  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_1__0/O
+                         net (fo=53, routed)          1.039     9.858    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_1__0_n_0
+    SLICE_X41Y26         FDRE                                         r  DifficultyDriver/GenExpression/clock_divider_reg[25]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.432    14.773    DifficultyDriver/GenExpression/clk_IBUF_BUFG
+    SLICE_X41Y26         FDRE                                         r  DifficultyDriver/GenExpression/clock_divider_reg[25]/C
+                         clock pessimism              0.274    15.047    
+                         clock uncertainty           -0.035    15.012    
+    SLICE_X41Y26         FDRE (Setup_fdre_C_R)       -0.429    14.583    DifficultyDriver/GenExpression/clock_divider_reg[25]
+  -------------------------------------------------------------------
+                         required time                         14.583    
+                         arrival time                          -9.858    
+  -------------------------------------------------------------------
+                         slack                                  4.725    
+
+Slack (MET) :             4.725ns  (required time - arrival time)
+  Source:                 DifficultyDriver/GenExpression/clock_divider_reg[22]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            DifficultyDriver/GenExpression/clock_divider_reg[26]/R
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        4.791ns  (logic 1.076ns (22.459%)  route 3.715ns (77.540%))
+  Logic Levels:           5  (LUT2=1 LUT4=1 LUT5=1 LUT6=2)
+  Clock Path Skew:        -0.020ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.773ns = ( 14.773 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.067ns
+    Clock Pessimism Removal (CPR):    0.274ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.546     5.067    DifficultyDriver/GenExpression/clk_IBUF_BUFG
+    SLICE_X41Y25         FDRE                                         r  DifficultyDriver/GenExpression/clock_divider_reg[22]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y25         FDRE (Prop_fdre_C_Q)         0.456     5.523 r  DifficultyDriver/GenExpression/clock_divider_reg[22]/Q
+                         net (fo=2, routed)           0.912     6.436    DifficultyDriver/GenExpression/clock_divider[22]
+    SLICE_X40Y24         LUT4 (Prop_lut4_I2_O)        0.124     6.560 f  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_8/O
+                         net (fo=1, routed)           0.444     7.004    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_8_n_0
+    SLICE_X40Y24         LUT5 (Prop_lut5_I4_O)        0.124     7.128 f  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_7/O
+                         net (fo=1, routed)           0.303     7.430    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_7_n_0
+    SLICE_X40Y23         LUT6 (Prop_lut6_I5_O)        0.124     7.554 f  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_4/O
+                         net (fo=1, routed)           0.440     7.995    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_4_n_0
+    SLICE_X40Y21         LUT6 (Prop_lut6_I0_O)        0.124     8.119 f  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_3/O
+                         net (fo=2, routed)           0.576     8.695    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_3_n_0
+    SLICE_X40Y19         LUT2 (Prop_lut2_I0_O)        0.124     8.819 r  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_1__0/O
+                         net (fo=53, routed)          1.039     9.858    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_1__0_n_0
+    SLICE_X41Y26         FDRE                                         r  DifficultyDriver/GenExpression/clock_divider_reg[26]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.432    14.773    DifficultyDriver/GenExpression/clk_IBUF_BUFG
+    SLICE_X41Y26         FDRE                                         r  DifficultyDriver/GenExpression/clock_divider_reg[26]/C
+                         clock pessimism              0.274    15.047    
+                         clock uncertainty           -0.035    15.012    
+    SLICE_X41Y26         FDRE (Setup_fdre_C_R)       -0.429    14.583    DifficultyDriver/GenExpression/clock_divider_reg[26]
+  -------------------------------------------------------------------
+                         required time                         14.583    
+                         arrival time                          -9.858    
+  -------------------------------------------------------------------
+                         slack                                  4.725    
+
+Slack (MET) :             4.742ns  (required time - arrival time)
+  Source:                 DifficultyDriver/GenExpression/clock_divider_reg[22]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            DifficultyDriver/GenExpression/clock_divider_reg[21]/R
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        4.793ns  (logic 1.076ns (22.447%)  route 3.717ns (77.553%))
+  Logic Levels:           5  (LUT2=1 LUT4=1 LUT5=1 LUT6=2)
+  Clock Path Skew:        0.000ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.771ns = ( 14.771 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.067ns
+    Clock Pessimism Removal (CPR):    0.296ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.546     5.067    DifficultyDriver/GenExpression/clk_IBUF_BUFG
+    SLICE_X41Y25         FDRE                                         r  DifficultyDriver/GenExpression/clock_divider_reg[22]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y25         FDRE (Prop_fdre_C_Q)         0.456     5.523 r  DifficultyDriver/GenExpression/clock_divider_reg[22]/Q
+                         net (fo=2, routed)           0.912     6.436    DifficultyDriver/GenExpression/clock_divider[22]
+    SLICE_X40Y24         LUT4 (Prop_lut4_I2_O)        0.124     6.560 f  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_8/O
+                         net (fo=1, routed)           0.444     7.004    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_8_n_0
+    SLICE_X40Y24         LUT5 (Prop_lut5_I4_O)        0.124     7.128 f  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_7/O
+                         net (fo=1, routed)           0.303     7.430    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_7_n_0
+    SLICE_X40Y23         LUT6 (Prop_lut6_I5_O)        0.124     7.554 f  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_4/O
+                         net (fo=1, routed)           0.440     7.995    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_4_n_0
+    SLICE_X40Y21         LUT6 (Prop_lut6_I0_O)        0.124     8.119 f  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_3/O
+                         net (fo=2, routed)           0.576     8.695    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_3_n_0
+    SLICE_X40Y19         LUT2 (Prop_lut2_I0_O)        0.124     8.819 r  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_1__0/O
+                         net (fo=53, routed)          1.042     9.861    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_1__0_n_0
+    SLICE_X41Y25         FDRE                                         r  DifficultyDriver/GenExpression/clock_divider_reg[21]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.430    14.771    DifficultyDriver/GenExpression/clk_IBUF_BUFG
+    SLICE_X41Y25         FDRE                                         r  DifficultyDriver/GenExpression/clock_divider_reg[21]/C
+                         clock pessimism              0.296    15.067    
+                         clock uncertainty           -0.035    15.032    
+    SLICE_X41Y25         FDRE (Setup_fdre_C_R)       -0.429    14.603    DifficultyDriver/GenExpression/clock_divider_reg[21]
+  -------------------------------------------------------------------
+                         required time                         14.603    
+                         arrival time                          -9.861    
+  -------------------------------------------------------------------
+                         slack                                  4.742    
+
+Slack (MET) :             4.742ns  (required time - arrival time)
+  Source:                 DifficultyDriver/GenExpression/clock_divider_reg[22]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            DifficultyDriver/GenExpression/clock_divider_reg[22]/R
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        4.793ns  (logic 1.076ns (22.447%)  route 3.717ns (77.553%))
+  Logic Levels:           5  (LUT2=1 LUT4=1 LUT5=1 LUT6=2)
+  Clock Path Skew:        0.000ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.771ns = ( 14.771 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.067ns
+    Clock Pessimism Removal (CPR):    0.296ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.546     5.067    DifficultyDriver/GenExpression/clk_IBUF_BUFG
+    SLICE_X41Y25         FDRE                                         r  DifficultyDriver/GenExpression/clock_divider_reg[22]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y25         FDRE (Prop_fdre_C_Q)         0.456     5.523 r  DifficultyDriver/GenExpression/clock_divider_reg[22]/Q
+                         net (fo=2, routed)           0.912     6.436    DifficultyDriver/GenExpression/clock_divider[22]
+    SLICE_X40Y24         LUT4 (Prop_lut4_I2_O)        0.124     6.560 f  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_8/O
+                         net (fo=1, routed)           0.444     7.004    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_8_n_0
+    SLICE_X40Y24         LUT5 (Prop_lut5_I4_O)        0.124     7.128 f  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_7/O
+                         net (fo=1, routed)           0.303     7.430    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_7_n_0
+    SLICE_X40Y23         LUT6 (Prop_lut6_I5_O)        0.124     7.554 f  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_4/O
+                         net (fo=1, routed)           0.440     7.995    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_4_n_0
+    SLICE_X40Y21         LUT6 (Prop_lut6_I0_O)        0.124     8.119 f  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_3/O
+                         net (fo=2, routed)           0.576     8.695    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_3_n_0
+    SLICE_X40Y19         LUT2 (Prop_lut2_I0_O)        0.124     8.819 r  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_1__0/O
+                         net (fo=53, routed)          1.042     9.861    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_1__0_n_0
+    SLICE_X41Y25         FDRE                                         r  DifficultyDriver/GenExpression/clock_divider_reg[22]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.430    14.771    DifficultyDriver/GenExpression/clk_IBUF_BUFG
+    SLICE_X41Y25         FDRE                                         r  DifficultyDriver/GenExpression/clock_divider_reg[22]/C
+                         clock pessimism              0.296    15.067    
+                         clock uncertainty           -0.035    15.032    
+    SLICE_X41Y25         FDRE (Setup_fdre_C_R)       -0.429    14.603    DifficultyDriver/GenExpression/clock_divider_reg[22]
+  -------------------------------------------------------------------
+                         required time                         14.603    
+                         arrival time                          -9.861    
+  -------------------------------------------------------------------
+                         slack                                  4.742    
+
+Slack (MET) :             4.742ns  (required time - arrival time)
+  Source:                 DifficultyDriver/GenExpression/clock_divider_reg[22]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            DifficultyDriver/GenExpression/clock_divider_reg[23]/R
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        4.793ns  (logic 1.076ns (22.447%)  route 3.717ns (77.553%))
+  Logic Levels:           5  (LUT2=1 LUT4=1 LUT5=1 LUT6=2)
+  Clock Path Skew:        0.000ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.771ns = ( 14.771 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.067ns
+    Clock Pessimism Removal (CPR):    0.296ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.546     5.067    DifficultyDriver/GenExpression/clk_IBUF_BUFG
+    SLICE_X41Y25         FDRE                                         r  DifficultyDriver/GenExpression/clock_divider_reg[22]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y25         FDRE (Prop_fdre_C_Q)         0.456     5.523 r  DifficultyDriver/GenExpression/clock_divider_reg[22]/Q
+                         net (fo=2, routed)           0.912     6.436    DifficultyDriver/GenExpression/clock_divider[22]
+    SLICE_X40Y24         LUT4 (Prop_lut4_I2_O)        0.124     6.560 f  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_8/O
+                         net (fo=1, routed)           0.444     7.004    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_8_n_0
+    SLICE_X40Y24         LUT5 (Prop_lut5_I4_O)        0.124     7.128 f  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_7/O
+                         net (fo=1, routed)           0.303     7.430    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_7_n_0
+    SLICE_X40Y23         LUT6 (Prop_lut6_I5_O)        0.124     7.554 f  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_4/O
+                         net (fo=1, routed)           0.440     7.995    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_4_n_0
+    SLICE_X40Y21         LUT6 (Prop_lut6_I0_O)        0.124     8.119 f  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_3/O
+                         net (fo=2, routed)           0.576     8.695    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_3_n_0
+    SLICE_X40Y19         LUT2 (Prop_lut2_I0_O)        0.124     8.819 r  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_1__0/O
+                         net (fo=53, routed)          1.042     9.861    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_1__0_n_0
+    SLICE_X41Y25         FDRE                                         r  DifficultyDriver/GenExpression/clock_divider_reg[23]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.430    14.771    DifficultyDriver/GenExpression/clk_IBUF_BUFG
+    SLICE_X41Y25         FDRE                                         r  DifficultyDriver/GenExpression/clock_divider_reg[23]/C
+                         clock pessimism              0.296    15.067    
+                         clock uncertainty           -0.035    15.032    
+    SLICE_X41Y25         FDRE (Setup_fdre_C_R)       -0.429    14.603    DifficultyDriver/GenExpression/clock_divider_reg[23]
+  -------------------------------------------------------------------
+                         required time                         14.603    
+                         arrival time                          -9.861    
+  -------------------------------------------------------------------
+                         slack                                  4.742    
+
+Slack (MET) :             4.742ns  (required time - arrival time)
+  Source:                 DifficultyDriver/GenExpression/clock_divider_reg[22]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            DifficultyDriver/GenExpression/clock_divider_reg[24]/R
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        4.793ns  (logic 1.076ns (22.447%)  route 3.717ns (77.553%))
+  Logic Levels:           5  (LUT2=1 LUT4=1 LUT5=1 LUT6=2)
+  Clock Path Skew:        0.000ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.771ns = ( 14.771 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.067ns
+    Clock Pessimism Removal (CPR):    0.296ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.546     5.067    DifficultyDriver/GenExpression/clk_IBUF_BUFG
+    SLICE_X41Y25         FDRE                                         r  DifficultyDriver/GenExpression/clock_divider_reg[22]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y25         FDRE (Prop_fdre_C_Q)         0.456     5.523 r  DifficultyDriver/GenExpression/clock_divider_reg[22]/Q
+                         net (fo=2, routed)           0.912     6.436    DifficultyDriver/GenExpression/clock_divider[22]
+    SLICE_X40Y24         LUT4 (Prop_lut4_I2_O)        0.124     6.560 f  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_8/O
+                         net (fo=1, routed)           0.444     7.004    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_8_n_0
+    SLICE_X40Y24         LUT5 (Prop_lut5_I4_O)        0.124     7.128 f  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_7/O
+                         net (fo=1, routed)           0.303     7.430    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_7_n_0
+    SLICE_X40Y23         LUT6 (Prop_lut6_I5_O)        0.124     7.554 f  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_4/O
+                         net (fo=1, routed)           0.440     7.995    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_4_n_0
+    SLICE_X40Y21         LUT6 (Prop_lut6_I0_O)        0.124     8.119 f  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_3/O
+                         net (fo=2, routed)           0.576     8.695    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_3_n_0
+    SLICE_X40Y19         LUT2 (Prop_lut2_I0_O)        0.124     8.819 r  DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_1__0/O
+                         net (fo=53, routed)          1.042     9.861    DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_1__0_n_0
+    SLICE_X41Y25         FDRE                                         r  DifficultyDriver/GenExpression/clock_divider_reg[24]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.430    14.771    DifficultyDriver/GenExpression/clk_IBUF_BUFG
+    SLICE_X41Y25         FDRE                                         r  DifficultyDriver/GenExpression/clock_divider_reg[24]/C
+                         clock pessimism              0.296    15.067    
+                         clock uncertainty           -0.035    15.032    
+    SLICE_X41Y25         FDRE (Setup_fdre_C_R)       -0.429    14.603    DifficultyDriver/GenExpression/clock_divider_reg[24]
+  -------------------------------------------------------------------
+                         required time                         14.603    
+                         arrival time                          -9.861    
+  -------------------------------------------------------------------
+                         slack                                  4.742    
+
+Slack (MET) :             4.767ns  (required time - arrival time)
+  Source:                 RightButton/count_reg[13]/C
+                            (rising edge-triggered cell FDSE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            RightButton/count_reg[8]/S
+                            (rising edge-triggered cell FDSE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        4.747ns  (logic 1.182ns (24.901%)  route 3.565ns (75.099%))
+  Logic Levels:           4  (LUT2=1 LUT4=1 LUT5=2)
+  Clock Path Skew:        -0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.776ns = ( 14.776 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.073ns
+    Clock Pessimism Removal (CPR):    0.275ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.552     5.073    RightButton/clk_IBUF_BUFG
+    SLICE_X36Y20         FDSE                                         r  RightButton/count_reg[13]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X36Y20         FDSE (Prop_fdse_C_Q)         0.456     5.529 f  RightButton/count_reg[13]/Q
+                         net (fo=3, routed)           1.126     6.655    RightButton/count_reg_n_0_[13]
+    SLICE_X38Y18         LUT4 (Prop_lut4_I0_O)        0.150     6.805 r  RightButton/count[23]_i_6__3/O
+                         net (fo=1, routed)           0.307     7.112    RightButton/count[23]_i_6__3_n_0
+    SLICE_X38Y19         LUT5 (Prop_lut5_I4_O)        0.328     7.440 r  RightButton/count[23]_i_4__3/O
+                         net (fo=1, routed)           0.452     7.892    RightButton/count[23]_i_4__3_n_0
+    SLICE_X38Y19         LUT5 (Prop_lut5_I0_O)        0.124     8.016 r  RightButton/count[23]_i_2__3/O
+                         net (fo=25, routed)          0.941     8.957    RightButton/count[23]_i_2__3_n_0
+    SLICE_X38Y19         LUT2 (Prop_lut2_I1_O)        0.124     9.081 r  RightButton/count[23]_i_1/O
+                         net (fo=23, routed)          0.739     9.820    RightButton/count[23]_i_1_n_0
+    SLICE_X36Y18         FDSE                                         r  RightButton/count_reg[8]/S
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.435    14.776    RightButton/clk_IBUF_BUFG
+    SLICE_X36Y18         FDSE                                         r  RightButton/count_reg[8]/C
+                         clock pessimism              0.275    15.051    
+                         clock uncertainty           -0.035    15.016    
+    SLICE_X36Y18         FDSE (Setup_fdse_C_S)       -0.429    14.587    RightButton/count_reg[8]
+  -------------------------------------------------------------------
+                         required time                         14.587    
+                         arrival time                          -9.820    
+  -------------------------------------------------------------------
+                         slack                                  4.767    
+
+Slack (MET) :             4.767ns  (required time - arrival time)
+  Source:                 RightButton/count_reg[13]/C
+                            (rising edge-triggered cell FDSE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            RightButton/count_reg[9]/S
+                            (rising edge-triggered cell FDSE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        4.747ns  (logic 1.182ns (24.901%)  route 3.565ns (75.099%))
+  Logic Levels:           4  (LUT2=1 LUT4=1 LUT5=2)
+  Clock Path Skew:        -0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.776ns = ( 14.776 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.073ns
+    Clock Pessimism Removal (CPR):    0.275ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.552     5.073    RightButton/clk_IBUF_BUFG
+    SLICE_X36Y20         FDSE                                         r  RightButton/count_reg[13]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X36Y20         FDSE (Prop_fdse_C_Q)         0.456     5.529 f  RightButton/count_reg[13]/Q
+                         net (fo=3, routed)           1.126     6.655    RightButton/count_reg_n_0_[13]
+    SLICE_X38Y18         LUT4 (Prop_lut4_I0_O)        0.150     6.805 r  RightButton/count[23]_i_6__3/O
+                         net (fo=1, routed)           0.307     7.112    RightButton/count[23]_i_6__3_n_0
+    SLICE_X38Y19         LUT5 (Prop_lut5_I4_O)        0.328     7.440 r  RightButton/count[23]_i_4__3/O
+                         net (fo=1, routed)           0.452     7.892    RightButton/count[23]_i_4__3_n_0
+    SLICE_X38Y19         LUT5 (Prop_lut5_I0_O)        0.124     8.016 r  RightButton/count[23]_i_2__3/O
+                         net (fo=25, routed)          0.941     8.957    RightButton/count[23]_i_2__3_n_0
+    SLICE_X38Y19         LUT2 (Prop_lut2_I1_O)        0.124     9.081 r  RightButton/count[23]_i_1/O
+                         net (fo=23, routed)          0.739     9.820    RightButton/count[23]_i_1_n_0
+    SLICE_X36Y18         FDSE                                         r  RightButton/count_reg[9]/S
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.435    14.776    RightButton/clk_IBUF_BUFG
+    SLICE_X36Y18         FDSE                                         r  RightButton/count_reg[9]/C
+                         clock pessimism              0.275    15.051    
+                         clock uncertainty           -0.035    15.016    
+    SLICE_X36Y18         FDSE (Setup_fdse_C_S)       -0.429    14.587    RightButton/count_reg[9]
+  -------------------------------------------------------------------
+                         required time                         14.587    
+                         arrival time                          -9.820    
+  -------------------------------------------------------------------
+                         slack                                  4.767    
+
+Slack (MET) :             4.767ns  (required time - arrival time)
+  Source:                 RightButton/count_reg[13]/C
+                            (rising edge-triggered cell FDSE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            RightButton/count_reg[1]/S
+                            (rising edge-triggered cell FDSE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        4.749ns  (logic 1.182ns (24.892%)  route 3.567ns (75.108%))
+  Logic Levels:           4  (LUT2=1 LUT4=1 LUT5=2)
+  Clock Path Skew:        -0.020ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.778ns = ( 14.778 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.073ns
+    Clock Pessimism Removal (CPR):    0.275ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.552     5.073    RightButton/clk_IBUF_BUFG
+    SLICE_X36Y20         FDSE                                         r  RightButton/count_reg[13]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X36Y20         FDSE (Prop_fdse_C_Q)         0.456     5.529 f  RightButton/count_reg[13]/Q
+                         net (fo=3, routed)           1.126     6.655    RightButton/count_reg_n_0_[13]
+    SLICE_X38Y18         LUT4 (Prop_lut4_I0_O)        0.150     6.805 r  RightButton/count[23]_i_6__3/O
+                         net (fo=1, routed)           0.307     7.112    RightButton/count[23]_i_6__3_n_0
+    SLICE_X38Y19         LUT5 (Prop_lut5_I4_O)        0.328     7.440 r  RightButton/count[23]_i_4__3/O
+                         net (fo=1, routed)           0.452     7.892    RightButton/count[23]_i_4__3_n_0
+    SLICE_X38Y19         LUT5 (Prop_lut5_I0_O)        0.124     8.016 r  RightButton/count[23]_i_2__3/O
+                         net (fo=25, routed)          0.941     8.957    RightButton/count[23]_i_2__3_n_0
+    SLICE_X38Y19         LUT2 (Prop_lut2_I1_O)        0.124     9.081 r  RightButton/count[23]_i_1/O
+                         net (fo=23, routed)          0.741     9.822    RightButton/count[23]_i_1_n_0
+    SLICE_X36Y17         FDSE                                         r  RightButton/count_reg[1]/S
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.437    14.778    RightButton/clk_IBUF_BUFG
+    SLICE_X36Y17         FDSE                                         r  RightButton/count_reg[1]/C
+                         clock pessimism              0.275    15.053    
+                         clock uncertainty           -0.035    15.018    
+    SLICE_X36Y17         FDSE (Setup_fdse_C_S)       -0.429    14.589    RightButton/count_reg[1]
+  -------------------------------------------------------------------
+                         required time                         14.589    
+                         arrival time                          -9.822    
+  -------------------------------------------------------------------
+                         slack                                  4.767    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.086ns  (arrival time - required time)
+  Source:                 CenterButton/control_out_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            StateController/PS_reg[1]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.440ns  (logic 0.209ns (47.543%)  route 0.231ns (52.457%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.263ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.945ns
+    Source Clock Delay      (SCD):    1.433ns
+    Clock Pessimism Removal (CPR):    0.249ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.550     1.433    CenterButton/clk_IBUF_BUFG
+    SLICE_X34Y26         FDRE                                         r  CenterButton/control_out_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X34Y26         FDRE (Prop_fdre_C_Q)         0.164     1.597 r  CenterButton/control_out_reg/Q
+                         net (fo=2, routed)           0.231     1.828    StateController/btn_valid_center
+    SLICE_X40Y26         LUT3 (Prop_lut3_I2_O)        0.045     1.873 r  StateController/PS[1]_i_1/O
+                         net (fo=1, routed)           0.000     1.873    StateController/NS[1]
+    SLICE_X40Y26         FDCE                                         r  StateController/PS_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.818     1.945    StateController/clk_IBUF_BUFG
+    SLICE_X40Y26         FDCE                                         r  StateController/PS_reg[1]/C
+                         clock pessimism             -0.249     1.696    
+    SLICE_X40Y26         FDCE (Hold_fdce_C_D)         0.091     1.787    StateController/PS_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -1.787    
+                         arrival time                           1.873    
+  -------------------------------------------------------------------
+                         slack                                  0.086    
+
+Slack (MET) :             0.086ns  (arrival time - required time)
+  Source:                 CenterButton/control_out_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            StateController/PS_reg[0]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.441ns  (logic 0.209ns (47.435%)  route 0.232ns (52.565%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.263ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.945ns
+    Source Clock Delay      (SCD):    1.433ns
+    Clock Pessimism Removal (CPR):    0.249ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.550     1.433    CenterButton/clk_IBUF_BUFG
+    SLICE_X34Y26         FDRE                                         r  CenterButton/control_out_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X34Y26         FDRE (Prop_fdre_C_Q)         0.164     1.597 r  CenterButton/control_out_reg/Q
+                         net (fo=2, routed)           0.232     1.829    GameDriver/CompareSystem/btn_valid_center
+    SLICE_X40Y26         LUT6 (Prop_lut6_I4_O)        0.045     1.874 r  GameDriver/CompareSystem/PS[0]_i_1/O
+                         net (fo=1, routed)           0.000     1.874    StateController/reset_reg_0[0]
+    SLICE_X40Y26         FDCE                                         r  StateController/PS_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.818     1.945    StateController/clk_IBUF_BUFG
+    SLICE_X40Y26         FDCE                                         r  StateController/PS_reg[0]/C
+                         clock pessimism             -0.249     1.696    
+    SLICE_X40Y26         FDCE (Hold_fdce_C_D)         0.092     1.788    StateController/PS_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -1.788    
+                         arrival time                           1.874    
+  -------------------------------------------------------------------
+                         slack                                  0.086    
+
+Slack (MET) :             0.109ns  (arrival time - required time)
+  Source:                 GameDriver/TrapSystem/clk_out_flag_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GameDriver/CountdownBuzzer/count_reg[9]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.463ns  (logic 0.186ns (40.207%)  route 0.277ns (59.793%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.262ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.947ns
+    Source Clock Delay      (SCD):    1.436ns
+    Clock Pessimism Removal (CPR):    0.249ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.553     1.436    GameDriver/TrapSystem/clk_IBUF_BUFG
+    SLICE_X39Y28         FDRE                                         r  GameDriver/TrapSystem/clk_out_flag_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y28         FDRE (Prop_fdre_C_Q)         0.141     1.577 r  GameDriver/TrapSystem/clk_out_flag_reg/Q
+                         net (fo=29, routed)          0.277     1.854    GameDriver/CountdownBuzzer/clk_out_flag_reg
+    SLICE_X32Y28         LUT5 (Prop_lut5_I0_O)        0.045     1.899 r  GameDriver/CountdownBuzzer/count[9]_i_1__4/O
+                         net (fo=1, routed)           0.000     1.899    GameDriver/CountdownBuzzer/count[9]_i_1__4_n_0
+    SLICE_X32Y28         FDCE                                         r  GameDriver/CountdownBuzzer/count_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.820     1.947    GameDriver/CountdownBuzzer/clk_IBUF_BUFG
+    SLICE_X32Y28         FDCE                                         r  GameDriver/CountdownBuzzer/count_reg[9]/C
+                         clock pessimism             -0.249     1.698    
+    SLICE_X32Y28         FDCE (Hold_fdce_C_D)         0.092     1.790    GameDriver/CountdownBuzzer/count_reg[9]
+  -------------------------------------------------------------------
+                         required time                         -1.790    
+                         arrival time                           1.899    
+  -------------------------------------------------------------------
+                         slack                                  0.109    
+
+Slack (MET) :             0.151ns  (arrival time - required time)
+  Source:                 GameDriver/ConvertToBCD/count_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GameDriver/ConvertToBCD/ones_tmp_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.285ns  (logic 0.186ns (65.184%)  route 0.099ns (34.816%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.944ns
+    Source Clock Delay      (SCD):    1.434ns
+    Clock Pessimism Removal (CPR):    0.497ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.551     1.434    GameDriver/ConvertToBCD/clk_IBUF_BUFG
+    SLICE_X39Y23         FDRE                                         r  GameDriver/ConvertToBCD/count_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y23         FDRE (Prop_fdre_C_Q)         0.141     1.575 r  GameDriver/ConvertToBCD/count_reg[2]/Q
+                         net (fo=6, routed)           0.099     1.674    GameDriver/ConvertToBCD/count_reg__0[2]
+    SLICE_X38Y23         LUT5 (Prop_lut5_I3_O)        0.045     1.719 r  GameDriver/ConvertToBCD/ones_tmp[0]_i_1/O
+                         net (fo=1, routed)           0.000     1.719    GameDriver/ConvertToBCD/ones_tmp[0]_i_1_n_0
+    SLICE_X38Y23         FDRE                                         r  GameDriver/ConvertToBCD/ones_tmp_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.817     1.944    GameDriver/ConvertToBCD/clk_IBUF_BUFG
+    SLICE_X38Y23         FDRE                                         r  GameDriver/ConvertToBCD/ones_tmp_reg[0]/C
+                         clock pessimism             -0.497     1.447    
+    SLICE_X38Y23         FDRE (Hold_fdre_C_D)         0.121     1.568    GameDriver/ConvertToBCD/ones_tmp_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -1.568    
+                         arrival time                           1.719    
+  -------------------------------------------------------------------
+                         slack                                  0.151    
+
+Slack (MET) :             0.199ns  (arrival time - required time)
+  Source:                 InitDriver/GenExpression/FSM_sequential_scroll_point_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            InitDriver/GenExpression/FSM_sequential_scroll_point_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.332ns  (logic 0.186ns (56.061%)  route 0.146ns (43.939%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.945ns
+    Source Clock Delay      (SCD):    1.434ns
+    Clock Pessimism Removal (CPR):    0.498ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.551     1.434    InitDriver/GenExpression/clk_IBUF_BUFG
+    SLICE_X47Y24         FDRE                                         r  InitDriver/GenExpression/FSM_sequential_scroll_point_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y24         FDRE (Prop_fdre_C_Q)         0.141     1.575 r  InitDriver/GenExpression/FSM_sequential_scroll_point_reg[0]/Q
+                         net (fo=17, routed)          0.146     1.721    InitDriver/GenExpression/scroll_point[0]
+    SLICE_X46Y24         LUT3 (Prop_lut3_I1_O)        0.045     1.766 r  InitDriver/GenExpression/FSM_sequential_scroll_point[2]_i_2/O
+                         net (fo=1, routed)           0.000     1.766    InitDriver/GenExpression/p_0_out[2]
+    SLICE_X46Y24         FDRE                                         r  InitDriver/GenExpression/FSM_sequential_scroll_point_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.818     1.945    InitDriver/GenExpression/clk_IBUF_BUFG
+    SLICE_X46Y24         FDRE                                         r  InitDriver/GenExpression/FSM_sequential_scroll_point_reg[2]/C
+                         clock pessimism             -0.498     1.447    
+    SLICE_X46Y24         FDRE (Hold_fdre_C_D)         0.120     1.567    InitDriver/GenExpression/FSM_sequential_scroll_point_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.567    
+                         arrival time                           1.766    
+  -------------------------------------------------------------------
+                         slack                                  0.199    
+
+Slack (MET) :             0.200ns  (arrival time - required time)
+  Source:                 GameDriver/TrapSystem/clk_out_top_reg[13]/C
+                            (rising edge-triggered cell FDPE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GameDriver/TrapSystem/clk_out_top_reg[12]/D
+                            (rising edge-triggered cell FDPE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.296ns  (logic 0.141ns (47.586%)  route 0.155ns (52.414%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.951ns
+    Source Clock Delay      (SCD):    1.440ns
+    Clock Pessimism Removal (CPR):    0.498ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.557     1.440    GameDriver/TrapSystem/clk_IBUF_BUFG
+    SLICE_X39Y32         FDPE                                         r  GameDriver/TrapSystem/clk_out_top_reg[13]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y32         FDPE (Prop_fdpe_C_Q)         0.141     1.581 r  GameDriver/TrapSystem/clk_out_top_reg[13]/Q
+                         net (fo=2, routed)           0.155     1.736    GameDriver/TrapSystem/clk_out_top[13]
+    SLICE_X38Y32         FDPE                                         r  GameDriver/TrapSystem/clk_out_top_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.824     1.951    GameDriver/TrapSystem/clk_IBUF_BUFG
+    SLICE_X38Y32         FDPE                                         r  GameDriver/TrapSystem/clk_out_top_reg[12]/C
+                         clock pessimism             -0.498     1.453    
+    SLICE_X38Y32         FDPE (Hold_fdpe_C_D)         0.083     1.536    GameDriver/TrapSystem/clk_out_top_reg[12]
+  -------------------------------------------------------------------
+                         required time                         -1.536    
+                         arrival time                           1.736    
+  -------------------------------------------------------------------
+                         slack                                  0.200    
+
+Slack (MET) :             0.207ns  (arrival time - required time)
+  Source:                 GameDriver/ConvertToBCD/thousands_tmp_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GameDriver/ConvertToBCD/thousands_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.288ns  (logic 0.164ns (56.896%)  route 0.124ns (43.104%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.944ns
+    Source Clock Delay      (SCD):    1.436ns
+    Clock Pessimism Removal (CPR):    0.497ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.553     1.436    GameDriver/ConvertToBCD/clk_IBUF_BUFG
+    SLICE_X38Y22         FDRE                                         r  GameDriver/ConvertToBCD/thousands_tmp_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y22         FDRE (Prop_fdre_C_Q)         0.164     1.600 r  GameDriver/ConvertToBCD/thousands_tmp_reg[3]/Q
+                         net (fo=4, routed)           0.124     1.724    GameDriver/ConvertToBCD/thousands_tmp[3]
+    SLICE_X37Y23         FDRE                                         r  GameDriver/ConvertToBCD/thousands_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.817     1.944    GameDriver/ConvertToBCD/clk_IBUF_BUFG
+    SLICE_X37Y23         FDRE                                         r  GameDriver/ConvertToBCD/thousands_reg[3]/C
+                         clock pessimism             -0.497     1.447    
+    SLICE_X37Y23         FDRE (Hold_fdre_C_D)         0.070     1.517    GameDriver/ConvertToBCD/thousands_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -1.517    
+                         arrival time                           1.724    
+  -------------------------------------------------------------------
+                         slack                                  0.207    
+
+Slack (MET) :             0.215ns  (arrival time - required time)
+  Source:                 GameDriver/TrapSystem/clk_out_top_reg[24]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GameDriver/TrapSystem/clk_out_top_reg[23]/D
+                            (rising edge-triggered cell FDPE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.325ns  (logic 0.141ns (43.384%)  route 0.184ns (56.616%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.032ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.951ns
+    Source Clock Delay      (SCD):    1.441ns
+    Clock Pessimism Removal (CPR):    0.478ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.558     1.441    GameDriver/TrapSystem/clk_IBUF_BUFG
+    SLICE_X39Y33         FDCE                                         r  GameDriver/TrapSystem/clk_out_top_reg[24]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y33         FDCE (Prop_fdce_C_Q)         0.141     1.582 r  GameDriver/TrapSystem/clk_out_top_reg[24]/Q
+                         net (fo=2, routed)           0.184     1.766    GameDriver/TrapSystem/clk_out_top[24]
+    SLICE_X40Y31         FDPE                                         r  GameDriver/TrapSystem/clk_out_top_reg[23]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.824     1.951    GameDriver/TrapSystem/clk_IBUF_BUFG
+    SLICE_X40Y31         FDPE                                         r  GameDriver/TrapSystem/clk_out_top_reg[23]/C
+                         clock pessimism             -0.478     1.473    
+    SLICE_X40Y31         FDPE (Hold_fdpe_C_D)         0.078     1.551    GameDriver/TrapSystem/clk_out_top_reg[23]
+  -------------------------------------------------------------------
+                         required time                         -1.551    
+                         arrival time                           1.766    
+  -------------------------------------------------------------------
+                         slack                                  0.215    
+
+Slack (MET) :             0.215ns  (arrival time - required time)
+  Source:                 EndDriver/GenExpression/sseg_out0_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            SSEGDriver/current_input_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.349ns  (logic 0.209ns (59.814%)  route 0.140ns (40.186%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.948ns
+    Source Clock Delay      (SCD):    1.437ns
+    Clock Pessimism Removal (CPR):    0.498ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.554     1.437    EndDriver/GenExpression/clk_IBUF_BUFG
+    SLICE_X46Y21         FDRE                                         r  EndDriver/GenExpression/sseg_out0_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X46Y21         FDRE (Prop_fdre_C_Q)         0.164     1.601 r  EndDriver/GenExpression/sseg_out0_reg[2]/Q
+                         net (fo=1, routed)           0.140     1.742    StateController/Q[2]
+    SLICE_X46Y22         LUT6 (Prop_lut6_I4_O)        0.045     1.787 r  StateController/current_input[2]_i_1/O
+                         net (fo=1, routed)           0.000     1.787    SSEGDriver/D[2]
+    SLICE_X46Y22         FDRE                                         r  SSEGDriver/current_input_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.821     1.948    SSEGDriver/clk_IBUF_BUFG
+    SLICE_X46Y22         FDRE                                         r  SSEGDriver/current_input_reg[2]/C
+                         clock pessimism             -0.498     1.450    
+    SLICE_X46Y22         FDRE (Hold_fdre_C_D)         0.121     1.571    SSEGDriver/current_input_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.571    
+                         arrival time                           1.787    
+  -------------------------------------------------------------------
+                         slack                                  0.215    
+
+Slack (MET) :             0.221ns  (arrival time - required time)
+  Source:                 DifficultyDriver/GenExpression/FSM_sequential_scroll_point_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            DifficultyDriver/GenExpression/sseg_out2_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.356ns  (logic 0.186ns (52.184%)  route 0.170ns (47.816%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.014ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.951ns
+    Source Clock Delay      (SCD):    1.439ns
+    Clock Pessimism Removal (CPR):    0.498ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.556     1.439    DifficultyDriver/GenExpression/clk_IBUF_BUFG
+    SLICE_X44Y19         FDRE                                         r  DifficultyDriver/GenExpression/FSM_sequential_scroll_point_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X44Y19         FDRE (Prop_fdre_C_Q)         0.141     1.580 r  DifficultyDriver/GenExpression/FSM_sequential_scroll_point_reg[1]/Q
+                         net (fo=26, routed)          0.170     1.751    DifficultyDriver/GenExpression/scroll_point[1]
+    SLICE_X46Y19         LUT5 (Prop_lut5_I1_O)        0.045     1.796 r  DifficultyDriver/GenExpression/sseg_out2[0]_i_1/O
+                         net (fo=1, routed)           0.000     1.796    DifficultyDriver/GenExpression/sseg_out2[0]_i_1_n_0
+    SLICE_X46Y19         FDRE                                         r  DifficultyDriver/GenExpression/sseg_out2_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.824     1.951    DifficultyDriver/GenExpression/clk_IBUF_BUFG
+    SLICE_X46Y19         FDRE                                         r  DifficultyDriver/GenExpression/sseg_out2_reg[0]/C
+                         clock pessimism             -0.498     1.453    
+    SLICE_X46Y19         FDRE (Hold_fdre_C_D)         0.121     1.574    DifficultyDriver/GenExpression/sseg_out2_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -1.574    
+                         arrival time                           1.796    
+  -------------------------------------------------------------------
+                         slack                                  0.221    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk_pin
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
+Min Period        n/a     BUFG/I   n/a            2.155         10.000      7.845      BUFGCTRL_X0Y0  clk_IBUF_BUFG_inst/I
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X35Y26   BottomButton/control_out_reg/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X34Y23   CenterButton/count_reg[0]/C
+Min Period        n/a     FDSE/C   n/a            1.000         10.000      9.000      SLICE_X32Y25   CenterButton/count_reg[10]/C
+Min Period        n/a     FDSE/C   n/a            1.000         10.000      9.000      SLICE_X32Y23   CenterButton/count_reg[11]/C
+Min Period        n/a     FDSE/C   n/a            1.000         10.000      9.000      SLICE_X32Y25   CenterButton/count_reg[12]/C
+Min Period        n/a     FDSE/C   n/a            1.000         10.000      9.000      SLICE_X32Y24   CenterButton/count_reg[13]/C
+Min Period        n/a     FDSE/C   n/a            1.000         10.000      9.000      SLICE_X32Y23   CenterButton/count_reg[14]/C
+Min Period        n/a     FDSE/C   n/a            1.000         10.000      9.000      SLICE_X34Y24   CenterButton/count_reg[15]/C
+Min Period        n/a     FDSE/C   n/a            1.000         10.000      9.000      SLICE_X32Y24   CenterButton/count_reg[16]/C
+Low Pulse Width   Slow    FDSE/C   n/a            0.500         5.000       4.500      SLICE_X34Y24   CenterButton/count_reg[15]/C
+Low Pulse Width   Slow    FDSE/C   n/a            0.500         5.000       4.500      SLICE_X34Y24   CenterButton/count_reg[18]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X35Y26   BottomButton/control_out_reg/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X35Y26   BottomButton/control_out_reg/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X34Y23   CenterButton/count_reg[0]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X34Y23   CenterButton/count_reg[0]/C
+Low Pulse Width   Slow    FDSE/C   n/a            0.500         5.000       4.500      SLICE_X32Y25   CenterButton/count_reg[10]/C
+Low Pulse Width   Fast    FDSE/C   n/a            0.500         5.000       4.500      SLICE_X32Y25   CenterButton/count_reg[10]/C
+Low Pulse Width   Slow    FDSE/C   n/a            0.500         5.000       4.500      SLICE_X32Y23   CenterButton/count_reg[11]/C
+Low Pulse Width   Fast    FDSE/C   n/a            0.500         5.000       4.500      SLICE_X32Y23   CenterButton/count_reg[11]/C
+High Pulse Width  Fast    FDSE/C   n/a            0.500         5.000       4.500      SLICE_X32Y22   CenterButton/count_reg[1]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X41Y22   DifficultyDriver/GenExpression/clock_divider_reg[10]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X41Y22   DifficultyDriver/GenExpression/clock_divider_reg[11]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X41Y22   DifficultyDriver/GenExpression/clock_divider_reg[12]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X41Y23   DifficultyDriver/GenExpression/clock_divider_reg[13]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X41Y23   DifficultyDriver/GenExpression/clock_divider_reg[13]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X41Y23   DifficultyDriver/GenExpression/clock_divider_reg[14]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X41Y23   DifficultyDriver/GenExpression/clock_divider_reg[14]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X42Y17   EndDriver/GenExpression/clock_divider_reg[9]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X40Y22   EndDriver/GenExpression/sseg_out0_reg[1]/C
+
+
+
+---------------------------------------------------------------------------------------------------
+Path Group:  **async_default**
+From Clock:  sys_clk_pin
+  To Clock:  sys_clk_pin
+
+Setup :            0  Failing Endpoints,  Worst Slack        5.477ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.205ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             5.477ns  (required time - arrival time)
+  Source:                 GameDriver/reset_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GameDriver/CountdownBuzzer/buzz_out_reg/CLR
+                            (recovery check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        3.977ns  (logic 0.552ns (13.879%)  route 3.425ns (86.121%))
+  Logic Levels:           1  (BUFG=1)
+  Clock Path Skew:        -0.105ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.774ns = ( 14.774 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.067ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.546     5.067    GameDriver/clk_IBUF_BUFG
+    SLICE_X43Y25         FDRE                                         r  GameDriver/reset_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y25         FDRE (Prop_fdre_C_Q)         0.456     5.523 f  GameDriver/reset_reg/Q
+                         net (fo=17, routed)          1.666     7.190    GameDriver_n_1
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     7.286 f  pattern_reg[15]_i_1/O
+                         net (fo=95, routed)          1.759     9.044    GameDriver/CountdownBuzzer/reset
+    SLICE_X28Y27         FDCE                                         f  GameDriver/CountdownBuzzer/buzz_out_reg/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.433    14.774    GameDriver/CountdownBuzzer/clk_IBUF_BUFG
+    SLICE_X28Y27         FDCE                                         r  GameDriver/CountdownBuzzer/buzz_out_reg/C
+                         clock pessimism              0.188    14.962    
+                         clock uncertainty           -0.035    14.927    
+    SLICE_X28Y27         FDCE (Recov_fdce_C_CLR)     -0.405    14.522    GameDriver/CountdownBuzzer/buzz_out_reg
+  -------------------------------------------------------------------
+                         required time                         14.522    
+                         arrival time                          -9.044    
+  -------------------------------------------------------------------
+                         slack                                  5.477    
+
+Slack (MET) :             5.482ns  (required time - arrival time)
+  Source:                 GameDriver/reset_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GameDriver/CountdownBuzzer/count_reg[1]/CLR
+                            (recovery check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        3.973ns  (logic 0.552ns (13.894%)  route 3.421ns (86.106%))
+  Logic Levels:           1  (BUFG=1)
+  Clock Path Skew:        -0.105ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.774ns = ( 14.774 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.067ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.546     5.067    GameDriver/clk_IBUF_BUFG
+    SLICE_X43Y25         FDRE                                         r  GameDriver/reset_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y25         FDRE (Prop_fdre_C_Q)         0.456     5.523 f  GameDriver/reset_reg/Q
+                         net (fo=17, routed)          1.666     7.190    GameDriver_n_1
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     7.286 f  pattern_reg[15]_i_1/O
+                         net (fo=95, routed)          1.754     9.040    GameDriver/CountdownBuzzer/reset
+    SLICE_X29Y27         FDCE                                         f  GameDriver/CountdownBuzzer/count_reg[1]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.433    14.774    GameDriver/CountdownBuzzer/clk_IBUF_BUFG
+    SLICE_X29Y27         FDCE                                         r  GameDriver/CountdownBuzzer/count_reg[1]/C
+                         clock pessimism              0.188    14.962    
+                         clock uncertainty           -0.035    14.927    
+    SLICE_X29Y27         FDCE (Recov_fdce_C_CLR)     -0.405    14.522    GameDriver/CountdownBuzzer/count_reg[1]
+  -------------------------------------------------------------------
+                         required time                         14.522    
+                         arrival time                          -9.040    
+  -------------------------------------------------------------------
+                         slack                                  5.482    
+
+Slack (MET) :             5.486ns  (required time - arrival time)
+  Source:                 GameDriver/reset_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GameDriver/CountdownBuzzer/count_reg[0]/CLR
+                            (recovery check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        3.970ns  (logic 0.552ns (13.905%)  route 3.418ns (86.095%))
+  Logic Levels:           1  (BUFG=1)
+  Clock Path Skew:        -0.104ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.775ns = ( 14.775 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.067ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.546     5.067    GameDriver/clk_IBUF_BUFG
+    SLICE_X43Y25         FDRE                                         r  GameDriver/reset_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y25         FDRE (Prop_fdre_C_Q)         0.456     5.523 f  GameDriver/reset_reg/Q
+                         net (fo=17, routed)          1.666     7.190    GameDriver_n_1
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     7.286 f  pattern_reg[15]_i_1/O
+                         net (fo=95, routed)          1.751     9.037    GameDriver/CountdownBuzzer/reset
+    SLICE_X32Y29         FDCE                                         f  GameDriver/CountdownBuzzer/count_reg[0]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.434    14.775    GameDriver/CountdownBuzzer/clk_IBUF_BUFG
+    SLICE_X32Y29         FDCE                                         r  GameDriver/CountdownBuzzer/count_reg[0]/C
+                         clock pessimism              0.188    14.963    
+                         clock uncertainty           -0.035    14.928    
+    SLICE_X32Y29         FDCE (Recov_fdce_C_CLR)     -0.405    14.523    GameDriver/CountdownBuzzer/count_reg[0]
+  -------------------------------------------------------------------
+                         required time                         14.523    
+                         arrival time                          -9.037    
+  -------------------------------------------------------------------
+                         slack                                  5.486    
+
+Slack (MET) :             5.486ns  (required time - arrival time)
+  Source:                 GameDriver/reset_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GameDriver/CountdownBuzzer/count_reg[10]/CLR
+                            (recovery check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        3.969ns  (logic 0.552ns (13.909%)  route 3.417ns (86.091%))
+  Logic Levels:           1  (BUFG=1)
+  Clock Path Skew:        -0.105ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.774ns = ( 14.774 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.067ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.546     5.067    GameDriver/clk_IBUF_BUFG
+    SLICE_X43Y25         FDRE                                         r  GameDriver/reset_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y25         FDRE (Prop_fdre_C_Q)         0.456     5.523 f  GameDriver/reset_reg/Q
+                         net (fo=17, routed)          1.666     7.190    GameDriver_n_1
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     7.286 f  pattern_reg[15]_i_1/O
+                         net (fo=95, routed)          1.750     9.036    GameDriver/CountdownBuzzer/reset
+    SLICE_X32Y28         FDCE                                         f  GameDriver/CountdownBuzzer/count_reg[10]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.433    14.774    GameDriver/CountdownBuzzer/clk_IBUF_BUFG
+    SLICE_X32Y28         FDCE                                         r  GameDriver/CountdownBuzzer/count_reg[10]/C
+                         clock pessimism              0.188    14.962    
+                         clock uncertainty           -0.035    14.927    
+    SLICE_X32Y28         FDCE (Recov_fdce_C_CLR)     -0.405    14.522    GameDriver/CountdownBuzzer/count_reg[10]
+  -------------------------------------------------------------------
+                         required time                         14.522    
+                         arrival time                          -9.036    
+  -------------------------------------------------------------------
+                         slack                                  5.486    
+
+Slack (MET) :             5.486ns  (required time - arrival time)
+  Source:                 GameDriver/reset_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GameDriver/CountdownBuzzer/count_reg[12]/CLR
+                            (recovery check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        3.969ns  (logic 0.552ns (13.909%)  route 3.417ns (86.091%))
+  Logic Levels:           1  (BUFG=1)
+  Clock Path Skew:        -0.105ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.774ns = ( 14.774 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.067ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.546     5.067    GameDriver/clk_IBUF_BUFG
+    SLICE_X43Y25         FDRE                                         r  GameDriver/reset_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y25         FDRE (Prop_fdre_C_Q)         0.456     5.523 f  GameDriver/reset_reg/Q
+                         net (fo=17, routed)          1.666     7.190    GameDriver_n_1
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     7.286 f  pattern_reg[15]_i_1/O
+                         net (fo=95, routed)          1.750     9.036    GameDriver/CountdownBuzzer/reset
+    SLICE_X32Y28         FDCE                                         f  GameDriver/CountdownBuzzer/count_reg[12]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.433    14.774    GameDriver/CountdownBuzzer/clk_IBUF_BUFG
+    SLICE_X32Y28         FDCE                                         r  GameDriver/CountdownBuzzer/count_reg[12]/C
+                         clock pessimism              0.188    14.962    
+                         clock uncertainty           -0.035    14.927    
+    SLICE_X32Y28         FDCE (Recov_fdce_C_CLR)     -0.405    14.522    GameDriver/CountdownBuzzer/count_reg[12]
+  -------------------------------------------------------------------
+                         required time                         14.522    
+                         arrival time                          -9.036    
+  -------------------------------------------------------------------
+                         slack                                  5.486    
+
+Slack (MET) :             5.486ns  (required time - arrival time)
+  Source:                 GameDriver/reset_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GameDriver/CountdownBuzzer/count_reg[9]/CLR
+                            (recovery check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        3.969ns  (logic 0.552ns (13.909%)  route 3.417ns (86.091%))
+  Logic Levels:           1  (BUFG=1)
+  Clock Path Skew:        -0.105ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.774ns = ( 14.774 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.067ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.546     5.067    GameDriver/clk_IBUF_BUFG
+    SLICE_X43Y25         FDRE                                         r  GameDriver/reset_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y25         FDRE (Prop_fdre_C_Q)         0.456     5.523 f  GameDriver/reset_reg/Q
+                         net (fo=17, routed)          1.666     7.190    GameDriver_n_1
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     7.286 f  pattern_reg[15]_i_1/O
+                         net (fo=95, routed)          1.750     9.036    GameDriver/CountdownBuzzer/reset
+    SLICE_X32Y28         FDCE                                         f  GameDriver/CountdownBuzzer/count_reg[9]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.433    14.774    GameDriver/CountdownBuzzer/clk_IBUF_BUFG
+    SLICE_X32Y28         FDCE                                         r  GameDriver/CountdownBuzzer/count_reg[9]/C
+                         clock pessimism              0.188    14.962    
+                         clock uncertainty           -0.035    14.927    
+    SLICE_X32Y28         FDCE (Recov_fdce_C_CLR)     -0.405    14.522    GameDriver/CountdownBuzzer/count_reg[9]
+  -------------------------------------------------------------------
+                         required time                         14.522    
+                         arrival time                          -9.036    
+  -------------------------------------------------------------------
+                         slack                                  5.486    
+
+Slack (MET) :             5.487ns  (required time - arrival time)
+  Source:                 GameDriver/reset_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GameDriver/CountdownBuzzer/count_reg[3]/CLR
+                            (recovery check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        3.966ns  (logic 0.552ns (13.919%)  route 3.414ns (86.081%))
+  Logic Levels:           1  (BUFG=1)
+  Clock Path Skew:        -0.107ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.772ns = ( 14.772 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.067ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.546     5.067    GameDriver/clk_IBUF_BUFG
+    SLICE_X43Y25         FDRE                                         r  GameDriver/reset_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y25         FDRE (Prop_fdre_C_Q)         0.456     5.523 f  GameDriver/reset_reg/Q
+                         net (fo=17, routed)          1.666     7.190    GameDriver_n_1
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     7.286 f  pattern_reg[15]_i_1/O
+                         net (fo=95, routed)          1.747     9.033    GameDriver/CountdownBuzzer/reset
+    SLICE_X32Y27         FDCE                                         f  GameDriver/CountdownBuzzer/count_reg[3]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.431    14.772    GameDriver/CountdownBuzzer/clk_IBUF_BUFG
+    SLICE_X32Y27         FDCE                                         r  GameDriver/CountdownBuzzer/count_reg[3]/C
+                         clock pessimism              0.188    14.960    
+                         clock uncertainty           -0.035    14.925    
+    SLICE_X32Y27         FDCE (Recov_fdce_C_CLR)     -0.405    14.520    GameDriver/CountdownBuzzer/count_reg[3]
+  -------------------------------------------------------------------
+                         required time                         14.520    
+                         arrival time                          -9.033    
+  -------------------------------------------------------------------
+                         slack                                  5.487    
+
+Slack (MET) :             5.487ns  (required time - arrival time)
+  Source:                 GameDriver/reset_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GameDriver/CountdownBuzzer/count_reg[5]/CLR
+                            (recovery check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        3.966ns  (logic 0.552ns (13.919%)  route 3.414ns (86.081%))
+  Logic Levels:           1  (BUFG=1)
+  Clock Path Skew:        -0.107ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.772ns = ( 14.772 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.067ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.546     5.067    GameDriver/clk_IBUF_BUFG
+    SLICE_X43Y25         FDRE                                         r  GameDriver/reset_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y25         FDRE (Prop_fdre_C_Q)         0.456     5.523 f  GameDriver/reset_reg/Q
+                         net (fo=17, routed)          1.666     7.190    GameDriver_n_1
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     7.286 f  pattern_reg[15]_i_1/O
+                         net (fo=95, routed)          1.747     9.033    GameDriver/CountdownBuzzer/reset
+    SLICE_X32Y27         FDCE                                         f  GameDriver/CountdownBuzzer/count_reg[5]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.431    14.772    GameDriver/CountdownBuzzer/clk_IBUF_BUFG
+    SLICE_X32Y27         FDCE                                         r  GameDriver/CountdownBuzzer/count_reg[5]/C
+                         clock pessimism              0.188    14.960    
+                         clock uncertainty           -0.035    14.925    
+    SLICE_X32Y27         FDCE (Recov_fdce_C_CLR)     -0.405    14.520    GameDriver/CountdownBuzzer/count_reg[5]
+  -------------------------------------------------------------------
+                         required time                         14.520    
+                         arrival time                          -9.033    
+  -------------------------------------------------------------------
+                         slack                                  5.487    
+
+Slack (MET) :             5.487ns  (required time - arrival time)
+  Source:                 GameDriver/reset_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GameDriver/CountdownBuzzer/count_reg[7]/CLR
+                            (recovery check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        3.966ns  (logic 0.552ns (13.919%)  route 3.414ns (86.081%))
+  Logic Levels:           1  (BUFG=1)
+  Clock Path Skew:        -0.107ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.772ns = ( 14.772 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.067ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.546     5.067    GameDriver/clk_IBUF_BUFG
+    SLICE_X43Y25         FDRE                                         r  GameDriver/reset_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y25         FDRE (Prop_fdre_C_Q)         0.456     5.523 f  GameDriver/reset_reg/Q
+                         net (fo=17, routed)          1.666     7.190    GameDriver_n_1
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     7.286 f  pattern_reg[15]_i_1/O
+                         net (fo=95, routed)          1.747     9.033    GameDriver/CountdownBuzzer/reset
+    SLICE_X32Y27         FDCE                                         f  GameDriver/CountdownBuzzer/count_reg[7]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.431    14.772    GameDriver/CountdownBuzzer/clk_IBUF_BUFG
+    SLICE_X32Y27         FDCE                                         r  GameDriver/CountdownBuzzer/count_reg[7]/C
+                         clock pessimism              0.188    14.960    
+                         clock uncertainty           -0.035    14.925    
+    SLICE_X32Y27         FDCE (Recov_fdce_C_CLR)     -0.405    14.520    GameDriver/CountdownBuzzer/count_reg[7]
+  -------------------------------------------------------------------
+                         required time                         14.520    
+                         arrival time                          -9.033    
+  -------------------------------------------------------------------
+                         slack                                  5.487    
+
+Slack (MET) :             5.489ns  (required time - arrival time)
+  Source:                 GameDriver/reset_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GameDriver/CountdownBuzzer/count_reg[17]/CLR
+                            (recovery check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        3.966ns  (logic 0.552ns (13.917%)  route 3.414ns (86.083%))
+  Logic Levels:           1  (BUFG=1)
+  Clock Path Skew:        -0.104ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.775ns = ( 14.775 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.067ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.546     5.067    GameDriver/clk_IBUF_BUFG
+    SLICE_X43Y25         FDRE                                         r  GameDriver/reset_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y25         FDRE (Prop_fdre_C_Q)         0.456     5.523 f  GameDriver/reset_reg/Q
+                         net (fo=17, routed)          1.666     7.190    GameDriver_n_1
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     7.286 f  pattern_reg[15]_i_1/O
+                         net (fo=95, routed)          1.748     9.034    GameDriver/CountdownBuzzer/reset
+    SLICE_X31Y30         FDCE                                         f  GameDriver/CountdownBuzzer/count_reg[17]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         1.434    14.775    GameDriver/CountdownBuzzer/clk_IBUF_BUFG
+    SLICE_X31Y30         FDCE                                         r  GameDriver/CountdownBuzzer/count_reg[17]/C
+                         clock pessimism              0.188    14.963    
+                         clock uncertainty           -0.035    14.928    
+    SLICE_X31Y30         FDCE (Recov_fdce_C_CLR)     -0.405    14.523    GameDriver/CountdownBuzzer/count_reg[17]
+  -------------------------------------------------------------------
+                         required time                         14.523    
+                         arrival time                          -9.034    
+  -------------------------------------------------------------------
+                         slack                                  5.489    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.205ns  (arrival time - required time)
+  Source:                 BottomButton/control_out_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            StateController/PS_reg[0]/CLR
+                            (removal check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.376ns  (logic 0.141ns (37.536%)  route 0.235ns (62.464%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.263ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.945ns
+    Source Clock Delay      (SCD):    1.433ns
+    Clock Pessimism Removal (CPR):    0.249ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.550     1.433    BottomButton/clk_IBUF_BUFG
+    SLICE_X35Y26         FDRE                                         r  BottomButton/control_out_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y26         FDRE (Prop_fdre_C_Q)         0.141     1.574 f  BottomButton/control_out_reg/Q
+                         net (fo=2, routed)           0.235     1.809    StateController/AR[0]
+    SLICE_X40Y26         FDCE                                         f  StateController/PS_reg[0]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.818     1.945    StateController/clk_IBUF_BUFG
+    SLICE_X40Y26         FDCE                                         r  StateController/PS_reg[0]/C
+                         clock pessimism             -0.249     1.696    
+    SLICE_X40Y26         FDCE (Remov_fdce_C_CLR)     -0.092     1.604    StateController/PS_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -1.604    
+                         arrival time                           1.809    
+  -------------------------------------------------------------------
+                         slack                                  0.205    
+
+Slack (MET) :             0.205ns  (arrival time - required time)
+  Source:                 BottomButton/control_out_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            StateController/PS_reg[1]/CLR
+                            (removal check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.376ns  (logic 0.141ns (37.536%)  route 0.235ns (62.464%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.263ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.945ns
+    Source Clock Delay      (SCD):    1.433ns
+    Clock Pessimism Removal (CPR):    0.249ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.550     1.433    BottomButton/clk_IBUF_BUFG
+    SLICE_X35Y26         FDRE                                         r  BottomButton/control_out_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y26         FDRE (Prop_fdre_C_Q)         0.141     1.574 f  BottomButton/control_out_reg/Q
+                         net (fo=2, routed)           0.235     1.809    StateController/AR[0]
+    SLICE_X40Y26         FDCE                                         f  StateController/PS_reg[1]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.818     1.945    StateController/clk_IBUF_BUFG
+    SLICE_X40Y26         FDCE                                         r  StateController/PS_reg[1]/C
+                         clock pessimism             -0.249     1.696    
+    SLICE_X40Y26         FDCE (Remov_fdce_C_CLR)     -0.092     1.604    StateController/PS_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -1.604    
+                         arrival time                           1.809    
+  -------------------------------------------------------------------
+                         slack                                  0.205    
+
+Slack (MET) :             1.280ns  (arrival time - required time)
+  Source:                 GameDriver/reset_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GameDriver/CountdownBuzzer/count_reg[11]/CLR
+                            (removal check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        1.454ns  (logic 0.167ns (11.489%)  route 1.287ns (88.511%))
+  Logic Levels:           1  (BUFG=1)
+  Clock Path Skew:        0.266ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.948ns
+    Source Clock Delay      (SCD):    1.433ns
+    Clock Pessimism Removal (CPR):    0.249ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.550     1.433    GameDriver/clk_IBUF_BUFG
+    SLICE_X43Y25         FDRE                                         r  GameDriver/reset_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y25         FDRE (Prop_fdre_C_Q)         0.141     1.574 f  GameDriver/reset_reg/Q
+                         net (fo=17, routed)          0.672     2.247    GameDriver_n_1
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     2.273 f  pattern_reg[15]_i_1/O
+                         net (fo=95, routed)          0.614     2.887    GameDriver/CountdownBuzzer/reset
+    SLICE_X29Y28         FDCE                                         f  GameDriver/CountdownBuzzer/count_reg[11]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.821     1.948    GameDriver/CountdownBuzzer/clk_IBUF_BUFG
+    SLICE_X29Y28         FDCE                                         r  GameDriver/CountdownBuzzer/count_reg[11]/C
+                         clock pessimism             -0.249     1.699    
+    SLICE_X29Y28         FDCE (Remov_fdce_C_CLR)     -0.092     1.607    GameDriver/CountdownBuzzer/count_reg[11]
+  -------------------------------------------------------------------
+                         required time                         -1.607    
+                         arrival time                           2.887    
+  -------------------------------------------------------------------
+                         slack                                  1.280    
+
+Slack (MET) :             1.280ns  (arrival time - required time)
+  Source:                 GameDriver/reset_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GameDriver/CountdownBuzzer/count_reg[19]/CLR
+                            (removal check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        1.456ns  (logic 0.167ns (11.473%)  route 1.289ns (88.527%))
+  Logic Levels:           1  (BUFG=1)
+  Clock Path Skew:        0.268ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.950ns
+    Source Clock Delay      (SCD):    1.433ns
+    Clock Pessimism Removal (CPR):    0.249ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.550     1.433    GameDriver/clk_IBUF_BUFG
+    SLICE_X43Y25         FDRE                                         r  GameDriver/reset_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y25         FDRE (Prop_fdre_C_Q)         0.141     1.574 f  GameDriver/reset_reg/Q
+                         net (fo=17, routed)          0.672     2.247    GameDriver_n_1
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     2.273 f  pattern_reg[15]_i_1/O
+                         net (fo=95, routed)          0.616     2.889    GameDriver/CountdownBuzzer/reset
+    SLICE_X29Y30         FDCE                                         f  GameDriver/CountdownBuzzer/count_reg[19]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.823     1.950    GameDriver/CountdownBuzzer/clk_IBUF_BUFG
+    SLICE_X29Y30         FDCE                                         r  GameDriver/CountdownBuzzer/count_reg[19]/C
+                         clock pessimism             -0.249     1.701    
+    SLICE_X29Y30         FDCE (Remov_fdce_C_CLR)     -0.092     1.609    GameDriver/CountdownBuzzer/count_reg[19]
+  -------------------------------------------------------------------
+                         required time                         -1.609    
+                         arrival time                           2.889    
+  -------------------------------------------------------------------
+                         slack                                  1.280    
+
+Slack (MET) :             1.280ns  (arrival time - required time)
+  Source:                 GameDriver/reset_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GameDriver/CountdownBuzzer/count_reg[21]/CLR
+                            (removal check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        1.456ns  (logic 0.167ns (11.473%)  route 1.289ns (88.527%))
+  Logic Levels:           1  (BUFG=1)
+  Clock Path Skew:        0.268ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.950ns
+    Source Clock Delay      (SCD):    1.433ns
+    Clock Pessimism Removal (CPR):    0.249ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.550     1.433    GameDriver/clk_IBUF_BUFG
+    SLICE_X43Y25         FDRE                                         r  GameDriver/reset_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y25         FDRE (Prop_fdre_C_Q)         0.141     1.574 f  GameDriver/reset_reg/Q
+                         net (fo=17, routed)          0.672     2.247    GameDriver_n_1
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     2.273 f  pattern_reg[15]_i_1/O
+                         net (fo=95, routed)          0.616     2.889    GameDriver/CountdownBuzzer/reset
+    SLICE_X29Y30         FDCE                                         f  GameDriver/CountdownBuzzer/count_reg[21]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.823     1.950    GameDriver/CountdownBuzzer/clk_IBUF_BUFG
+    SLICE_X29Y30         FDCE                                         r  GameDriver/CountdownBuzzer/count_reg[21]/C
+                         clock pessimism             -0.249     1.701    
+    SLICE_X29Y30         FDCE (Remov_fdce_C_CLR)     -0.092     1.609    GameDriver/CountdownBuzzer/count_reg[21]
+  -------------------------------------------------------------------
+                         required time                         -1.609    
+                         arrival time                           2.889    
+  -------------------------------------------------------------------
+                         slack                                  1.280    
+
+Slack (MET) :             1.280ns  (arrival time - required time)
+  Source:                 GameDriver/reset_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GameDriver/CountdownBuzzer/count_reg[23]/CLR
+                            (removal check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        1.456ns  (logic 0.167ns (11.473%)  route 1.289ns (88.527%))
+  Logic Levels:           1  (BUFG=1)
+  Clock Path Skew:        0.268ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.950ns
+    Source Clock Delay      (SCD):    1.433ns
+    Clock Pessimism Removal (CPR):    0.249ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.550     1.433    GameDriver/clk_IBUF_BUFG
+    SLICE_X43Y25         FDRE                                         r  GameDriver/reset_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y25         FDRE (Prop_fdre_C_Q)         0.141     1.574 f  GameDriver/reset_reg/Q
+                         net (fo=17, routed)          0.672     2.247    GameDriver_n_1
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     2.273 f  pattern_reg[15]_i_1/O
+                         net (fo=95, routed)          0.616     2.889    GameDriver/CountdownBuzzer/reset
+    SLICE_X29Y30         FDCE                                         f  GameDriver/CountdownBuzzer/count_reg[23]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.823     1.950    GameDriver/CountdownBuzzer/clk_IBUF_BUFG
+    SLICE_X29Y30         FDCE                                         r  GameDriver/CountdownBuzzer/count_reg[23]/C
+                         clock pessimism             -0.249     1.701    
+    SLICE_X29Y30         FDCE (Remov_fdce_C_CLR)     -0.092     1.609    GameDriver/CountdownBuzzer/count_reg[23]
+  -------------------------------------------------------------------
+                         required time                         -1.609    
+                         arrival time                           2.889    
+  -------------------------------------------------------------------
+                         slack                                  1.280    
+
+Slack (MET) :             1.281ns  (arrival time - required time)
+  Source:                 GameDriver/reset_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GameDriver/CountdownBuzzer/count_reg[13]/CLR
+                            (removal check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        1.455ns  (logic 0.167ns (11.481%)  route 1.288ns (88.519%))
+  Logic Levels:           1  (BUFG=1)
+  Clock Path Skew:        0.266ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.948ns
+    Source Clock Delay      (SCD):    1.433ns
+    Clock Pessimism Removal (CPR):    0.249ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.550     1.433    GameDriver/clk_IBUF_BUFG
+    SLICE_X43Y25         FDRE                                         r  GameDriver/reset_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y25         FDRE (Prop_fdre_C_Q)         0.141     1.574 f  GameDriver/reset_reg/Q
+                         net (fo=17, routed)          0.672     2.247    GameDriver_n_1
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     2.273 f  pattern_reg[15]_i_1/O
+                         net (fo=95, routed)          0.615     2.888    GameDriver/CountdownBuzzer/reset
+    SLICE_X31Y29         FDCE                                         f  GameDriver/CountdownBuzzer/count_reg[13]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.821     1.948    GameDriver/CountdownBuzzer/clk_IBUF_BUFG
+    SLICE_X31Y29         FDCE                                         r  GameDriver/CountdownBuzzer/count_reg[13]/C
+                         clock pessimism             -0.249     1.699    
+    SLICE_X31Y29         FDCE (Remov_fdce_C_CLR)     -0.092     1.607    GameDriver/CountdownBuzzer/count_reg[13]
+  -------------------------------------------------------------------
+                         required time                         -1.607    
+                         arrival time                           2.888    
+  -------------------------------------------------------------------
+                         slack                                  1.281    
+
+Slack (MET) :             1.281ns  (arrival time - required time)
+  Source:                 GameDriver/reset_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GameDriver/CountdownBuzzer/count_reg[14]/CLR
+                            (removal check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        1.455ns  (logic 0.167ns (11.481%)  route 1.288ns (88.519%))
+  Logic Levels:           1  (BUFG=1)
+  Clock Path Skew:        0.266ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.948ns
+    Source Clock Delay      (SCD):    1.433ns
+    Clock Pessimism Removal (CPR):    0.249ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.550     1.433    GameDriver/clk_IBUF_BUFG
+    SLICE_X43Y25         FDRE                                         r  GameDriver/reset_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y25         FDRE (Prop_fdre_C_Q)         0.141     1.574 f  GameDriver/reset_reg/Q
+                         net (fo=17, routed)          0.672     2.247    GameDriver_n_1
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     2.273 f  pattern_reg[15]_i_1/O
+                         net (fo=95, routed)          0.615     2.888    GameDriver/CountdownBuzzer/reset
+    SLICE_X31Y29         FDCE                                         f  GameDriver/CountdownBuzzer/count_reg[14]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.821     1.948    GameDriver/CountdownBuzzer/clk_IBUF_BUFG
+    SLICE_X31Y29         FDCE                                         r  GameDriver/CountdownBuzzer/count_reg[14]/C
+                         clock pessimism             -0.249     1.699    
+    SLICE_X31Y29         FDCE (Remov_fdce_C_CLR)     -0.092     1.607    GameDriver/CountdownBuzzer/count_reg[14]
+  -------------------------------------------------------------------
+                         required time                         -1.607    
+                         arrival time                           2.888    
+  -------------------------------------------------------------------
+                         slack                                  1.281    
+
+Slack (MET) :             1.281ns  (arrival time - required time)
+  Source:                 GameDriver/reset_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GameDriver/CountdownBuzzer/count_reg[17]/CLR
+                            (removal check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        1.456ns  (logic 0.167ns (11.473%)  route 1.289ns (88.527%))
+  Logic Levels:           1  (BUFG=1)
+  Clock Path Skew:        0.267ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.949ns
+    Source Clock Delay      (SCD):    1.433ns
+    Clock Pessimism Removal (CPR):    0.249ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.550     1.433    GameDriver/clk_IBUF_BUFG
+    SLICE_X43Y25         FDRE                                         r  GameDriver/reset_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y25         FDRE (Prop_fdre_C_Q)         0.141     1.574 f  GameDriver/reset_reg/Q
+                         net (fo=17, routed)          0.672     2.247    GameDriver_n_1
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     2.273 f  pattern_reg[15]_i_1/O
+                         net (fo=95, routed)          0.616     2.889    GameDriver/CountdownBuzzer/reset
+    SLICE_X31Y30         FDCE                                         f  GameDriver/CountdownBuzzer/count_reg[17]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.822     1.949    GameDriver/CountdownBuzzer/clk_IBUF_BUFG
+    SLICE_X31Y30         FDCE                                         r  GameDriver/CountdownBuzzer/count_reg[17]/C
+                         clock pessimism             -0.249     1.700    
+    SLICE_X31Y30         FDCE (Remov_fdce_C_CLR)     -0.092     1.608    GameDriver/CountdownBuzzer/count_reg[17]
+  -------------------------------------------------------------------
+                         required time                         -1.608    
+                         arrival time                           2.889    
+  -------------------------------------------------------------------
+                         slack                                  1.281    
+
+Slack (MET) :             1.281ns  (arrival time - required time)
+  Source:                 GameDriver/reset_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            GameDriver/CountdownBuzzer/count_reg[18]/CLR
+                            (removal check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        1.456ns  (logic 0.167ns (11.473%)  route 1.289ns (88.527%))
+  Logic Levels:           1  (BUFG=1)
+  Clock Path Skew:        0.267ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.949ns
+    Source Clock Delay      (SCD):    1.433ns
+    Clock Pessimism Removal (CPR):    0.249ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.550     1.433    GameDriver/clk_IBUF_BUFG
+    SLICE_X43Y25         FDRE                                         r  GameDriver/reset_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y25         FDRE (Prop_fdre_C_Q)         0.141     1.574 f  GameDriver/reset_reg/Q
+                         net (fo=17, routed)          0.672     2.247    GameDriver_n_1
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     2.273 f  pattern_reg[15]_i_1/O
+                         net (fo=95, routed)          0.616     2.889    GameDriver/CountdownBuzzer/reset
+    SLICE_X31Y30         FDCE                                         f  GameDriver/CountdownBuzzer/count_reg[18]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=489, routed)         0.822     1.949    GameDriver/CountdownBuzzer/clk_IBUF_BUFG
+    SLICE_X31Y30         FDCE                                         r  GameDriver/CountdownBuzzer/count_reg[18]/C
+                         clock pessimism             -0.249     1.700    
+    SLICE_X31Y30         FDCE (Remov_fdce_C_CLR)     -0.092     1.608    GameDriver/CountdownBuzzer/count_reg[18]
+  -------------------------------------------------------------------
+                         required time                         -1.608    
+                         arrival time                           2.889    
+  -------------------------------------------------------------------
+                         slack                                  1.281    
+
+
+
+
+
