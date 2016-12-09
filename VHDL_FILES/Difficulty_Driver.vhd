@@ -76,7 +76,7 @@ begin
                 end if;
             when others =>
                 NS <= easy;
-                difficulty <= easy_bitmask;
+                difficulty <= hard_bitmask;
         end case;
     end process;
     

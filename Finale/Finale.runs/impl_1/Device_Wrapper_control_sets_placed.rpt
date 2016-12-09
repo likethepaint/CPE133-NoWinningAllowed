@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
-| Date         : Wed Dec  7 20:10:53 2016
+| Date         : Fri Dec  9 06:05:25 2016
 | Host         : zoidberg running 64-bit Ubuntu 16.04.1 LTS
 | Command      : report_control_sets -verbose -file Device_Wrapper_control_sets_placed.rpt
 | Design       : Device_Wrapper
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    46 |
-| Unused register locations in slices containing registers |   212 |
+| Number of unique control sets                            |    47 |
+| Unused register locations in slices containing registers |   216 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,67 +33,68 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              37 |           23 |
-| No           | No                    | Yes                    |              31 |           11 |
-| No           | Yes                   | No                     |             116 |           36 |
-| Yes          | No                    | No                     |             108 |           39 |
-| Yes          | No                    | Yes                    |              49 |           17 |
-| Yes          | Yes                   | No                     |              63 |           19 |
+| No           | No                    | No                     |              35 |           24 |
+| No           | No                    | Yes                    |              31 |           14 |
+| No           | Yes                   | No                     |             118 |           37 |
+| Yes          | No                    | No                     |             107 |           38 |
+| Yes          | No                    | Yes                    |              49 |           18 |
+| Yes          | Yes                   | No                     |             148 |           40 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+------------------------------------------------------------+-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+----------------+
-|                        Clock Signal                        |                             Enable Signal                             |                            Set/Reset Signal                           | Slice Load Count | Bel Load Count |
-+------------------------------------------------------------+-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+----------------+
-|  GameDriver/CountdownTimer/time_counter_reg[1]_LDC_i_1_n_0 |                                                                       | GameDriver/CountdownTimer/time_counter_reg[1]_LDC_i_2_n_0             |                1 |              1 |
-|  GameDriver/TrapSystem/out_of_time_reg                     |                                                                       | reset__0                                                              |                1 |              1 |
-|  GameDriver/CountdownTimer/time_counter_reg[7]_LDC_i_1_n_0 |                                                                       | GameDriver/CountdownTimer/time_counter_reg[7]_LDC_i_2_n_0             |                1 |              1 |
-|  DifficultyDriver/time_counter_reg[11]_P                   |                                                                       | DifficultyDriver/time_counter_reg[11]_C                               |                1 |              1 |
-|  GameDriver/TrapSystem/out_of_time_reg                     | GameDriver/CountdownTimer/out_of_time1                                | GameDriver/CountdownTimer/time_counter_reg[1]_LDC_i_2_n_0             |                1 |              1 |
-|  GameDriver/TrapSystem/out_of_time_reg                     | GameDriver/CountdownTimer/out_of_time1                                | GameDriver/CountdownTimer/time_counter_reg[1]_LDC_i_1_n_0             |                1 |              1 |
-|  GameDriver/TrapSystem/out_of_time_reg                     | GameDriver/CountdownTimer/out_of_time1                                | reset__0                                                              |                1 |              1 |
-|  GameDriver/TrapSystem/out_of_time_reg                     | GameDriver/CountdownTimer/out_of_time1                                | DifficultyDriver/time_counter_reg[5]_P                                |                1 |              1 |
-|  GameDriver/TrapSystem/out_of_time_reg                     | GameDriver/CountdownTimer/out_of_time1                                | DifficultyDriver/time_counter_reg[5]_C                                |                1 |              1 |
-|  DifficultyDriver/time_counter_reg[3]_P                    |                                                                       | DifficultyDriver/time_counter_reg[2]_C                                |                1 |              1 |
-|  DifficultyDriver/time_counter_reg[5]_P                    |                                                                       | DifficultyDriver/time_counter_reg[5]_C                                |                1 |              1 |
-|  TopButton/control_out                                     |                                                                       |                                                                       |                1 |              1 |
-|  DifficultyDriver/difficulty_inferred__0_n_0               |                                                                       |                                                                       |                1 |              2 |
-|  clk_IBUF_BUFG                                             |                                                                       | BottomButton/AR[0]                                                    |                1 |              2 |
-|  GameDriver/TrapSystem/out_of_time_reg                     | GameDriver/CountdownTimer/out_of_time1                                | GameDriver/CountdownTimer/time_counter_reg[7]_LDC_i_2_n_0             |                1 |              2 |
-|  GameDriver/TrapSystem/out_of_time_reg                     | GameDriver/CountdownTimer/out_of_time1                                | GameDriver/CountdownTimer/time_counter_reg[7]_LDC_i_1_n_0             |                1 |              2 |
-|  GameDriver/TrapSystem/out_of_time_reg                     | GameDriver/CountdownTimer/out_of_time1                                | DifficultyDriver/time_counter_reg[3]_P                                |                1 |              2 |
-|  GameDriver/TrapSystem/out_of_time_reg                     | GameDriver/CountdownTimer/out_of_time1                                | DifficultyDriver/time_counter_reg[2]_C                                |                1 |              2 |
-|  clk_IBUF_BUFG                                             | InitDriver/GenExpression/sseg_out0                                    | InitDriver/GenExpression/sseg_out0[4]_i_1__1_n_0                      |                1 |              4 |
-|  clk_IBUF_BUFG                                             | InitDriver/GenExpression/sseg_out0                                    | InitDriver/GenExpression/sseg_out0[2]_i_1__1_n_0                      |                1 |              4 |
-|  clk_IBUF_BUFG                                             | GameDriver/ConvertToBCD/count[3]_i_1__4_n_0                           | GameDriver/CountdownTimer/SS[0]                                       |                2 |              4 |
-|  GameDriver/TrapSystem/out_of_time_reg                     | GameDriver/CountdownTimer/out_of_time1                                | DifficultyDriver/time_counter_reg[11]_C                               |                2 |              5 |
-|  clk_IBUF_BUFG                                             | GameDriver/TrapSystem/prev_error_sum[4]_i_1_n_0                       |                                                                       |                2 |              5 |
-|  GameDriver/TrapSystem/out_of_time_reg                     | GameDriver/CountdownTimer/out_of_time1                                | DifficultyDriver/time_counter_reg[11]_P                               |                1 |              5 |
-|  clk_IBUF_BUFG                                             | SSEGDriver/sseg_an_wire                                               | SSEGDriver/FSM_onehot_sseg_an_wire[4]_i_1_n_0                         |                2 |              5 |
-|  clk_IBUF_BUFG                                             | BottomButton/count[6]_i_2__0_n_0                                      | BottomButton/count[6]_i_1__0_n_0                                      |                2 |              6 |
-|  clk_IBUF_BUFG                                             | CenterButton/count[6]_i_2__1_n_0                                      | CenterButton/count[6]_i_1__1_n_0                                      |                2 |              6 |
-|  clk_IBUF_BUFG                                             | LeftButton/count[6]_i_2__2_n_0                                        | LeftButton/count[6]_i_1__2_n_0                                        |                2 |              6 |
-|  clk_IBUF_BUFG                                             | RightButton/count[6]_i_2__3_n_0                                       | RightButton/count[6]_i_1__3_n_0                                       |                2 |              6 |
-|  clk_IBUF_BUFG                                             | SSEGDriver/current_input                                              |                                                                       |                4 |              6 |
-|  clk_IBUF_BUFG                                             | TopButton/count[6]_i_2_n_0                                            | TopButton/count[6]_i_1_n_0                                            |                2 |              6 |
-|  clk_IBUF_BUFG                                             | GameDriver/CountdownTimer/E[0]                                        |                                                                       |                2 |             12 |
-|  clk_IBUF_BUFG                                             |                                                                       | GameDriver/PatternSystem/count[15]_i_1_n_0                            |                4 |             15 |
-|  clk_IBUF_BUFG                                             | InitDriver/GenExpression/sseg_out0                                    |                                                                       |                6 |             15 |
-| ~reset__0                                                  |                                                                       |                                                                       |                7 |             16 |
-|  clk_IBUF_BUFG                                             | GameDriver/ConvertToBCD/ones[3]_i_1_n_0                               |                                                                       |                5 |             16 |
-|  clk_IBUF_BUFG                                             | GameDriver/ConvertToBCD/ones_tmp[3]_i_2_n_0                           | GameDriver/CountdownTimer/SS[0]                                       |                3 |             16 |
-|  clk_IBUF_BUFG                                             |                                                                       |                                                                       |               14 |             18 |
-|  clk_IBUF_BUFG                                             |                                                                       | SSEGDriver/count[17]_i_1_n_0                                          |                6 |             18 |
-|  clk_IBUF_BUFG                                             | GameDriver/TrapSystem/clk_out_top0                                    | reset__0                                                              |                5 |             26 |
-|  clk_IBUF_BUFG                                             |                                                                       | InitDriver/GenExpression/sseg_out0                                    |                7 |             26 |
-|  clk_IBUF_BUFG                                             |                                                                       | DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_1_n_0 |                7 |             26 |
-|  clk_IBUF_BUFG                                             |                                                                       | EndDriver/GenExpression/FSM_sequential_scroll_point[2]_i_1__0_n_0     |                7 |             26 |
-|  clk_IBUF_BUFG                                             | EndDriver/GenExpression/FSM_sequential_scroll_point[2]_i_1__0_n_0     |                                                                       |               10 |             27 |
-|  clk_IBUF_BUFG                                             | DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_1_n_0 |                                                                       |               10 |             27 |
-|  clk_IBUF_BUFG                                             |                                                                       | reset__0                                                              |                9 |             28 |
-+------------------------------------------------------------+-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+----------------+
++------------------------------------------------------------+--------------------------------------------------------------------------+--------------------------------------------------------------------------+------------------+----------------+
+|                        Clock Signal                        |                               Enable Signal                              |                             Set/Reset Signal                             | Slice Load Count | Bel Load Count |
++------------------------------------------------------------+--------------------------------------------------------------------------+--------------------------------------------------------------------------+------------------+----------------+
+|  GameDriver/TrapSystem/out_of_time_reg                     | GameDriver/CountdownTimer/out_of_time1                                   | DifficultyDriver/time_counter_reg[5]_C                                   |                1 |              1 |
+|  TopButton/control_out                                     |                                                                          |                                                                          |                1 |              1 |
+|  GameDriver/TrapSystem/out_of_time_reg                     | GameDriver/CountdownTimer/out_of_time1                                   | reset__0                                                                 |                1 |              1 |
+|  GameDriver/TrapSystem/out_of_time_reg                     | GameDriver/CountdownTimer/out_of_time1                                   | GameDriver/CountdownTimer/time_counter_reg[1]_LDC_i_1_n_0                |                1 |              1 |
+|  GameDriver/TrapSystem/out_of_time_reg                     | GameDriver/CountdownTimer/out_of_time1                                   | GameDriver/CountdownTimer/time_counter_reg[1]_LDC_i_2_n_0                |                1 |              1 |
+|  GameDriver/TrapSystem/out_of_time_reg                     | GameDriver/CountdownTimer/out_of_time1                                   | DifficultyDriver/time_counter_reg[5]_P                                   |                1 |              1 |
+|  GameDriver/TrapSystem/out_of_time_reg                     |                                                                          | reset__0                                                                 |                1 |              1 |
+|  GameDriver/CountdownTimer/time_counter_reg[1]_LDC_i_1_n_0 |                                                                          | GameDriver/CountdownTimer/time_counter_reg[1]_LDC_i_2_n_0                |                1 |              1 |
+|  GameDriver/CountdownTimer/time_counter_reg[7]_LDC_i_1_n_0 |                                                                          | GameDriver/CountdownTimer/time_counter_reg[7]_LDC_i_2_n_0                |                1 |              1 |
+|  DifficultyDriver/time_counter_reg[11]_P                   |                                                                          | DifficultyDriver/time_counter_reg[11]_C                                  |                1 |              1 |
+|  DifficultyDriver/time_counter_reg[3]_P                    |                                                                          | DifficultyDriver/time_counter_reg[3]_C                                   |                1 |              1 |
+|  DifficultyDriver/time_counter_reg[5]_P                    |                                                                          | DifficultyDriver/time_counter_reg[5]_C                                   |                1 |              1 |
+|  GameDriver/CountdownTimer/E[0]                            |                                                                          | GameDriver/CompareSystem/sseg_out1_reg[5][0]                             |                1 |              2 |
+|  GameDriver/TrapSystem/out_of_time_reg                     | GameDriver/CountdownTimer/out_of_time1                                   | DifficultyDriver/time_counter_reg[3]_P                                   |                1 |              2 |
+|  GameDriver/TrapSystem/out_of_time_reg                     | GameDriver/CountdownTimer/out_of_time1                                   | DifficultyDriver/time_counter_reg[3]_C                                   |                1 |              2 |
+|  clk_IBUF_BUFG                                             |                                                                          | BottomButton/AR[0]                                                       |                1 |              2 |
+|  GameDriver/TrapSystem/out_of_time_reg                     | GameDriver/CountdownTimer/out_of_time1                                   | GameDriver/CountdownTimer/time_counter_reg[7]_LDC_i_2_n_0                |                1 |              2 |
+|  GameDriver/TrapSystem/out_of_time_reg                     | GameDriver/CountdownTimer/out_of_time1                                   | GameDriver/CountdownTimer/time_counter_reg[7]_LDC_i_1_n_0                |                1 |              2 |
+|  DifficultyDriver/difficulty_inferred__0_n_0               |                                                                          |                                                                          |                1 |              2 |
+|  clk_IBUF_BUFG                                             | InitDriver/GenExpression/sseg_out0                                       | InitDriver/GenExpression/sseg_out0[4]_i_1__1_n_0                         |                2 |              4 |
+|  clk_IBUF_BUFG                                             | InitDriver/GenExpression/sseg_out0                                       | InitDriver/GenExpression/sseg_out0[2]_i_1__1_n_0                         |                1 |              4 |
+|  clk_IBUF_BUFG                                             | GameDriver/TrapSystem/prev_error_sum[3]_i_1_n_0                          |                                                                          |                2 |              4 |
+|  clk_IBUF_BUFG                                             | GameDriver/ConvertToBCD/count[3]_i_1__4_n_0                              | GameDriver/CountdownTimer/SS[0]                                          |                1 |              4 |
+|  GameDriver/TrapSystem/out_of_time_reg                     | GameDriver/CountdownTimer/out_of_time1                                   | DifficultyDriver/time_counter_reg[11]_P                                  |                1 |              5 |
+|  clk_IBUF_BUFG                                             | SSEGDriver/sseg_an_wire                                                  | SSEGDriver/FSM_onehot_sseg_an_wire[4]_i_1_n_0                            |                2 |              5 |
+|  GameDriver/TrapSystem/out_of_time_reg                     | GameDriver/CountdownTimer/out_of_time1                                   | DifficultyDriver/time_counter_reg[11]_C                                  |                2 |              5 |
+|  clk_IBUF_BUFG                                             | SSEGDriver/current_input                                                 |                                                                          |                3 |              6 |
+|  clk_IBUF_BUFG                                             | GameDriver/CountdownTimer/binary_stored_reg[11][0]                       |                                                                          |                2 |             12 |
+| ~reset__0                                                  |                                                                          |                                                                          |                6 |             14 |
+|  clk_IBUF_BUFG                                             | InitDriver/GenExpression/sseg_out0                                       |                                                                          |                7 |             15 |
+|  clk_IBUF_BUFG                                             |                                                                          | GameDriver/PatternSystem/count[15]_i_1__4_n_0                            |                4 |             15 |
+|  clk_IBUF_BUFG                                             | GameDriver/ConvertToBCD/ones[3]_i_1_n_0                                  |                                                                          |                2 |             16 |
+|  clk_IBUF_BUFG                                             | GameDriver/ConvertToBCD/ones_tmp[3]_i_2_n_0                              | GameDriver/CountdownTimer/SS[0]                                          |                3 |             16 |
+|  clk_IBUF_BUFG                                             |                                                                          | SSEGDriver/count[17]_i_1__4_n_0                                          |                6 |             18 |
+|  clk_IBUF_BUFG                                             |                                                                          |                                                                          |               16 |             18 |
+|  clk_IBUF_BUFG                                             | TopButton/count[23]_i_2_n_0                                              | TopButton/count[23]_i_1_n_0                                              |                6 |             23 |
+|  clk_IBUF_BUFG                                             | RightButton/count[23]_i_2__3_n_0                                         | RightButton/count[23]_i_1_n_0                                            |                5 |             23 |
+|  clk_IBUF_BUFG                                             | CenterButton/count[23]_i_2__1_n_0                                        | CenterButton/count[23]_i_1_n_0                                           |                8 |             23 |
+|  clk_IBUF_BUFG                                             | BottomButton/count[23]_i_2__0_n_0                                        | BottomButton/count[23]_i_1_n_0                                           |                6 |             23 |
+|  clk_IBUF_BUFG                                             | LeftButton/count[23]_i_2__2_n_0                                          | LeftButton/count[23]_i_1_n_0                                             |                6 |             23 |
+|  clk_IBUF_BUFG                                             |                                                                          | InitDriver/GenExpression/sseg_out0                                       |                7 |             26 |
+|  clk_IBUF_BUFG                                             | GameDriver/PatternSystem/E[0]                                            | reset__0                                                                 |                6 |             26 |
+|  clk_IBUF_BUFG                                             |                                                                          | EndDriver/GenExpression/FSM_sequential_scroll_point[2]_i_1__1_n_0        |                7 |             26 |
+|  clk_IBUF_BUFG                                             |                                                                          | DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_1__0_n_0 |                7 |             26 |
+|  clk_IBUF_BUFG                                             | EndDriver/GenExpression/FSM_sequential_scroll_point[2]_i_1__1_n_0        |                                                                          |               13 |             27 |
+|  clk_IBUF_BUFG                                             | DifficultyDriver/GenExpression/FSM_sequential_scroll_point[2]_i_1__0_n_0 |                                                                          |                9 |             27 |
+|  clk_IBUF_BUFG                                             |                                                                          | reset__0                                                                 |               12 |             28 |
++------------------------------------------------------------+--------------------------------------------------------------------------+--------------------------------------------------------------------------+------------------+----------------+
 
 

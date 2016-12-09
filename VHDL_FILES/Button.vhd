@@ -25,7 +25,7 @@ architecture arch_Button of Button is
     signal control_out : STD_LOGIC := '0';
 
     -- Counter for debounce timing
-    signal count : STD_LOGIC_VECTOR(6 downto 0):= "0000000";
+    signal count : STD_LOGIC_VECTOR(23 downto 0):= x"000000";
 begin
     
     -- Valid button press must be longer than 100 ms
@@ -39,10 +39,10 @@ begin
             
             if (raw_input = '0') then
                 count <= count XOR count;
-            elsif (unsigned(count) = "1000000") then
+            elsif (unsigned(count) = x"989680") then
                 control_out <= '1';
-                count <= "1111111";  -- put count in hold state, will reset when button is released
-            elsif (count /= "1111111") then
+                count <= x"FFFFFF";  -- put count in hold state, will reset when button is released
+            elsif (count /= x"FFFFFF") then
                 -- Increment count when not in hold state
                 count <= STD_LOGIC_VECTOR(unsigned(count) + 1);
             end if;

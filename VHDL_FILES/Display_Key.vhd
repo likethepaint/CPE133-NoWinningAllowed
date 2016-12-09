@@ -76,21 +76,21 @@ begin
                     when "000111" => sseg_cat <= "00011111"; --7
                     when "001000" => sseg_cat <= "00000001"; --8
                     when "001001" => sseg_cat <= "00011001"; --9
-                    when "001010" => sseg_cat <= "00010011"; --A
+                    when "001010" => sseg_cat <= "00010001"; --A
                     when "001011" => sseg_cat <= "11000001"; --B
                     when "001100" => sseg_cat <= "01100011"; --C
                     when "001101" => sseg_cat <= "10000101"; --D
                     when "001110" => sseg_cat <= "01100001"; --E
                     when "001111" => sseg_cat <= "01110001"; --F
                     when "010000" => sseg_cat <= "01000011"; --G
-                    when "010001" => sseg_cat <= "11010001"; --H
+                    when "010001" => sseg_cat <= "10010001"; --H
                     when "010010" => sseg_cat <= "11110011"; --I
                     when "010011" => sseg_cat <= "10000111"; --J
                     when "010100" => sseg_cat <= "01010001"; --K
                     when "010101" => sseg_cat <= "11100011"; --L
                     when "010111" => sseg_cat <= "01010111"; --M
                     when "011000" => sseg_cat <= "11010101"; --N
-                    when "011001" => sseg_cat <= "11000101"; --O
+                    when "011001" => sseg_cat <= "00000011"; --O
                     when "011010" => sseg_cat <= "00110001"; --P
                     when "011011" => sseg_cat <= "00011001"; --Q
                     when "011100" => sseg_cat <= "00110011"; --R

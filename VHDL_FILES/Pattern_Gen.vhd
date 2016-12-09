@@ -51,7 +51,7 @@ begin
     setPattern : process (reset)
     begin
         if (falling_edge(reset)) then
-            pattern <= count;
+            pattern <= (count XOR x"1001") OR count;
         end if;
     end process;
        

@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
-| Date         : Wed Dec  7 20:11:06 2016
+| Date         : Fri Dec  9 06:05:39 2016
 | Host         : zoidberg running 64-bit Ubuntu 16.04.1 LTS
 | Command      : report_drc -file Device_Wrapper_drc_routed.rpt -pb Device_Wrapper_drc_routed.pb
 | Design       : Device_Wrapper
@@ -23,7 +23,7 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 8
+             Violations found: 7
 
 2. REPORT DETAILS
 -----------------
@@ -66,11 +66,6 @@ Net GameDriver/CountdownTimer/time_counter_reg[1]_LDC_i_1_n_0 is a gated clock n
 Related violations: <none>
 
 PDRC-153#6 Warning
-Gated clock check  
-Net GameDriver/CountdownTimer/time_counter_reg[7]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin GameDriver/CountdownTimer/time_counter_reg[7]_LDC_i_1/O, cell GameDriver/CountdownTimer/time_counter_reg[7]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#7 Warning
 Gated clock check  
 Net GameDriver/CountdownTimer/time_counter_reg[7]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin GameDriver/CountdownTimer/time_counter_reg[7]_LDC_i_1/O, cell GameDriver/CountdownTimer/time_counter_reg[7]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>

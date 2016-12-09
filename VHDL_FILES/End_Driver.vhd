@@ -36,14 +36,12 @@ begin
                                            sseg_out2 => sseg_out2,
                                            sseg_out3 => sseg_out3); 
 
-    GenWinLoss : process (clk) 
+    GenWinLoss : process (win, lose) 
     begin
         if (win = '1') then
             end_word_select <= "101";
         elsif (lose = '1') then
             end_word_select <= "110";
-        else 
-            end_word_select <= "111";
         end if;
     end process;
 

@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 2583 
+INFO: Helper process launched with PID 18427 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1020.117 ; gain = 128.137 ; free physical = 3094 ; free virtual = 21473
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1020.117 ; gain = 128.137 ; free physical = 4977 ; free virtual = 22878
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Device_Wrapper' [/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/VHDL_FILES/Device_Wrapper.vhd:19]
 WARNING: [Synth 8-614] signal 'pattern' is read in the process but is not in the sensitivity list [/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/VHDL_FILES/Device_Wrapper.vhd:145]
@@ -75,8 +75,6 @@ INFO: [Synth 8-256] done synthesizing module 'Init_Driver' (12#1) [/home/brett/P
 INFO: [Synth 8-3491] module 'End_Driver' declared at '/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/VHDL_FILES/End_Driver.vhd:5' bound to instance 'EndDriver' of component 'End_Driver' [/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/VHDL_FILES/Device_Wrapper.vhd:223]
 INFO: [Synth 8-638] synthesizing module 'End_Driver' [/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/VHDL_FILES/End_Driver.vhd:16]
 INFO: [Synth 8-3491] module 'Display_Word' declared at '/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/VHDL_FILES/Display_Word.vhd:5' bound to instance 'GenExpression' of component 'Display_Word' [/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/VHDL_FILES/End_Driver.vhd:32]
-WARNING: [Synth 8-614] signal 'win' is read in the process but is not in the sensitivity list [/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/VHDL_FILES/End_Driver.vhd:39]
-WARNING: [Synth 8-614] signal 'lose' is read in the process but is not in the sensitivity list [/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/VHDL_FILES/End_Driver.vhd:39]
 INFO: [Synth 8-256] done synthesizing module 'End_Driver' (13#1) [/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/VHDL_FILES/End_Driver.vhd:16]
 INFO: [Synth 8-3491] module 'SSEG_Select' declared at '/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/VHDL_FILES/SSEG_Select.vhd:13' bound to instance 'SSEGSelect' of component 'SSEG_Select' [/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/VHDL_FILES/Device_Wrapper.vhd:234]
 INFO: [Synth 8-638] synthesizing module 'SSEG_Select' [/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/VHDL_FILES/SSEG_Select.vhd:38]
@@ -113,7 +111,7 @@ WARNING: [Synth 8-3331] design Difficulty_Driver has unconnected port state[1]
 WARNING: [Synth 8-3331] design Difficulty_Driver has unconnected port state[0]
 WARNING: [Synth 8-3331] design Device_Wrapper has unconnected port reset
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1060.555 ; gain = 168.574 ; free physical = 3055 ; free virtual = 21435
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1060.555 ; gain = 168.574 ; free physical = 4936 ; free virtual = 22837
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -123,7 +121,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1060.555 ; gain = 168.574 ; free physical = 3056 ; free virtual = 21435
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1060.555 ; gain = 168.574 ; free physical = 4936 ; free virtual = 22837
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -142,22 +140,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1357.047 ; gain = 0.000 ; free physical = 2888 ; free virtual = 21267
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1357.820 ; gain = 0.000 ; free physical = 4676 ; free virtual = 22577
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1357.047 ; gain = 465.066 ; free physical = 2886 ; free virtual = 21265
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1357.820 ; gain = 465.840 ; free physical = 4676 ; free virtual = 22576
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1357.047 ; gain = 465.066 ; free physical = 2886 ; free virtual = 21265
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1357.820 ; gain = 465.840 ; free physical = 4676 ; free virtual = 22576
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1357.047 ; gain = 465.066 ; free physical = 2886 ; free virtual = 21265
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1357.820 ; gain = 465.840 ; free physical = 4676 ; free virtual = 22576
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "control_out" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "Letter_Out5" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
@@ -165,6 +163,7 @@ INFO: [Synth 8-5544] ROM "Letter_Out8" won't be mapped to Block RAM because addr
 INFO: [Synth 8-802] inferred FSM for state register 'scroll_point_reg' in module 'Display_Word'
 INFO: [Synth 8-5545] ROM "sseg_out0" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "scroll_point" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "reset" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'sseg_an_wire_reg' in module 'SSEG_Driver'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
@@ -180,6 +179,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'sseg_an_wire_reg' in module
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'scroll_point_reg' using encoding 'sequential' in module 'Display_Word'
 WARNING: [Synth 8-327] inferring latch for variable 'difficulty_reg' [/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/VHDL_FILES/Difficulty_Driver.vhd:57]
+WARNING: [Synth 8-327] inferring latch for variable 'end_word_select_reg' [/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/VHDL_FILES/End_Driver.vhd:33]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -192,7 +192,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'difficulty_reg' [/home/bret
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'sseg_an_wire_reg' using encoding 'one-hot' in module 'SSEG_Driver'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1357.047 ; gain = 465.066 ; free physical = 2862 ; free virtual = 21241
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1357.820 ; gain = 465.840 ; free physical = 4672 ; free virtual = 22572
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -207,10 +207,10 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input     28 Bit       Adders := 1     
 	   2 Input     27 Bit       Adders := 3     
+	   2 Input     24 Bit       Adders := 5     
 	   2 Input     18 Bit       Adders := 1     
 	   2 Input     16 Bit       Adders := 1     
 	   2 Input     12 Bit       Adders := 1     
-	   2 Input      7 Bit       Adders := 5     
 	  16 Input      5 Bit       Adders := 1     
 	   2 Input      4 Bit       Adders := 5     
 +---XORs : 
@@ -218,10 +218,10 @@ Detailed RTL Component Info :
 +---Registers : 
 	               28 Bit    Registers := 2     
 	               27 Bit    Registers := 3     
+	               24 Bit    Registers := 5     
 	               18 Bit    Registers := 1     
 	               16 Bit    Registers := 1     
 	               12 Bit    Registers := 2     
-	                7 Bit    Registers := 5     
 	                6 Bit    Registers := 17    
 	                5 Bit    Registers := 1     
 	                4 Bit    Registers := 5     
@@ -230,12 +230,12 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     28 Bit        Muxes := 2     
 	   2 Input     27 Bit        Muxes := 3     
+	   2 Input     24 Bit        Muxes := 10    
 	   2 Input     18 Bit        Muxes := 1     
 	   4 Input     16 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 3     
 	   4 Input     12 Bit        Muxes := 1     
 	   2 Input     12 Bit        Muxes := 2     
-	   2 Input      7 Bit        Muxes := 5     
 	   8 Input      6 Bit        Muxes := 24    
 	   2 Input      6 Bit        Muxes := 14    
 	   9 Input      6 Bit        Muxes := 9     
@@ -246,12 +246,11 @@ Detailed RTL Component Info :
 	   5 Input      4 Bit        Muxes := 1     
 	   8 Input      3 Bit        Muxes := 3     
 	   4 Input      3 Bit        Muxes := 1     
-	   3 Input      3 Bit        Muxes := 1     
 	   7 Input      2 Bit        Muxes := 1     
 	   8 Input      2 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 26    
+	   2 Input      1 Bit        Muxes := 27    
 	   4 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -269,12 +268,12 @@ Detailed RTL Component Info :
 Module Button 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      7 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
 +---Registers : 
-	                7 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input      7 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 3     
 Module State_Controller 
 Detailed RTL Component Info : 
@@ -359,10 +358,8 @@ Module Game_Driver
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
-Module End_Driver 
-Detailed RTL Component Info : 
 +---Muxes : 
-	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 Module SSEG_Driver 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -390,7 +387,7 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1357.047 ; gain = 465.066 ; free physical = 2862 ; free virtual = 21241
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1357.820 ; gain = 465.840 ; free physical = 4672 ; free virtual = 22572
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -408,9 +405,9 @@ INFO: [Synth 8-5545] ROM "EndDriver/GenExpression/sseg_out0" won't be mapped to 
 INFO: [Synth 8-5545] ROM "EndDriver/GenExpression/scroll_point" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
 WARNING: [Synth 8-3331] design Device_Wrapper has unconnected port reset
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1357.047 ; gain = 465.066 ; free physical = 2861 ; free virtual = 21241
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1357.820 ; gain = 465.840 ; free physical = 4674 ; free virtual = 22574
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1357.047 ; gain = 465.066 ; free physical = 2861 ; free virtual = 21241
+Finished Parallel Reinference  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1357.820 ; gain = 465.840 ; free physical = 4674 ; free virtual = 22574
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -436,6 +433,7 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 Start Area Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GameDriver/TrapSystem/clk_out_top_reg[27] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\EndDriver/end_word_select_reg[2] )
 INFO: [Synth 8-3886] merging instance 'InitDriver/GenExpression/sseg_out0_reg[0]' (FDE) to 'InitDriver/GenExpression/sseg_out0_reg[4]'
 INFO: [Synth 8-3886] merging instance 'InitDriver/GenExpression/sseg_out1_reg[0]' (FDE) to 'InitDriver/GenExpression/sseg_out1_reg[4]'
 INFO: [Synth 8-3886] merging instance 'InitDriver/GenExpression/sseg_out2_reg[0]' (FDE) to 'InitDriver/GenExpression/sseg_out2_reg[4]'
@@ -448,6 +446,7 @@ INFO: [Synth 8-3886] merging instance 'GameDriver/ConvertToBCD/ones_reg[5]' (FDR
 INFO: [Synth 8-3886] merging instance 'GameDriver/ConvertToBCD/tens_reg[5]' (FDRE) to 'GameDriver/ConvertToBCD/hundreds_reg[5]'
 INFO: [Synth 8-3886] merging instance 'GameDriver/ConvertToBCD/hundreds_reg[5]' (FDRE) to 'GameDriver/ConvertToBCD/thousands_reg[5]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GameDriver/ConvertToBCD/thousands_reg[5] )
+INFO: [Synth 8-3886] merging instance 'GameDriver/PatternSystem/pattern_reg[0]' (FD_1) to 'GameDriver/PatternSystem/pattern_reg[12]'
 INFO: [Synth 8-3886] merging instance 'DifficultyDriver/difficulty_reg[0]' (LD) to 'DifficultyDriver/difficulty_reg[3]'
 INFO: [Synth 8-3886] merging instance 'DifficultyDriver/difficulty_reg[1]' (LD) to 'DifficultyDriver/difficulty_reg[3]'
 INFO: [Synth 8-3886] merging instance 'DifficultyDriver/difficulty_reg[2]' (LD) to 'DifficultyDriver/difficulty_reg[3]'
@@ -455,12 +454,13 @@ INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Difficul
 INFO: [Synth 8-3886] merging instance 'DifficultyDriver/difficulty_reg[4]' (LD) to 'DifficultyDriver/difficulty_reg[5]'
 INFO: [Synth 8-3886] merging instance 'DifficultyDriver/difficulty_reg[5]' (LD) to 'DifficultyDriver/difficulty_reg[6]'
 INFO: [Synth 8-3886] merging instance 'DifficultyDriver/difficulty_reg[6]' (LD) to 'DifficultyDriver/difficulty_reg[7]'
-INFO: [Synth 8-3886] merging instance 'DifficultyDriver/difficulty_reg[8]' (LD) to 'DifficultyDriver/difficulty_reg[9]'
-INFO: [Synth 8-3886] merging instance 'DifficultyDriver/difficulty_reg[9]' (LD) to 'DifficultyDriver/difficulty_reg[10]'
-INFO: [Synth 8-3886] merging instance 'DifficultyDriver/difficulty_reg[10]' (LD) to 'DifficultyDriver/difficulty_reg[11]'
-INFO: [Synth 8-3886] merging instance 'DifficultyDriver/difficulty_reg[11]' (LD) to 'DifficultyDriver/difficulty_reg[12]'
-INFO: [Synth 8-3886] merging instance 'DifficultyDriver/difficulty_reg[12]' (LD) to 'DifficultyDriver/difficulty_reg[13]'
-INFO: [Synth 8-3886] merging instance 'DifficultyDriver/difficulty_reg[13]' (LD) to 'DifficultyDriver/difficulty_reg[14]'
+INFO: [Synth 8-3886] merging instance 'DifficultyDriver/difficulty_reg[8]' (LD) to 'DifficultyDriver/difficulty_reg[15]'
+INFO: [Synth 8-3886] merging instance 'DifficultyDriver/difficulty_reg[9]' (LD) to 'DifficultyDriver/difficulty_reg[15]'
+INFO: [Synth 8-3886] merging instance 'DifficultyDriver/difficulty_reg[10]' (LD) to 'DifficultyDriver/difficulty_reg[15]'
+INFO: [Synth 8-3886] merging instance 'DifficultyDriver/difficulty_reg[11]' (LD) to 'DifficultyDriver/difficulty_reg[15]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GameDriver/PatternSystem/pattern_reg[12] )
+INFO: [Synth 8-3886] merging instance 'DifficultyDriver/difficulty_reg[12]' (LD) to 'DifficultyDriver/difficulty_reg[15]'
+INFO: [Synth 8-3886] merging instance 'DifficultyDriver/difficulty_reg[13]' (LD) to 'DifficultyDriver/difficulty_reg[15]'
 INFO: [Synth 8-3886] merging instance 'DifficultyDriver/difficulty_reg[14]' (LD) to 'DifficultyDriver/difficulty_reg[15]'
 WARNING: [Synth 8-3332] Sequential element (DifficultyDriver/difficulty_reg[14]) is unused and will be removed from module Device_Wrapper.
 WARNING: [Synth 8-3332] Sequential element (DifficultyDriver/difficulty_reg[13]) is unused and will be removed from module Device_Wrapper.
@@ -476,6 +476,9 @@ WARNING: [Synth 8-3332] Sequential element (DifficultyDriver/difficulty_reg[3]) 
 WARNING: [Synth 8-3332] Sequential element (DifficultyDriver/difficulty_reg[2]) is unused and will be removed from module Device_Wrapper.
 WARNING: [Synth 8-3332] Sequential element (DifficultyDriver/difficulty_reg[1]) is unused and will be removed from module Device_Wrapper.
 WARNING: [Synth 8-3332] Sequential element (DifficultyDriver/difficulty_reg[0]) is unused and will be removed from module Device_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (GameDriver/PatternSystem/pattern_reg[12]) is unused and will be removed from module Device_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (GameDriver/PatternSystem/pattern_reg[0]) is unused and will be removed from module Device_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (EndDriver/end_word_select_reg[2]) is unused and will be removed from module Device_Wrapper.
 WARNING: [Synth 8-3332] Sequential element (GameDriver/TrapSystem/clk_out_top_reg[27]) is unused and will be removed from module Device_Wrapper.
 WARNING: [Synth 8-3332] Sequential element (GameDriver/TrapSystem/clk_out_top_reg[26]) is unused and will be removed from module Device_Wrapper.
 WARNING: [Synth 8-3332] Sequential element (InitDriver/GenExpression/sseg_out0_reg[0]) is unused and will be removed from module Device_Wrapper.
@@ -490,10 +493,12 @@ WARNING: [Synth 8-3332] Sequential element (GameDriver/ConvertToBCD/hundreds_reg
 WARNING: [Synth 8-3332] Sequential element (GameDriver/ConvertToBCD/ones_reg[5]) is unused and will be removed from module Device_Wrapper.
 WARNING: [Synth 8-3332] Sequential element (GameDriver/ConvertToBCD/tens_reg[5]) is unused and will be removed from module Device_Wrapper.
 WARNING: [Synth 8-3332] Sequential element (GameDriver/ConvertToBCD/thousands_reg[5]) is unused and will be removed from module Device_Wrapper.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GameDriver/TrapSystem/prev_error_sum_reg[4] )
+WARNING: [Synth 8-3332] Sequential element (GameDriver/TrapSystem/prev_error_sum_reg[4]) is unused and will be removed from module Device_Wrapper.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1357.047 ; gain = 465.066 ; free physical = 2846 ; free virtual = 21224
+Finished Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1357.820 ; gain = 465.840 ; free physical = 4674 ; free virtual = 22574
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1357.047 ; gain = 465.066 ; free physical = 2846 ; free virtual = 21224
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1357.820 ; gain = 465.840 ; free physical = 4674 ; free virtual = 22574
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -507,10 +512,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1357.047 ; gain = 465.066 ; free physical = 2813 ; free virtual = 21191
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1357.820 ; gain = 465.840 ; free physical = 4672 ; free virtual = 22571
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1378.055 ; gain = 486.074 ; free physical = 2772 ; free virtual = 21150
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1380.828 ; gain = 488.848 ; free physical = 4649 ; free virtual = 22548
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -522,16 +527,16 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1386.062 ; gain = 494.082 ; free physical = 2764 ; free virtual = 21142
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1380.828 ; gain = 488.848 ; free physical = 4649 ; free virtual = 22548
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1386.062 ; gain = 494.082 ; free physical = 2764 ; free virtual = 21142
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1380.828 ; gain = 488.848 ; free physical = 4649 ; free virtual = 22548
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1386.062 ; gain = 494.082 ; free physical = 2764 ; free virtual = 21142
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1380.828 ; gain = 488.848 ; free physical = 4649 ; free virtual = 22548
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -548,7 +553,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1386.062 ; gain = 494.082 ; free physical = 2763 ; free virtual = 21141
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1380.828 ; gain = 488.848 ; free physical = 4649 ; free virtual = 22548
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -561,7 +566,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1386.062 ; gain = 494.082 ; free physical = 2763 ; free virtual = 21141
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1380.828 ; gain = 488.848 ; free physical = 4649 ; free virtual = 22548
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -573,25 +578,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1386.062 ; gain = 494.082 ; free physical = 2763 ; free virtual = 21141
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1380.828 ; gain = 488.848 ; free physical = 4649 ; free virtual = 22548
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1386.062 ; gain = 494.082 ; free physical = 2763 ; free virtual = 21141
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1380.828 ; gain = 488.848 ; free physical = 4649 ; free virtual = 22548
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1386.062 ; gain = 494.082 ; free physical = 2763 ; free virtual = 21141
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1380.828 ; gain = 488.848 ; free physical = 4649 ; free virtual = 22548
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1386.062 ; gain = 494.082 ; free physical = 2763 ; free virtual = 21141
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1380.828 ; gain = 488.848 ; free physical = 4649 ; free virtual = 22548
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -608,68 +613,70 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     2|
-|2     |CARRY4 |    46|
-|3     |LUT1   |   154|
-|4     |LUT2   |    34|
-|5     |LUT3   |    86|
-|6     |LUT4   |    61|
-|7     |LUT5   |    82|
-|8     |LUT6   |   150|
+|2     |CARRY4 |    76|
+|3     |LUT1   |   267|
+|4     |LUT2   |   176|
+|5     |LUT3   |    78|
+|6     |LUT4   |    66|
+|7     |LUT5   |   104|
+|8     |LUT6   |   131|
 |9     |MUXF7  |     2|
 |10    |FDCE   |    56|
 |11    |FDPE   |    24|
-|12    |FDRE   |   275|
-|13    |FDSE   |    42|
+|12    |FDRE   |   272|
+|13    |FDSE   |   127|
 |14    |LD     |     2|
-|15    |LDC    |     5|
-|16    |IBUF   |    22|
-|17    |OBUF   |    28|
+|15    |LDC    |     6|
+|16    |LDP    |     1|
+|17    |IBUF   |    22|
+|18    |OBUF   |    28|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+-------------------+------------------+------+
 |      |Instance           |Module            |Cells |
 +------+-------------------+------------------+------+
-|1     |top                |                  |  1071|
-|2     |  BottomButton     |Button            |    20|
-|3     |  CenterButton     |Button_0          |    20|
-|4     |  DifficultyDriver |Difficulty_Driver |   139|
+|1     |top                |                  |  1440|
+|2     |  BottomButton     |Button            |    90|
+|3     |  CenterButton     |Button_0          |    90|
+|4     |  DifficultyDriver |Difficulty_Driver |   138|
 |5     |    GenExpression  |Display_Word_5    |   122|
-|6     |  EndDriver        |End_Driver        |   122|
+|6     |  EndDriver        |End_Driver        |   124|
 |7     |    GenExpression  |Display_Word_4    |   122|
-|8     |  GameDriver       |Game_Driver       |   405|
-|9     |    CompareSystem  |Comparator        |     2|
+|8     |  GameDriver       |Game_Driver       |   424|
+|9     |    CompareSystem  |Comparator        |     3|
 |10    |    ConvertToBCD   |Binary_to_BCD     |    75|
 |11    |    CountdownTimer |Timer             |    79|
-|12    |    PatternSystem  |Pattern_Gen       |   106|
-|13    |    TrapSystem     |Trap              |   142|
+|12    |    PatternSystem  |Pattern_Gen       |   129|
+|13    |    TrapSystem     |Trap              |   137|
 |14    |  InitDriver       |Init_Driver       |   112|
 |15    |    GenExpression  |Display_Word      |   112|
-|16    |  LeftButton       |Button_1          |    20|
-|17    |  RightButton      |Button_2          |    20|
+|16    |  LeftButton       |Button_1          |    90|
+|17    |  RightButton      |Button_2          |    90|
 |18    |  SSEGDriver       |SSEG_Driver       |    83|
-|19    |  StateController  |State_Controller  |    56|
-|20    |  TopButton        |Button_3          |    20|
+|19    |  StateController  |State_Controller  |    55|
+|20    |  TopButton        |Button_3          |    90|
 +------+-------------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1386.062 ; gain = 494.082 ; free physical = 2763 ; free virtual = 21141
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1380.828 ; gain = 488.848 ; free physical = 4649 ; free virtual = 22548
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 30 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1386.062 ; gain = 110.449 ; free physical = 2763 ; free virtual = 21141
-Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1386.070 ; gain = 494.090 ; free physical = 2763 ; free virtual = 21141
+Synthesis finished with 0 errors, 0 critical warnings and 35 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1380.828 ; gain = 104.441 ; free physical = 4649 ; free virtual = 22548
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1380.836 ; gain = 488.855 ; free physical = 4649 ; free virtual = 22548
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 75 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 107 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 1 inverter(s) to 16 load pin(s).
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 14 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 7 instances were transformed.
+  A total of 9 instances were transformed.
   LD => LDCE: 2 instances
-  LDC => LDCE: 5 instances
+  LDC => LDCE: 6 instances
+  LDP => LDPE: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-115 Infos, 70 Warnings, 1 Critical Warnings and 0 Errors encountered.
+120 Infos, 73 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1386.070 ; gain = 419.535 ; free physical = 2764 ; free virtual = 21142
-report_utilization: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1418.078 ; gain = 0.000 ; free physical = 2763 ; free virtual = 21141
-INFO: [Common 17-206] Exiting Vivado at Wed Dec  7 20:10:32 2016...
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1380.836 ; gain = 414.301 ; free physical = 4651 ; free virtual = 22550
+report_utilization: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1412.844 ; gain = 0.000 ; free physical = 4649 ; free virtual = 22549
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  9 06:05:04 2016...

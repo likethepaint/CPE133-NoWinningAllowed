@@ -88,7 +88,7 @@ begin
     ValidState : process (clk)
     begin
         if (rising_edge(clk)) then
-            if ((state = "0100") OR (state = "1000")) then
+            if ((state = "0100")) then
                 reset <= '0';
             else 
                 reset <= '1';
