@@ -1,0 +1,140 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+Process ID: 8248
+
+Current time: 	12/9/16 1:49:35 AM MST
+Time zone: 	Mountain Standard Time (America/Phoenix)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	D:/Vivado/2016.2/tps/win64/jre
+
+User name: 	violi
+User home directory: C:/Users/violi
+User working directory: C:/Users/violi/Desktop/CPE 133 Project/CPE133-NoWinningAllowed/CPE133-NoWinningAllowed-Finale/Finale
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI Base root directory: D:/Vivado
+RDI Data directory: D:/Vivado/2016.2/data
+RDI Bin directory: D:/Vivado/2016.2/bin
+
+Vivado preferences path: C:/Users/violi/AppData/Roaming/Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: C:/Users/violi/AppData/Roaming/Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	193 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 494 MB
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bL:g (cv:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\violi\Desktop\CPE 133 Project\CPE133-NoWinningAllowed\CPE133-NoWinningAllowed-Finale\Finale\Finale.xpr. Version: Vivado v2016.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/violi/Desktop/CPE 133 Project/CPE133-NoWinningAllowed/CPE133-NoWinningAllowed-Finale/Finale/Finale.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/violi/Desktop/CPE 133 Project/CPE133-NoWinningAllowed/CPE133-NoWinningAllowed-Finale/Finale' INFO: [Project 1-313] Project file moved from 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 43 MB (+43093kb) [00:00:03]
+// [Engine Memory]: 465 MB (+335985kb) [00:00:03]
+// [GUI Memory]: 55 MB (+9644kb) [00:00:04]
+// [Engine Memory]: 494 MB (+5751kb) [00:00:05]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 59 MB (+1024kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 507 MB. GUI used memory: 37 MB. Current time: 12/9/16 1:49:36 AM MST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: Finale; location: C:/Users/violi/Desktop/CPE 133 Project/CPE133-NoWinningAllowed/CPE133-NoWinningAllowed-Finale/Finale; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 765.164 ; gain = 134.234 
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Device_Wrapper - arch_Device_Wrapper (Device_Wrapper.vhd)]", 1); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Device_Wrapper - arch_Device_Wrapper (Device_Wrapper.vhd), DifficultyDriver - Difficulty_Driver - arch_Difficulty_Driver (Difficulty_Driver.vhd)]", 8); // z:k (G:JPanel, cv:JFrame)
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Device_Wrapper - arch_Device_Wrapper (Device_Wrapper.vhd), SSEGDriver - SSEG_Driver - arch_SSEG_Driver (Display_Key.vhd)]", 15, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Device_Wrapper - arch_Device_Wrapper (Device_Wrapper.vhd), SSEGDriver - SSEG_Driver - arch_SSEG_Driver (Display_Key.vhd)]", 15, false); // z:k (G:JPanel, cv:JFrame)
+// [GUI Memory]: 62 MB (+216kb) [00:00:35]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Device_Wrapper - arch_Device_Wrapper (Device_Wrapper.vhd), SSEGDriver - SSEG_Driver - arch_SSEG_Driver (Display_Key.vhd)]", 15, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Device_Wrapper - arch_Device_Wrapper (Device_Wrapper.vhd), DifficultyDriver - Difficulty_Driver - arch_Difficulty_Driver (Difficulty_Driver.vhd)]", 8, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Device_Wrapper - arch_Device_Wrapper (Device_Wrapper.vhd), DifficultyDriver - Difficulty_Driver - arch_Difficulty_Driver (Difficulty_Driver.vhd)]", 8, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Display_Key.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Device_Wrapper - arch_Device_Wrapper (Device_Wrapper.vhd), DifficultyDriver - Difficulty_Driver - arch_Difficulty_Driver (Difficulty_Driver.vhd)]", 8); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Device_Wrapper - arch_Device_Wrapper (Device_Wrapper.vhd), DifficultyDriver - Difficulty_Driver - arch_Difficulty_Driver (Difficulty_Driver.vhd), GenExpression - Display_Word - arch_Display_Word (Display_Word.vhd), Key_Map - Word_Key - Behavioral (Word_Key.vhd)]", 10, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Device_Wrapper - arch_Device_Wrapper (Device_Wrapper.vhd), DifficultyDriver - Difficulty_Driver - arch_Difficulty_Driver (Difficulty_Driver.vhd), GenExpression - Display_Word - arch_Display_Word (Display_Word.vhd), Key_Map - Word_Key - Behavioral (Word_Key.vhd)]", 10, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectCodeEditor("Word_Key.vhd", 191, 346); // bH:N (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 66 MB (+1114kb) [00:01:16]
+// Elapsed time: 62 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Difficulty_Driver.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Display_Key.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// [GUI Memory]: 70 MB (+696kb) [00:02:08]
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Difficulty_Driver.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Word_Key.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Display_Key.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("Display_Key.vhd", 222, 349); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "Display_Key.vhd", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "Display_Key.vhd", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 76 MB (+2731kb) [00:02:45]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Difficulty_Driver.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Word_Key.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("Word_Key.vhd", 229, 443); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "Word_Key.vhd", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Display_Key.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("Display_Key.vhd", 221, 258); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "Display_Key.vhd", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+// [Engine Memory]: 521 MB (+3236kb) [00:03:17]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Word_Key.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// [GUI Memory]: 80 MB (+72kb) [00:03:17]
+selectCodeEditor("Word_Key.vhd", 230, 466); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "Word_Key.vhd", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Display_Key.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("Display_Key.vhd", 225, 398); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "Display_Key.vhd", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Word_Key.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("Word_Key.vhd", 230, 482); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "Word_Key.vhd", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Display_Key.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("Display_Key.vhd", 224, 553); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "Display_Key.vhd", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Word_Key.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("Word_Key.vhd", 229, 501); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "Word_Key.vhd", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("Word_Key.vhd", 197, 522); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("Word_Key.vhd", 197, 540); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("Word_Key.vhd", 210, 539); // bH:N (JPanel:JComponent, cv:JFrame)
