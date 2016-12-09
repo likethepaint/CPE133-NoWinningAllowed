@@ -75,3 +75,10 @@ dismissDialog("Open Project"); // bL:g (cv:JFrame)
 // HMemoryUtils.trashcanNow. Engine heap size: 541 MB. GUI used memory: 37 MB. Current time: 12/9/16 1:49:42 AM MST
 // [Engine Memory]: 541 MB (+4710kb) [00:00:09]
 // Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH

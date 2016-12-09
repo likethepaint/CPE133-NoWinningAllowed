@@ -138,3 +138,13 @@ typeControlKey((HResource) null, "Word_Key.vhd", 'v'); // bH:N (JPanel:JComponen
 selectCodeEditor("Word_Key.vhd", 197, 522); // bH:N (JPanel:JComponent, cv:JFrame)
 selectCodeEditor("Word_Key.vhd", 197, 540); // bH:N (JPanel:JComponent, cv:JFrame)
 selectCodeEditor("Word_Key.vhd", 210, 539); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 12 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 533 MB. GUI used memory: 39 MB. Current time: 12/9/16 1:53:37 AM MST
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
