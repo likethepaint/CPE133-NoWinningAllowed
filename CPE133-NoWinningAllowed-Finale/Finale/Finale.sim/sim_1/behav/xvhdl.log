@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/VHDL_FILES/Word_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Word_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/VHDL_FILES/Display_Word.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Word
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/VHDL_FILES/End_Driver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity End_Driver
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Finale/Finale.srcs/sources_1/new/End_Driver_Sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity End_Driver_Sim

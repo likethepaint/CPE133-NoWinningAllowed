@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Dec 07 15:09:23 2016
+# Process ID: 7476
+# Current directory: C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.runs/synth_1
+# Command line: vivado.exe -log State_Machine_Wrapper.vds -mode batch -messageDb vivado.pb -notrace -source State_Machine_Wrapper.tcl
+# Log file: C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.runs/synth_1/State_Machine_Wrapper.vds
+# Journal file: C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source State_Machine_Wrapper.tcl -notrace

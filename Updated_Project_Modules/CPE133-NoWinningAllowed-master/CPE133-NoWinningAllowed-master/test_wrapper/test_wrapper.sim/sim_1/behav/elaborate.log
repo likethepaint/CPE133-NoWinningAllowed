@@ -1,0 +1,20 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 64fe5322e910496192224576d4daa070 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot test_bench_behav xil_defaultlib.test_bench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture arch_button of entity xil_defaultlib.Button [button_default]
+Compiling architecture behavioral of entity xil_defaultlib.button_splitter [button_splitter_default]
+Compiling architecture behavioral of entity xil_defaultlib.button_input [button_input_default]
+Compiling architecture behavioral of entity xil_defaultlib.Game_State_Machine [game_state_machine_default]
+Compiling architecture behavioral of entity xil_defaultlib.button_fsm [button_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.State_Machine_Wrapper [state_machine_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.test_bench
+Built simulation snapshot test_bench_behav

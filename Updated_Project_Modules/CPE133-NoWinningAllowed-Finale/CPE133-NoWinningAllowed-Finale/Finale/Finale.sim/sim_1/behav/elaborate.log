@@ -1,0 +1,32 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto a6de33d6223f433e8e1ec502fcb7cc1b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_hell_behav xil_defaultlib.sim_hell -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling architecture arch_button of entity xil_defaultlib.Button [button_default]
+Compiling architecture behavioral of entity xil_defaultlib.button_splitter [button_splitter_default]
+Compiling architecture behavioral of entity xil_defaultlib.button_input [button_input_default]
+Compiling architecture arch_pattern_gen of entity xil_defaultlib.Pattern_Gen [pattern_gen_default]
+Compiling architecture arch_trap of entity xil_defaultlib.Trap [trap_default]
+Compiling architecture arch_comparator of entity xil_defaultlib.Comparator [comparator_default]
+Compiling architecture arch_binary_to_bcd of entity xil_defaultlib.Binary_to_BCD [binary_to_bcd_default]
+Compiling architecture arch_timer of entity xil_defaultlib.Timer [timer_default]
+Compiling architecture arch_game_module of entity xil_defaultlib.Game_Module [game_module_default]
+Compiling architecture arch_sseg_select of entity xil_defaultlib.SSEG_Select [sseg_select_default]
+Compiling architecture behavioral of entity xil_defaultlib.Game_State_Machine [game_state_machine_default]
+Compiling architecture behavioral of entity xil_defaultlib.button_fsm [button_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.End_Driver [end_driver_default]
+Compiling architecture behavioral of entity xil_defaultlib.Word_Key [word_key_default]
+Compiling architecture behavioral of entity xil_defaultlib.Generate_Word [generate_word_default]
+Compiling architecture behavioral of entity xil_defaultlib.Display_Key [display_key_default]
+Compiling architecture behavioral of entity xil_defaultlib.State_Machine_Wrapper [state_machine_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.sim_hell
+Built simulation snapshot sim_hell_behav

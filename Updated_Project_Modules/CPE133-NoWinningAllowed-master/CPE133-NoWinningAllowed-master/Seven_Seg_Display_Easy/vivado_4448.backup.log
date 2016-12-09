@@ -1,0 +1,185 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Dec 05 18:23:01 2016
+# Process ID: 4448
+# Current directory: E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3932 E:\CPE133-NoWinningAllowed-master\Seven_Seg_Display_Easy\Seven_Seg_Display_Easy.xpr
+# Log file: E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/vivado.log
+# Journal file: E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.ip_user_files', nor could it be found using path 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-master/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 719.480 ; gain = 92.035
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: Display_Source
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:01:21 ; elapsed = 00:22:10 . Memory (MB): peak = 832.883 ; gain = 625.699
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Display_Source' [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:17]
+INFO: [Synth 8-3491] module 'Word_Key' declared at 'E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Word_Key.vhd:8' bound to instance 'Key_Map' of component 'Word_Key' [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'Word_Key' [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Word_Key.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'Word_Key' (1#1) [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Word_Key.vhd:21]
+INFO: [Synth 8-3491] module 'Display_Key' declared at 'E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd:16' bound to instance 'Seven_Seg_Driver' of component 'Display_Key' [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'Display_Key' [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd:27]
+WARNING: [Synth 8-614] signal 'cen' is read in the process but is not in the sensitivity list [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd:69]
+WARNING: [Synth 8-614] signal 'current_input' is read in the process but is not in the sensitivity list [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'Display_Key' (2#1) [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd:27]
+WARNING: [Synth 8-3848] Net to_display1 in module/entity Display_Source does not have driver. [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:43]
+WARNING: [Synth 8-3848] Net to_display2 in module/entity Display_Source does not have driver. [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:43]
+WARNING: [Synth 8-3848] Net to_display3 in module/entity Display_Source does not have driver. [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:43]
+WARNING: [Synth 8-3848] Net to_display4 in module/entity Display_Source does not have driver. [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Display_Source' (3#1) [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:17]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:21 ; elapsed = 00:22:12 . Memory (MB): peak = 858.402 ; gain = 651.219
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in1[5] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in1[4] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in1[3] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in1[2] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in1[1] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in1[0] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in2[5] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in2[4] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in2[3] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in2[2] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in2[1] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in2[0] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in3[5] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in3[4] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in3[3] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in3[2] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in3[1] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in3[0] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in4[5] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in4[4] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in4[3] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in4[2] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in4[1] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in4[0] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:22 ; elapsed = 00:22:14 . Memory (MB): peak = 858.402 ; gain = 651.219
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:01:31 ; elapsed = 00:22:36 . Memory (MB): peak = 1153.664 ; gain = 946.480
+12 Infos, 30 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:30 . Memory (MB): peak = 1153.664 ; gain = 320.781
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+[Mon Dec 05 18:46:39 2016] Launched synth_1...
+Run output will be captured here: E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.runs/synth_1/runme.log
+[Mon Dec 05 18:46:39 2016] Launched impl_1...
+Run output will be captured here: E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Mon Dec 05 18:48:52 2016] Launched impl_1...
+Run output will be captured here: E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.runs/impl_1/runme.log
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: Display_Source
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:01:58 ; elapsed = 00:27:10 . Memory (MB): peak = 1162.234 ; gain = 955.051
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Display_Source' [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:17]
+INFO: [Synth 8-3491] module 'Word_Key' declared at 'E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Word_Key.vhd:8' bound to instance 'Key_Map' of component 'Word_Key' [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'Word_Key' [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Word_Key.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'Word_Key' (1#1) [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Word_Key.vhd:21]
+INFO: [Synth 8-3491] module 'Display_Key' declared at 'E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd:16' bound to instance 'Seven_Seg_Driver' of component 'Display_Key' [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'Display_Key' [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd:27]
+WARNING: [Synth 8-614] signal 'cen' is read in the process but is not in the sensitivity list [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd:69]
+WARNING: [Synth 8-614] signal 'current_input' is read in the process but is not in the sensitivity list [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'Display_Key' (2#1) [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd:27]
+WARNING: [Synth 8-3848] Net to_display1 in module/entity Display_Source does not have driver. [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:43]
+WARNING: [Synth 8-3848] Net to_display2 in module/entity Display_Source does not have driver. [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:43]
+WARNING: [Synth 8-3848] Net to_display3 in module/entity Display_Source does not have driver. [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:43]
+WARNING: [Synth 8-3848] Net to_display4 in module/entity Display_Source does not have driver. [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Display_Source' (3#1) [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:17]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:59 ; elapsed = 00:27:14 . Memory (MB): peak = 1162.234 ; gain = 955.051
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in1[5] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in1[4] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in1[3] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in1[2] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in1[1] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in1[0] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in2[5] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in2[4] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in2[3] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in2[2] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in2[1] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in2[0] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in3[5] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in3[4] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in3[3] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in3[2] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in3[1] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in3[0] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in4[5] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in4[4] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in4[3] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in4[2] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in4[1] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+WARNING: [Synth 8-3295] tying undriven pin Seven_Seg_Driver:bin_in4[0] to constant 0 [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd:54]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:59 ; elapsed = 00:27:15 . Memory (MB): peak = 1162.234 ; gain = 955.051
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [E:/CPE133-NoWinningAllowed-master/Seven_Seg_Display_Easy/Seven_Seg_Display_Easy.srcs/constrs_1/new/constraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:02:02 ; elapsed = 00:27:17 . Memory (MB): peak = 1227.750 ; gain = 1020.566
+11 Infos, 30 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1227.750 ; gain = 65.516
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 05 18:52:03 2016...

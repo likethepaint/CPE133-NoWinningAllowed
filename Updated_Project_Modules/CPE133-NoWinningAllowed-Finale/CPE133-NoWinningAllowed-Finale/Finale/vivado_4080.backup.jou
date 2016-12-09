@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Dec 07 13:28:37 2016
+# Process ID: 4080
+# Current directory: C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5332 C:\Users\ckenner\Desktop\CPE133-NoWinningAllowed-Finale\CPE133-NoWinningAllowed-Finale\Finale\Finale.xpr
+# Log file: C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/vivado.log
+# Journal file: C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/End_Driver.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+close_design
+synth_design -rtl -name rtl_1
+close_design
+remove_files C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.srcs/sources_1/new/game_driver.vhd
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+place_ports debug_leds_input T18
+place_ports {raw_input[0]} W19
+set_property package_pin "" [get_ports [list  {raw_input[1]}]]
+startgroup
+set_property package_pin "" [get_ports [list  reset]]
+place_ports {raw_input[1]} U18
+endgroup
+place_ports {raw_input[2]} T17
+set_property IOSTANDARD LVCMOS33 [get_ports [list {raw_input[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {raw_input[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {raw_input[2]}]]
+place_ports reset U17
+set_property IOSTANDARD LVCMOS33 [get_ports [list debug_leds_input]]
+set_property target_constrs_file C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Test_Const.xdc [current_fileset -constrset]
+save_constraints -force
+close_design

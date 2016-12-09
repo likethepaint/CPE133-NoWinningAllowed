@@ -1,0 +1,22 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../../VHDL_FILES/Word_Key.vhd"
+vhdl xil_defaultlib  "../../../../VHDL_FILES/Button.vhd"
+vhdl xil_defaultlib  "../../../../VHDL_FILES/Trap.vhd"
+vhdl xil_defaultlib  "../../../../VHDL_FILES/Timer.vhd"
+vhdl xil_defaultlib  "../../../../VHDL_FILES/Pattern_Gen.vhd"
+vhdl xil_defaultlib  "../../../../VHDL_FILES/Comparator.vhd"
+vhdl xil_defaultlib  "../../../../VHDL_FILES/Binary_to_BCD.vhd"
+vhdl xil_defaultlib  "../../../../VHDL_FILES/Display_Key.vhd"
+vhdl xil_defaultlib  "../../../../VHDL_FILES/End_Driver.vhd"
+vhdl xil_defaultlib  "../../../../VHDL_FILES/SSEG_Select.vhd"
+vhdl xil_defaultlib  "../../../../VHDL_FILES/Game_State_Machine.vhd"
+vhdl xil_defaultlib  "../../../../VHDL_FILES/Display_Word.vhd"
+vhdl xil_defaultlib  "../../../../VHDL_FILES/button_splitter.vhd"
+vhdl xil_defaultlib  "../../../../VHDL_FILES/button_input.vhd"
+vhdl xil_defaultlib  "../../../../VHDL_FILES/button_fsm.vhd"
+vhdl xil_defaultlib  "../../../../VHDL_FILES/Game_Module.vhd"
+vhdl xil_defaultlib  "../../../../VHDL_FILES/State_Machine_Wrapper.vhd"
+vhdl xil_defaultlib  "../../../Finale.srcs/sim_1/new/sim_hell.vhd"
+
+# Do not sort compile order
+nosort

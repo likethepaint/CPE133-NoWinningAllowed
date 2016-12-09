@@ -1,0 +1,67 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Wed Dec 07 15:11:55 2016
+| Host         : RM111B7 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file State_Machine_Wrapper_control_sets_placed.rpt
+| Design       : State_Machine_Wrapper
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    14 |
+| Unused register locations in slices containing registers |    76 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              27 |            7 |
+| No           | No                    | Yes                    |               4 |            4 |
+| No           | Yes                   | No                     |              46 |           15 |
+| Yes          | No                    | No                     |              54 |           16 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               9 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+-------------------------------+-------------------------------------------------+------------------+----------------+
+|         Clock Signal        |         Enable Signal         |                 Set/Reset Signal                | Slice Load Count | Bel Load Count |
++-----------------------------+-------------------------------+-------------------------------------------------+------------------+----------------+
+|  game/NS_reg[0]_LDC_i_1_n_0 |                               | game/NS_reg[0]_LDC_i_2_n_0                      |                1 |              1 |
+|  game/NS_reg[1]_LDC_i_1_n_0 |                               | game/NS_reg[1]_LDC_i_2_n_0                      |                1 |              1 |
+|  clk_IBUF_BUFG              |                               | game/NS_reg[0]_LDC_i_1_n_0                      |                1 |              1 |
+|  clk_IBUF_BUFG              |                               | game/NS_reg[0]_LDC_i_2_n_0                      |                1 |              1 |
+|  clk_IBUF_BUFG              |                               | game/NS_reg[1]_LDC_i_1_n_0                      |                1 |              1 |
+|  clk_IBUF_BUFG              |                               | game/NS_reg[1]_LDC_i_2_n_0                      |                1 |              1 |
+|  clk_IBUF_BUFG              | Generate_Word_End/to_display0 | Generate_Word_End/to_display0[3]_i_1__0_n_0     |                2 |              4 |
+|  clk_IBUF_BUFG              | SSEG_Display/sseg_an_wire     | SSEG_Display/FSM_onehot_sseg_an_wire[4]_i_1_n_0 |                2 |              5 |
+|  clk_IBUF_BUFG              | SSEG_Display/current_input    |                                                 |                3 |              6 |
+|  clk_IBUF_BUFG              |                               | SSEG_Display/count[17]_i_1_n_0                  |                6 |             18 |
+|  clk_IBUF_BUFG              | Generate_Word_End/to_display0 |                                                 |                5 |             18 |
+|  clk_IBUF_BUFG              |                               | Generate_Word_End/to_display0                   |                7 |             26 |
+|  clk_IBUF_BUFG              |                               |                                                 |                7 |             27 |
+|  clk_IBUF_BUFG              | game/sel                      |                                                 |                8 |             30 |
++-----------------------------+-------------------------------+-------------------------------------------------+------------------+----------------+
+
+

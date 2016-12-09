@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../../VHDL_FILES/Word_Key.vhd"
+vhdl xil_defaultlib  "../../../../VHDL_FILES/Display_Word.vhd"
+vhdl xil_defaultlib  "../../../../VHDL_FILES/End_Driver.vhd"
+vhdl xil_defaultlib  "../../../Finale.srcs/sources_1/new/End_Driver_Sim.vhd"
+
+# Do not sort compile order
+nosort

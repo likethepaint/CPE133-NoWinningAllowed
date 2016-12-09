@@ -1,0 +1,828 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Dec 07 15:09:23 2016
+# Process ID: 7476
+# Current directory: C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.runs/synth_1
+# Command line: vivado.exe -log State_Machine_Wrapper.vds -mode batch -messageDb vivado.pb -notrace -source State_Machine_Wrapper.tcl
+# Log file: C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.runs/synth_1/State_Machine_Wrapper.vds
+# Journal file: C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source State_Machine_Wrapper.tcl -notrace
+Command: synth_design -top State_Machine_Wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4196 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 273.352 ; gain = 65.898
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'State_Machine_Wrapper' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:24]
+WARNING: [Synth 8-614] signal 'pattern_adj' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:153]
+INFO: [Synth 8-3491] module 'button_splitter' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_splitter.vhd:34' bound to instance 'button_module' of component 'button_splitter' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:164]
+INFO: [Synth 8-638] synthesizing module 'button_splitter' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_splitter.vhd:40]
+INFO: [Synth 8-3491] module 'Button' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Button.vhd:17' bound to instance 'LeftButton' of component 'Button' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_splitter.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'Button' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Button.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'Button' (1#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Button.vhd:23]
+INFO: [Synth 8-3491] module 'Button' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Button.vhd:17' bound to instance 'centerButton' of component 'Button' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_splitter.vhd:53]
+INFO: [Synth 8-3491] module 'Button' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Button.vhd:17' bound to instance 'rightButton' of component 'Button' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_splitter.vhd:54]
+WARNING: [Synth 8-614] signal 'sample2' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_splitter.vhd:56]
+WARNING: [Synth 8-614] signal 'sample1' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_splitter.vhd:56]
+WARNING: [Synth 8-614] signal 'sample3' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_splitter.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'button_splitter' (2#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_splitter.vhd:40]
+INFO: [Synth 8-3491] module 'button_input' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_input.vhd:34' bound to instance 'button_press_driver' of component 'button_input' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'button_input' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_input.vhd:44]
+WARNING: [Synth 8-614] signal 'current_state' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_input.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'button_input' (3#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_input.vhd:44]
+INFO: [Synth 8-3491] module 'Game_Module' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Module.vhd:21' bound to instance 'actual_game_module' of component 'Game_Module' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:175]
+INFO: [Synth 8-638] synthesizing module 'Game_Module' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Module.vhd:36]
+INFO: [Synth 8-3491] module 'Pattern_Gen' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Pattern_Gen.vhd:22' bound to instance 'PatternSystem' of component 'Pattern_Gen' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Module.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'Pattern_Gen' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Pattern_Gen.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'Pattern_Gen' (4#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Pattern_Gen.vhd:28]
+INFO: [Synth 8-3491] module 'Trap' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Trap.vhd:18' bound to instance 'TrapSystem' of component 'Trap' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Module.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'Trap' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Trap.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'Trap' (5#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Trap.vhd:27]
+INFO: [Synth 8-3491] module 'Comparator' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Comparator.vhd:21' bound to instance 'CompareSystem' of component 'Comparator' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Module.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'Comparator' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Comparator.vhd:29]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Comparator.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Comparator' (6#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Comparator.vhd:29]
+INFO: [Synth 8-3491] module 'Binary_to_BCD' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Binary_to_BCD.vhd:15' bound to instance 'ConvertToBCD' of component 'Binary_to_BCD' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Module.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'Binary_to_BCD' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Binary_to_BCD.vhd:25]
+WARNING: [Synth 8-3848] Net sseg_enable in module/entity Binary_to_BCD does not have driver. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Binary_to_BCD.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'Binary_to_BCD' (7#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Binary_to_BCD.vhd:25]
+INFO: [Synth 8-3491] module 'Timer' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Timer.vhd:34' bound to instance 'CountdownTimer' of component 'Timer' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Module.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'Timer' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Timer.vhd:42]
+WARNING: [Synth 8-614] signal 'difficulty' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Timer.vhd:52]
+WARNING: [Synth 8-614] signal 'easy' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Timer.vhd:52]
+WARNING: [Synth 8-614] signal 'medium' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Timer.vhd:52]
+WARNING: [Synth 8-614] signal 'hard' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Timer.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'Timer' (8#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Timer.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Game_Module' (9#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Module.vhd:36]
+INFO: [Synth 8-3491] module 'SSEG_Select' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd:13' bound to instance 'Seven_Segment_Driver' of component 'SSEG_Select' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:189]
+INFO: [Synth 8-638] synthesizing module 'SSEG_Select' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'SSEG_Select' (10#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd:38]
+INFO: [Synth 8-3491] module 'Game_State_Machine' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_State_Machine.vhd:34' bound to instance 'game' of component 'Game_State_Machine' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:216]
+INFO: [Synth 8-638] synthesizing module 'Game_State_Machine' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_State_Machine.vhd:45]
+INFO: [Synth 8-226] default block is never used [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_State_Machine.vhd:65]
+WARNING: [Synth 8-614] signal 'initialize_button_in' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_State_Machine.vhd:62]
+WARNING: [Synth 8-614] signal 'selected_difficulty' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_State_Machine.vhd:62]
+WARNING: [Synth 8-614] signal 'game_over' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_State_Machine.vhd:62]
+WARNING: [Synth 8-3848] Net activate_difficulty_select in module/entity Game_State_Machine does not have driver. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_State_Machine.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Game_State_Machine' (11#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_State_Machine.vhd:45]
+INFO: [Synth 8-3491] module 'button_fsm' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_fsm.vhd:6' bound to instance 'dif_select' of component 'button_fsm' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:224]
+INFO: [Synth 8-638] synthesizing module 'button_fsm' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_fsm.vhd:17]
+WARNING: [Synth 8-614] signal 'choice' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_fsm.vhd:39]
+WARNING: [Synth 8-614] signal 'easy_bitmask' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_fsm.vhd:39]
+WARNING: [Synth 8-614] signal 'medium_bitmask' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_fsm.vhd:39]
+WARNING: [Synth 8-614] signal 'hard_bitmask' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_fsm.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'button_fsm' (12#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_fsm.vhd:17]
+INFO: [Synth 8-3491] module 'End_Driver' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/End_Driver.vhd:5' bound to instance 'end_state_driver' of component 'End_Driver' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:234]
+INFO: [Synth 8-638] synthesizing module 'End_Driver' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/End_Driver.vhd:12]
+WARNING: [Synth 8-614] signal 'win' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/End_Driver.vhd:16]
+WARNING: [Synth 8-614] signal 'lose' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/End_Driver.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'End_Driver' (13#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/End_Driver.vhd:12]
+INFO: [Synth 8-3491] module 'Generate_Word' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd:5' bound to instance 'Generate_Word_Init' of component 'Generate_Word' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'Generate_Word' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd:15]
+INFO: [Synth 8-3491] module 'Word_Key' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Word_Key.vhd:5' bound to instance 'Key_Map' of component 'Word_Key' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'Word_Key' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Word_Key.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'Word_Key' (14#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Word_Key.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'Generate_Word' (15#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd:15]
+INFO: [Synth 8-3491] module 'Generate_Word' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd:5' bound to instance 'Generate_Word_Dif' of component 'Generate_Word' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:254]
+INFO: [Synth 8-3491] module 'Generate_Word' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd:5' bound to instance 'Generate_Word_End' of component 'Generate_Word' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:262]
+INFO: [Synth 8-3491] module 'Display_Key' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd:16' bound to instance 'SSEG_Display' of component 'Display_Key' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:270]
+INFO: [Synth 8-638] synthesizing module 'Display_Key' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd:27]
+WARNING: [Synth 8-614] signal 'cen' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd:69]
+WARNING: [Synth 8-614] signal 'current_input' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'Display_Key' (16#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'State_Machine_Wrapper' (17#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:24]
+WARNING: [Synth 8-3331] design Generate_Word has unconnected port cen
+WARNING: [Synth 8-3331] design Game_State_Machine has unconnected port activate_difficulty_select
+WARNING: [Synth 8-3331] design Game_State_Machine has unconnected port reset
+WARNING: [Synth 8-3331] design Binary_to_BCD has unconnected port sseg_enable
+WARNING: [Synth 8-3331] design button_input has unconnected port clk
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 310.813 ; gain = 103.359
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 310.813 ; gain = 103.359
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Test_Const.xdc]
+Finished Parsing XDC File [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Test_Const.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Test_Const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/State_Machine_Wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/State_Machine_Wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 604.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 604.832 ; gain = 397.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 604.832 ; gain = 397.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 604.832 ; gain = 397.379
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "control_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "initialize_game" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reset" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "to_display0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "to_display1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "to_display2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "to_display3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "NS" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "NS" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Letter_Out5" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Letter_Out8" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'scroll_point_reg' in module 'Generate_Word'
+INFO: [Synth 8-5545] ROM "to_display0" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "scroll_point" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'sseg_an_wire_reg' in module 'Display_Key'
+WARNING: [Synth 8-327] inferring latch for variable 'difficulty_select_reg' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_input.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'initialize_game_reg' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_input.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'init_word_select_reg' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_input.vhd:56]
+WARNING: [Synth 8-327] inferring latch for variable 'difficulty_reg' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_fsm.vhd:85]
+WARNING: [Synth 8-327] inferring latch for variable 'word_select_reg' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_fsm.vhd:44]
+WARNING: [Synth 8-327] inferring latch for variable 'end_word_select_reg' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/End_Driver.vhd:20]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE6 |                              000 |                              111
+                 iSTATE5 |                              001 |                              110
+                 iSTATE4 |                              010 |                              101
+                 iSTATE3 |                              011 |                              100
+                 iSTATE2 |                              100 |                              011
+                 iSTATE1 |                              101 |                              010
+                 iSTATE0 |                              110 |                              001
+                  iSTATE |                              111 |                              000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'scroll_point_reg' using encoding 'sequential' in module 'Generate_Word'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                            00001 |                             1111
+                  iSTATE |                            00010 |                             1110
+                 iSTATE0 |                            00100 |                             1101
+                 iSTATE3 |                            01000 |                             1011
+*
+                 iSTATE2 |                            10000 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sseg_an_wire_reg' using encoding 'one-hot' in module 'Display_Key'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 604.832 ; gain = 397.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     27 Bit       Adders := 3     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 3     
+	  16 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 5     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Registers : 
+	               28 Bit    Registers := 2     
+	               27 Bit    Registers := 3     
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 21    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 2     
+	   2 Input     27 Bit        Muxes := 3     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 14    
+	   8 Input      6 Bit        Muxes := 24    
+	   9 Input      6 Bit        Muxes := 9     
+	   3 Input      6 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 8     
+	   4 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 4     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 27    
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module State_Machine_Wrapper 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module Button 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module button_input 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module Pattern_Gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module Trap 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     28 Bit       Adders := 1     
+	  16 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Registers : 
+	               28 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 2     
+Module Binary_to_BCD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 5     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                6 Bit    Registers := 4     
+	                4 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 1     
+Module Timer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+Module Game_Module 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module SSEG_Select 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 4     
+Module Game_State_Machine 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 2     
+Module button_fsm 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module End_Driver 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Word_Key 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      6 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 4     
+	   9 Input      6 Bit        Muxes := 3     
+Module Generate_Word 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                6 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+	   8 Input      6 Bit        Muxes := 4     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Display_Key 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
++---Registers : 
+	               18 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 604.832 ; gain = 397.379
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "dif_select/" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "button_module/LeftButton/control_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "button_module/centerButton/control_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "button_module/rightButton/control_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "game/NS" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Generate_Word_Init/to_display0" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Generate_Word_Init/scroll_point" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Generate_Word_Dif/to_display0" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Generate_Word_Dif/scroll_point" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Generate_Word_End/to_display0" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Generate_Word_End/scroll_point" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design State_Machine_Wrapper has unconnected port reset
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 604.832 ; gain = 397.379
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 604.832 ; gain = 397.379
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++----------------------+-----------------------+---------------+----------------+
+|Module Name           | RTL Object            | Depth x Width | Implemented As | 
++----------------------+-----------------------+---------------+----------------+
+|Display_Key           | sseg_cat              | 64x8          | LUT            | 
+|State_Machine_Wrapper | SSEG_Display/sseg_cat | 64x8          | LUT            | 
++----------------------+-----------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\actual_game_module/TrapSystem/clk_out_top_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\button_press_driver/initialize_game_reg )
+INFO: [Synth 8-3886] merging instance 'button_press_driver/init_word_select_reg[0]' (LD) to 'button_press_driver/init_word_select_reg[2]'
+INFO: [Synth 8-3886] merging instance 'button_press_driver/init_word_select_reg[1]' (LD) to 'button_press_driver/init_word_select_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\button_press_driver/init_word_select_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\end_state_driver/end_word_select_reg[2] )
+INFO: [Synth 8-3886] merging instance 'actual_game_module/ConvertToBCD/ones_reg[4]' (FDRE) to 'actual_game_module/ConvertToBCD/thousands_reg[4]'
+INFO: [Synth 8-3886] merging instance 'actual_game_module/ConvertToBCD/tens_reg[4]' (FDRE) to 'actual_game_module/ConvertToBCD/thousands_reg[4]'
+INFO: [Synth 8-3886] merging instance 'actual_game_module/ConvertToBCD/hundreds_reg[4]' (FDRE) to 'actual_game_module/ConvertToBCD/thousands_reg[4]'
+INFO: [Synth 8-3886] merging instance 'actual_game_module/ConvertToBCD/thousands_reg[4]' (FDRE) to 'actual_game_module/ConvertToBCD/hundreds_reg[5]'
+INFO: [Synth 8-3886] merging instance 'actual_game_module/ConvertToBCD/ones_reg[5]' (FDRE) to 'actual_game_module/ConvertToBCD/hundreds_reg[5]'
+INFO: [Synth 8-3886] merging instance 'actual_game_module/ConvertToBCD/tens_reg[5]' (FDRE) to 'actual_game_module/ConvertToBCD/hundreds_reg[5]'
+INFO: [Synth 8-3886] merging instance 'actual_game_module/ConvertToBCD/hundreds_reg[5]' (FDRE) to 'actual_game_module/ConvertToBCD/thousands_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\actual_game_module/ConvertToBCD/thousands_reg[5] )
+INFO: [Synth 8-3886] merging instance 'dif_select/difficulty_reg[0]' (LD) to 'dif_select/difficulty_reg[1]'
+INFO: [Synth 8-3886] merging instance 'dif_select/difficulty_reg[1]' (LD) to 'dif_select/difficulty_reg[2]'
+INFO: [Synth 8-3886] merging instance 'dif_select/difficulty_reg[2]' (LD) to 'dif_select/difficulty_reg[3]'
+INFO: [Synth 8-3886] merging instance 'dif_select/difficulty_reg[4]' (LD) to 'dif_select/difficulty_reg[5]'
+INFO: [Synth 8-3886] merging instance 'dif_select/difficulty_reg[5]' (LD) to 'dif_select/difficulty_reg[6]'
+INFO: [Synth 8-3886] merging instance 'dif_select/difficulty_reg[6]' (LD) to 'dif_select/difficulty_reg[7]'
+INFO: [Synth 8-3886] merging instance 'dif_select/difficulty_reg[8]' (LD) to 'dif_select/difficulty_reg[9]'
+INFO: [Synth 8-3886] merging instance 'dif_select/difficulty_reg[9]' (LD) to 'dif_select/difficulty_reg[10]'
+INFO: [Synth 8-3886] merging instance 'dif_select/difficulty_reg[10]' (LD) to 'dif_select/difficulty_reg[11]'
+INFO: [Synth 8-3886] merging instance 'dif_select/difficulty_reg[11]' (LD) to 'dif_select/difficulty_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dif_select/difficulty_reg[12]' (LD) to 'dif_select/difficulty_reg[13]'
+INFO: [Synth 8-3886] merging instance 'dif_select/difficulty_reg[13]' (LD) to 'dif_select/difficulty_reg[14]'
+INFO: [Synth 8-3886] merging instance 'dif_select/difficulty_reg[14]' (LD) to 'dif_select/difficulty_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Generate_Word_Init/to_display0_reg[0]' (FDE) to 'Generate_Word_Init/to_display0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Generate_Word_Init/to_display1_reg[0]' (FDE) to 'Generate_Word_Init/to_display1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Generate_Word_Init/to_display2_reg[0]' (FDE) to 'Generate_Word_Init/to_display2_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Generate_Word_Init/to_display3_reg[0]' (FDE) to 'Generate_Word_Init/to_display3_reg[4]'
+WARNING: [Synth 8-3332] Sequential element (button_press_driver/initialize_game_reg) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (button_press_driver/init_word_select_reg[2]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (button_press_driver/init_word_select_reg[1]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (button_press_driver/init_word_select_reg[0]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (dif_select/difficulty_reg[14]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (dif_select/difficulty_reg[13]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (dif_select/difficulty_reg[12]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (dif_select/difficulty_reg[11]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (dif_select/difficulty_reg[10]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (dif_select/difficulty_reg[9]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (dif_select/difficulty_reg[8]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (dif_select/difficulty_reg[6]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (dif_select/difficulty_reg[5]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (dif_select/difficulty_reg[4]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (dif_select/difficulty_reg[2]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (dif_select/difficulty_reg[1]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (dif_select/difficulty_reg[0]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (end_state_driver/end_word_select_reg[2]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[27]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[26]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Generate_Word_Init/to_display0_reg[0]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Generate_Word_Init/to_display1_reg[0]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Generate_Word_Init/to_display2_reg[0]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Generate_Word_Init/to_display3_reg[0]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/ConvertToBCD/thousands_reg[4]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/ConvertToBCD/ones_reg[4]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/ConvertToBCD/tens_reg[4]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/ConvertToBCD/hundreds_reg[4]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/ConvertToBCD/hundreds_reg[5]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/ConvertToBCD/ones_reg[5]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/ConvertToBCD/tens_reg[5]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/ConvertToBCD/thousands_reg[5]) is unused and will be removed from module State_Machine_Wrapper.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\actual_game_module/TrapSystem/clk_out_flag_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\actual_game_module/CountdownTimer/out_of_time_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\actual_game_module/CountdownTimer/time_counter_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\end_state_driver/end_word_select_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\end_state_driver/end_word_select_reg[0] )
+INFO: [Synth 8-3886] merging instance 'actual_game_module/ConvertToBCD/binary_stored_reg[0]' (FDE) to 'actual_game_module/ConvertToBCD/binary_stored_reg[8]'
+INFO: [Synth 8-3886] merging instance 'actual_game_module/ConvertToBCD/binary_stored_reg[2]' (FDE) to 'actual_game_module/ConvertToBCD/binary_stored_reg[3]'
+INFO: [Synth 8-3886] merging instance 'actual_game_module/ConvertToBCD/binary_stored_reg[6]' (FDE) to 'actual_game_module/ConvertToBCD/binary_stored_reg[7]'
+INFO: [Synth 8-3886] merging instance 'actual_game_module/ConvertToBCD/binary_stored_reg[8]' (FDE) to 'actual_game_module/ConvertToBCD/binary_stored_reg[9]'
+INFO: [Synth 8-3886] merging instance 'actual_game_module/ConvertToBCD/binary_stored_reg[9]' (FDE) to 'actual_game_module/ConvertToBCD/binary_stored_reg[10]'
+INFO: [Synth 8-3886] merging instance 'actual_game_module/ConvertToBCD/binary_stored_reg[10]' (FDE) to 'actual_game_module/ConvertToBCD/binary_stored_reg[11]'
+INFO: [Synth 8-3886] merging instance 'Generate_Word_End/to_display1_reg[3]' (FDE) to 'Generate_Word_End/to_display0_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Generate_Word_End/to_display2_reg[3]' (FDE) to 'Generate_Word_End/to_display1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Generate_Word_End/to_display3_reg[3]' (FDE) to 'Generate_Word_End/to_display2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Generate_Word_End/to_display1_reg[4]' (FDE) to 'Generate_Word_End/to_display3_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Generate_Word_End/to_display0_reg[4]' (FDE) to 'Generate_Word_End/to_display2_reg[2]'
+WARNING: [Synth 8-3332] Sequential element (button_press_driver/difficulty_select_reg[2]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (button_press_driver/difficulty_select_reg[1]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (button_press_driver/difficulty_select_reg[0]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (end_state_driver/end_word_select_reg[1]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (end_state_driver/end_word_select_reg[0]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/prev_error_sum_reg[4]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/prev_error_sum_reg[3]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/prev_error_sum_reg[2]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/prev_error_sum_reg[1]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/prev_error_sum_reg[0]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[25]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[24]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[23]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[22]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[21]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[20]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[19]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[18]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[17]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[16]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[15]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[14]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[13]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[12]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[11]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[10]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[9]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[8]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[7]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[6]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[5]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[4]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[3]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[2]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[1]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_top_reg[0]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[27]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[26]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[25]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[24]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[23]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[22]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[21]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[20]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[19]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[18]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[17]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[16]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[15]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[14]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[13]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[12]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[11]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[10]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[9]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[8]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[7]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[6]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[5]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[4]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[3]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[2]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[1]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_count_reg[0]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/TrapSystem/clk_out_flag_reg) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/CountdownTimer/time_counter_reg[4]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/ConvertToBCD/binary_stored_reg[10]) is unused and will be removed from module State_Machine_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (actual_game_module/ConvertToBCD/binary_stored_reg[9]) is unused and will be removed from module State_Machine_Wrapper.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 604.832 ; gain = 397.379
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 604.832 ; gain = 397.379
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:59 . Memory (MB): peak = 604.832 ; gain = 397.379
+---------------------------------------------------------------------------------
+Found timing loop:
+     0: i_23/i_5/O (GATE_2_2)
+     1: i_23/i_5/I1 (GATE_2_2)
+     2: i_23/i_6/O (GATE_2_14_OR)
+     3: i_23/i_6/I1 (GATE_2_14_OR)
+     4: i_23/i_5/O (GATE_2_2)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Trap.vhd:42]
+Found timing loop:
+     0: i_23/i_2/O (GATE_2_2)
+     1: i_23/i_2/I0 (GATE_2_2)
+     2: i_23/i_1/O (GATE_2_4)
+     3: i_23/i_1/I0 (GATE_2_4)
+     4: i_23/i_3/O (BUF)
+     5: i_23/i_3/I (BUF)
+     6: i_23/i_2/O (GATE_2_2)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Trap.vhd:42]
+Found timing loop:
+     0: i_23/i_417/O (INV)
+     1: i_23/i_417/I (INV)
+     2: i_23/i_68/O (GATE_2_8_AND)
+     3: i_23/i_68/I0 (GATE_2_8_AND)
+     4: i_23/i_417/O (INV)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Trap.vhd:42]
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_23/i_5/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_23/i_417/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_23/i_3/O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'i_23/i_417' with timing assertions on output pin 'O'
+WARNING: [Synth 8-264] enable of latch \dif_select/difficulty_reg[3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dif_select/difficulty_reg[3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dif_select/difficulty_reg[7]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dif_select/difficulty_reg[7]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dif_select/difficulty_reg[15]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dif_select/difficulty_reg[15]  is always disabled
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'i_23/i_417' with timing assertions on output pin 'O'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dif_select/word_select_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dif_select/word_select_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dif_select/word_select_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dif_select/difficulty_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dif_select/difficulty_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dif_select/difficulty_reg[15] )
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'i_23/i_417' with timing assertions on output pin 'O'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\actual_game_module/CountdownTimer/time_counter_reg[1]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\actual_game_module/CountdownTimer/time_counter_reg[3]_LDC )
+INFO: [Synth 8-3886] merging instance 'actual_game_module/ConvertToBCD/binary_stored_reg[4]' (FDE) to 'actual_game_module/ConvertToBCD/binary_stored_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\actual_game_module/CountdownTimer/time_counter_reg[5]_LDC )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\actual_game_module/CountdownTimer/time_counter_reg[7]_LDC )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\actual_game_module/CountdownTimer/time_counter_reg[11]_LDC )
+INFO: [Synth 8-3886] merging instance 'Generate_Word_Dif/to_display1_reg[3]' (FDE) to 'Generate_Word_Dif/to_display2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Generate_Word_Dif/to_display2_reg[3]' (FDE) to 'Generate_Word_Dif/to_display3_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Generate_Word_Dif/to_display0_reg[3]' (FDE) to 'Generate_Word_Dif/to_display1_reg[1]'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'i_23/i_417' with timing assertions on output pin 'O'
+INFO: [Synth 8-3886] merging instance 'actual_game_module/ConvertToBCD/binary_stored_reg[3]' (FDE) to 'actual_game_module/ConvertToBCD/binary_stored_reg[1]'
+INFO: [Synth 8-3886] merging instance 'actual_game_module/ConvertToBCD/binary_stored_reg[5]' (FDE) to 'actual_game_module/ConvertToBCD/binary_stored_reg[7]'
+INFO: [Synth 8-3886] merging instance 'actual_game_module/ConvertToBCD/binary_stored_reg[7]' (FDE) to 'actual_game_module/ConvertToBCD/binary_stored_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\actual_game_module/ConvertToBCD/binary_stored_reg[11] )
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'i_23/i_417' with timing assertions on output pin 'O'
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:00 . Memory (MB): peak = 604.832 ; gain = 397.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'i_162' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'i_162' with timing assertions on output pin 'O'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:01:01 . Memory (MB): peak = 604.832 ; gain = 397.379
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:45 ; elapsed = 00:01:01 . Memory (MB): peak = 604.832 ; gain = 397.379
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:45 ; elapsed = 00:01:01 . Memory (MB): peak = 604.832 ; gain = 397.379
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:01:02 . Memory (MB): peak = 604.832 ; gain = 397.379
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:01:02 . Memory (MB): peak = 604.832 ; gain = 397.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:01:02 . Memory (MB): peak = 604.832 ; gain = 397.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:01:02 . Memory (MB): peak = 604.832 ; gain = 397.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:01:02 . Memory (MB): peak = 604.832 ; gain = 397.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:01:02 . Memory (MB): peak = 604.832 ; gain = 397.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    35|
+|3     |LUT1   |   137|
+|4     |LUT2   |    30|
+|5     |LUT3   |    45|
+|6     |LUT4   |    30|
+|7     |LUT5   |    25|
+|8     |LUT6   |    38|
+|9     |FDCE   |     2|
+|10    |FDPE   |     2|
+|11    |FDRE   |   233|
+|12    |FDSE   |    24|
+|13    |LDC    |     2|
+|14    |IBUF   |     1|
+|15    |OBUF   |    28|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------------+-------------------+------+
+|      |Instance               |Module             |Cells |
++------+-----------------------+-------------------+------+
+|1     |top                    |                   |   633|
+|2     |  Generate_Word_Dif    |Generate_Word      |    96|
+|3     |  Generate_Word_End    |Generate_Word_0    |   112|
+|4     |  Generate_Word_Init   |Generate_Word_1    |   103|
+|5     |  SSEG_Display         |Display_Key        |    84|
+|6     |  Seven_Segment_Driver |SSEG_Select        |    30|
+|7     |  actual_game_module   |Game_Module        |    79|
+|8     |    ConvertToBCD       |Binary_to_BCD      |    79|
+|9     |  game                 |Game_State_Machine |    99|
++------+-----------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:01:02 . Memory (MB): peak = 604.832 ; gain = 397.379
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 243 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:47 . Memory (MB): peak = 604.832 ; gain = 103.359
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:01:02 . Memory (MB): peak = 604.832 ; gain = 397.379
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LDC => LDCE: 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+172 Infos, 147 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:01:00 . Memory (MB): peak = 604.832 ; gain = 397.379
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 604.832 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 07 15:10:29 2016...

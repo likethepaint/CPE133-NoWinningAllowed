@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Key.vhd"
+vhdl xil_defaultlib  "../../../Seven_Seg_Display_Easy.srcs/sources_1/new/Word_Key.vhd"
+vhdl xil_defaultlib  "../../../Seven_Seg_Display_Easy.srcs/sources_1/new/Display_Source.vhd"
+
+# Do not sort compile order
+nosort

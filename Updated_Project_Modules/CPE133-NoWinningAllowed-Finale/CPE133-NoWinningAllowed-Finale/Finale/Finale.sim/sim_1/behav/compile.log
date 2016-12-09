@@ -1,0 +1,36 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Word_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Word_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Button.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Button
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Trap.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Trap
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Timer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Timer
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Pattern_Gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pattern_Gen
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Comparator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Comparator
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Binary_to_BCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Binary_to_BCD
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/End_Driver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity End_Driver
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SSEG_Select
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_State_Machine.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Game_State_Machine
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Generate_Word
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_splitter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_splitter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_input.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_input
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_fsm
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Game_Module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity State_Machine_Wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.srcs/sim_1/new/sim_hell.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sim_hell

@@ -1,0 +1,1039 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Dec 07 14:03:17 2016
+# Process ID: 7564
+# Current directory: C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3136 C:\Users\ckenner\Desktop\CPE133-NoWinningAllowed-Finale\CPE133-NoWinningAllowed-Finale\Finale\Finale.xpr
+# Log file: C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/vivado.log
+# Journal file: C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale'
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 725.832 ; gain = 77.566
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Dec 07 14:04:48 2016] Launched impl_1...
+Run output will be captured here: C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Dec 07 14:08:13 2016] Launched synth_1...
+Run output will be captured here: C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.runs/synth_1/runme.log
+[Wed Dec 07 14:08:13 2016] Launched impl_1...
+Run output will be captured here: C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.2
+  **** Build date : Jun  2 2016-16:57:03
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 754.008 ; gain = 0.000
+open_hw_target
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+disconnect_hw_server localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.2
+  **** Build date : Jun  2 2016-16:57:03
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 771.789 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183713429A
+set_property PROGRAM.FILE {C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.runs/impl_1/State_Machine_Wrapper.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.runs/impl_1/State_Machine_Wrapper.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 851.590 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Dec 07 14:23:58 2016] Launched synth_1...
+Run output will be captured here: C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.runs/synth_1/runme.log
+[Wed Dec 07 14:23:58 2016] Launched impl_1...
+Run output will be captured here: C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Dec 07 14:31:04 2016] Launched synth_1...
+Run output will be captured here: C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.runs/synth_1/runme.log
+[Wed Dec 07 14:31:04 2016] Launched impl_1...
+Run output will be captured here: C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.runs/impl_1/State_Machine_Wrapper.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 872.270 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_hw
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: State_Machine_Wrapper
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:03:17 ; elapsed = 00:37:08 . Memory (MB): peak = 921.219 ; gain = 713.930
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'State_Machine_Wrapper' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:24]
+WARNING: [Synth 8-614] signal 'pattern_adj' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:152]
+INFO: [Synth 8-3491] module 'button_splitter' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_splitter.vhd:34' bound to instance 'button_module' of component 'button_splitter' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'button_splitter' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_splitter.vhd:40]
+INFO: [Synth 8-3491] module 'Button' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Button.vhd:17' bound to instance 'LeftButton' of component 'Button' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_splitter.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'Button' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Button.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'Button' (1#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Button.vhd:23]
+INFO: [Synth 8-3491] module 'Button' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Button.vhd:17' bound to instance 'centerButton' of component 'Button' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_splitter.vhd:53]
+INFO: [Synth 8-3491] module 'Button' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Button.vhd:17' bound to instance 'rightButton' of component 'Button' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_splitter.vhd:54]
+WARNING: [Synth 8-614] signal 'sample2' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_splitter.vhd:56]
+WARNING: [Synth 8-614] signal 'sample1' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_splitter.vhd:56]
+WARNING: [Synth 8-614] signal 'sample3' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_splitter.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'button_splitter' (2#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_splitter.vhd:40]
+INFO: [Synth 8-3491] module 'button_input' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_input.vhd:34' bound to instance 'button_press_driver' of component 'button_input' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'button_input' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_input.vhd:44]
+WARNING: [Synth 8-614] signal 'current_state' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_input.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'button_input' (3#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_input.vhd:44]
+INFO: [Synth 8-3491] module 'Game_Module' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Module.vhd:21' bound to instance 'actual_game_module' of component 'Game_Module' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:174]
+INFO: [Synth 8-638] synthesizing module 'Game_Module' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Module.vhd:36]
+INFO: [Synth 8-3491] module 'Pattern_Gen' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Pattern_Gen.vhd:22' bound to instance 'PatternSystem' of component 'Pattern_Gen' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Module.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'Pattern_Gen' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Pattern_Gen.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'Pattern_Gen' (4#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Pattern_Gen.vhd:28]
+INFO: [Synth 8-3491] module 'Trap' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Trap.vhd:18' bound to instance 'TrapSystem' of component 'Trap' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Module.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'Trap' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Trap.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'Trap' (5#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Trap.vhd:27]
+INFO: [Synth 8-3491] module 'Comparator' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Comparator.vhd:21' bound to instance 'CompareSystem' of component 'Comparator' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Module.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'Comparator' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Comparator.vhd:29]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Comparator.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Comparator' (6#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Comparator.vhd:29]
+INFO: [Synth 8-3491] module 'Binary_to_BCD' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Binary_to_BCD.vhd:15' bound to instance 'ConvertToBCD' of component 'Binary_to_BCD' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Module.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'Binary_to_BCD' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Binary_to_BCD.vhd:25]
+WARNING: [Synth 8-3848] Net sseg_enable in module/entity Binary_to_BCD does not have driver. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Binary_to_BCD.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'Binary_to_BCD' (7#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Binary_to_BCD.vhd:25]
+INFO: [Synth 8-3491] module 'Timer' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Timer.vhd:34' bound to instance 'CountdownTimer' of component 'Timer' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Module.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'Timer' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Timer.vhd:42]
+WARNING: [Synth 8-614] signal 'difficulty' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Timer.vhd:52]
+WARNING: [Synth 8-614] signal 'easy' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Timer.vhd:52]
+WARNING: [Synth 8-614] signal 'medium' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Timer.vhd:52]
+WARNING: [Synth 8-614] signal 'hard' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Timer.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'Timer' (8#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Timer.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Game_Module' (9#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Module.vhd:36]
+INFO: [Synth 8-3491] module 'SSEG_Select' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd:13' bound to instance 'Seven_Segment_Driver' of component 'SSEG_Select' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'SSEG_Select' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd:37]
+WARNING: [Synth 8-614] signal 'init_word0' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd:40]
+WARNING: [Synth 8-614] signal 'init_word1' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd:40]
+WARNING: [Synth 8-614] signal 'init_word2' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd:40]
+WARNING: [Synth 8-614] signal 'init_word3' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd:40]
+WARNING: [Synth 8-614] signal 'dif_word0' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd:40]
+WARNING: [Synth 8-614] signal 'dif_word1' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd:40]
+WARNING: [Synth 8-614] signal 'dif_word2' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd:40]
+WARNING: [Synth 8-614] signal 'dif_word3' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd:40]
+WARNING: [Synth 8-614] signal 'game_word0' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd:40]
+WARNING: [Synth 8-614] signal 'game_word1' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd:40]
+WARNING: [Synth 8-614] signal 'game_word2' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd:40]
+WARNING: [Synth 8-614] signal 'game_word3' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd:40]
+WARNING: [Synth 8-614] signal 'end_word0' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd:40]
+WARNING: [Synth 8-614] signal 'end_word1' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd:40]
+WARNING: [Synth 8-614] signal 'end_word2' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd:40]
+WARNING: [Synth 8-614] signal 'end_word3' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'SSEG_Select' (10#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd:37]
+INFO: [Synth 8-3491] module 'Game_State_Machine' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_State_Machine.vhd:34' bound to instance 'game' of component 'Game_State_Machine' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:214]
+INFO: [Synth 8-638] synthesizing module 'Game_State_Machine' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_State_Machine.vhd:45]
+INFO: [Synth 8-226] default block is never used [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_State_Machine.vhd:65]
+WARNING: [Synth 8-614] signal 'initialize_button_in' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_State_Machine.vhd:62]
+WARNING: [Synth 8-614] signal 'selected_difficulty' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_State_Machine.vhd:62]
+WARNING: [Synth 8-614] signal 'game_over' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_State_Machine.vhd:62]
+WARNING: [Synth 8-3848] Net activate_difficulty_select in module/entity Game_State_Machine does not have driver. [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_State_Machine.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Game_State_Machine' (11#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_State_Machine.vhd:45]
+INFO: [Synth 8-3491] module 'button_fsm' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_fsm.vhd:6' bound to instance 'dif_select' of component 'button_fsm' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:222]
+INFO: [Synth 8-638] synthesizing module 'button_fsm' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_fsm.vhd:17]
+WARNING: [Synth 8-614] signal 'choice' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_fsm.vhd:39]
+WARNING: [Synth 8-614] signal 'easy_bitmask' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_fsm.vhd:39]
+WARNING: [Synth 8-614] signal 'medium_bitmask' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_fsm.vhd:39]
+WARNING: [Synth 8-614] signal 'hard_bitmask' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_fsm.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'button_fsm' (12#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_fsm.vhd:17]
+INFO: [Synth 8-3491] module 'End_Driver' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/End_Driver.vhd:5' bound to instance 'end_state_driver' of component 'End_Driver' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:232]
+INFO: [Synth 8-638] synthesizing module 'End_Driver' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/End_Driver.vhd:12]
+WARNING: [Synth 8-614] signal 'win' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/End_Driver.vhd:16]
+WARNING: [Synth 8-614] signal 'lose' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/End_Driver.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'End_Driver' (13#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/End_Driver.vhd:12]
+INFO: [Synth 8-3491] module 'Generate_Word' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd:5' bound to instance 'Generate_Word_Init' of component 'Generate_Word' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:244]
+INFO: [Synth 8-638] synthesizing module 'Generate_Word' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd:15]
+INFO: [Synth 8-3491] module 'Word_Key' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Word_Key.vhd:5' bound to instance 'Key_Map' of component 'Word_Key' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'Word_Key' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Word_Key.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'Word_Key' (14#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Word_Key.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'Generate_Word' (15#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd:15]
+INFO: [Synth 8-3491] module 'Generate_Word' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd:5' bound to instance 'Generate_Word_Dif' of component 'Generate_Word' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:252]
+INFO: [Synth 8-3491] module 'Generate_Word' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd:5' bound to instance 'Generate_Word_End' of component 'Generate_Word' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:260]
+INFO: [Synth 8-3491] module 'Display_Key' declared at 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd:16' bound to instance 'SSEG_Display' of component 'Display_Key' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:268]
+INFO: [Synth 8-638] synthesizing module 'Display_Key' [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd:27]
+WARNING: [Synth 8-614] signal 'cen' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd:69]
+WARNING: [Synth 8-614] signal 'current_input' is read in the process but is not in the sensitivity list [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'Display_Key' (16#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'State_Machine_Wrapper' (17#1) [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd:24]
+WARNING: [Synth 8-3331] design Generate_Word has unconnected port cen
+WARNING: [Synth 8-3331] design Game_State_Machine has unconnected port activate_difficulty_select
+WARNING: [Synth 8-3331] design Game_State_Machine has unconnected port reset
+WARNING: [Synth 8-3331] design Binary_to_BCD has unconnected port sseg_enable
+WARNING: [Synth 8-3331] design button_input has unconnected port clk
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:03:19 ; elapsed = 00:37:10 . Memory (MB): peak = 954.180 ; gain = 746.891
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:19 ; elapsed = 00:37:10 . Memory (MB): peak = 954.180 ; gain = 746.891
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Test_Const.xdc]
+Finished Parsing XDC File [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Test_Const.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:03:35 ; elapsed = 00:37:29 . Memory (MB): peak = 1245.258 ; gain = 1037.969
+59 Infos, 44 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1245.258 ; gain = 372.988
+close_design
+file mkdir C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.srcs/sim_1/new/sim_hell.vhd w ]
+add_files -fileset sim_1 C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.srcs/sim_1/new/sim_hell.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'sim_hell' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj sim_hell_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Word_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Word_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Button.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Button
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Trap.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Trap
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Timer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Timer
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Pattern_Gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pattern_Gen
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Comparator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Comparator
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Binary_to_BCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Binary_to_BCD
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/End_Driver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity End_Driver
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SSEG_Select
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_State_Machine.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Game_State_Machine
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Generate_Word
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_splitter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_splitter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_input.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_input
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_fsm
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Game_Module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity State_Machine_Wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.srcs/sim_1/new/sim_hell.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sim_hell
+ERROR: [VRFC 10-719] formal port/generic <debug_leads_input> is not declared in <state_machine_wrapper> [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.srcs/sim_1/new/sim_hell.vhd:63]
+ERROR: [VRFC 10-704] formal debug_leds_input has no actual or default value [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.srcs/sim_1/new/sim_hell.vhd:61]
+ERROR: [VRFC 10-486] character '0' is not in type std_logic_vector [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.srcs/sim_1/new/sim_hell.vhd:73]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.srcs/sim_1/new/sim_hell.vhd:38]
+INFO: [VRFC 10-240] VHDL file C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.srcs/sim_1/new/sim_hell.vhd ignored due to errors
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1245.258 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1245.258 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'sim_hell' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj sim_hell_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Word_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Word_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Button.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Button
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Trap.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Trap
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Timer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Timer
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Pattern_Gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pattern_Gen
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Comparator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Comparator
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Binary_to_BCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Binary_to_BCD
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/End_Driver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity End_Driver
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SSEG_Select
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_State_Machine.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Game_State_Machine
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Generate_Word
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_splitter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_splitter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_input.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_input
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_fsm
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Game_Module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity State_Machine_Wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.srcs/sim_1/new/sim_hell.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sim_hell
+ERROR: [VRFC 10-486] character '0' is not in type std_logic_vector [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.srcs/sim_1/new/sim_hell.vhd:73]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.srcs/sim_1/new/sim_hell.vhd:38]
+INFO: [VRFC 10-240] VHDL file C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.srcs/sim_1/new/sim_hell.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'sim_hell' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj sim_hell_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Word_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Word_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Button.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Button
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Trap.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Trap
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Timer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Timer
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Pattern_Gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pattern_Gen
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Comparator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Comparator
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Binary_to_BCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Binary_to_BCD
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/End_Driver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity End_Driver
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SSEG_Select
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_State_Machine.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Game_State_Machine
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Generate_Word
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_splitter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_splitter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_input.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_input
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_fsm
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Game_Module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity State_Machine_Wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.srcs/sim_1/new/sim_hell.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sim_hell
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto a6de33d6223f433e8e1ec502fcb7cc1b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_hell_behav xil_defaultlib.sim_hell -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling architecture arch_button of entity xil_defaultlib.Button [button_default]
+Compiling architecture behavioral of entity xil_defaultlib.button_splitter [button_splitter_default]
+Compiling architecture behavioral of entity xil_defaultlib.button_input [button_input_default]
+Compiling architecture arch_pattern_gen of entity xil_defaultlib.Pattern_Gen [pattern_gen_default]
+Compiling architecture arch_trap of entity xil_defaultlib.Trap [trap_default]
+Compiling architecture arch_comparator of entity xil_defaultlib.Comparator [comparator_default]
+Compiling architecture arch_binary_to_bcd of entity xil_defaultlib.Binary_to_BCD [binary_to_bcd_default]
+Compiling architecture arch_timer of entity xil_defaultlib.Timer [timer_default]
+Compiling architecture arch_game_module of entity xil_defaultlib.Game_Module [game_module_default]
+Compiling architecture arch_sseg_select of entity xil_defaultlib.SSEG_Select [sseg_select_default]
+Compiling architecture behavioral of entity xil_defaultlib.Game_State_Machine [game_state_machine_default]
+Compiling architecture behavioral of entity xil_defaultlib.button_fsm [button_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.End_Driver [end_driver_default]
+Compiling architecture behavioral of entity xil_defaultlib.Word_Key [word_key_default]
+Compiling architecture behavioral of entity xil_defaultlib.Generate_Word [generate_word_default]
+Compiling architecture behavioral of entity xil_defaultlib.Display_Key [display_key_default]
+Compiling architecture behavioral of entity xil_defaultlib.State_Machine_Wrapper [state_machine_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.sim_hell
+Built simulation snapshot sim_hell_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.sim/sim_1/behav/xsim.dir/sim_hell_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Dec 07 14:51:03 2016...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1245.258 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_hell_behav -key {Behavioral:sim_1:Functional:sim_hell} -tclbatch {sim_hell.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source sim_hell.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_hell_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 1245.258 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 20 ms
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1245.258 ; gain = 0.000
+relaunch_sim
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'sim_hell' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj sim_hell_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Word_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Word_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Button.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Button
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Trap.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Trap
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Timer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Timer
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Pattern_Gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pattern_Gen
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Comparator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Comparator
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Binary_to_BCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Binary_to_BCD
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/End_Driver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity End_Driver
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SSEG_Select
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_State_Machine.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Game_State_Machine
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Generate_Word
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_splitter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_splitter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_input.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_input
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_fsm
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Game_Module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity State_Machine_Wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.srcs/sim_1/new/sim_hell.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sim_hell
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto a6de33d6223f433e8e1ec502fcb7cc1b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_hell_behav xil_defaultlib.sim_hell -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling architecture arch_button of entity xil_defaultlib.Button [button_default]
+Compiling architecture behavioral of entity xil_defaultlib.button_splitter [button_splitter_default]
+Compiling architecture behavioral of entity xil_defaultlib.button_input [button_input_default]
+Compiling architecture arch_pattern_gen of entity xil_defaultlib.Pattern_Gen [pattern_gen_default]
+Compiling architecture arch_trap of entity xil_defaultlib.Trap [trap_default]
+Compiling architecture arch_comparator of entity xil_defaultlib.Comparator [comparator_default]
+Compiling architecture arch_binary_to_bcd of entity xil_defaultlib.Binary_to_BCD [binary_to_bcd_default]
+Compiling architecture arch_timer of entity xil_defaultlib.Timer [timer_default]
+Compiling architecture arch_game_module of entity xil_defaultlib.Game_Module [game_module_default]
+Compiling architecture arch_sseg_select of entity xil_defaultlib.SSEG_Select [sseg_select_default]
+Compiling architecture behavioral of entity xil_defaultlib.Game_State_Machine [game_state_machine_default]
+Compiling architecture behavioral of entity xil_defaultlib.button_fsm [button_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.End_Driver [end_driver_default]
+Compiling architecture behavioral of entity xil_defaultlib.Word_Key [word_key_default]
+Compiling architecture behavioral of entity xil_defaultlib.Generate_Word [generate_word_default]
+Compiling architecture behavioral of entity xil_defaultlib.Display_Key [display_key_default]
+Compiling architecture behavioral of entity xil_defaultlib.State_Machine_Wrapper [state_machine_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.sim_hell
+Built simulation snapshot sim_hell_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1245.258 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1245.258 ; gain = 0.000
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:17 . Memory (MB): peak = 1245.258 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 20 ms
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1245.258 ; gain = 0.000
+run 20 ms
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1245.258 ; gain = 0.000
+add_bp {C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd} 49
+run 20 ms
+Stopped at time : 40000005 ns : File "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd" Line 49
+add_bp {C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd} 51
+run 20 ms
+Stopped at time : 40000005 ns : File "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd" Line 49
+run 20 ms
+Stopped at time : 40000005 ns : File "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd" Line 49
+remove_bps -file {C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd} -line 49
+run 20 ms
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1245.258 ; gain = 0.000
+relaunch_sim
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'sim_hell' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj sim_hell_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Word_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Word_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Button.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Button
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Trap.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Trap
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Timer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Timer
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Pattern_Gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pattern_Gen
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Comparator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Comparator
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Binary_to_BCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Binary_to_BCD
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/End_Driver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity End_Driver
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SSEG_Select
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_State_Machine.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Game_State_Machine
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Generate_Word
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_splitter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_splitter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_input.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_input
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_fsm
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Game_Module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity State_Machine_Wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.srcs/sim_1/new/sim_hell.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sim_hell
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto a6de33d6223f433e8e1ec502fcb7cc1b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_hell_behav xil_defaultlib.sim_hell -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling architecture arch_button of entity xil_defaultlib.Button [button_default]
+Compiling architecture behavioral of entity xil_defaultlib.button_splitter [button_splitter_default]
+Compiling architecture behavioral of entity xil_defaultlib.button_input [button_input_default]
+Compiling architecture arch_pattern_gen of entity xil_defaultlib.Pattern_Gen [pattern_gen_default]
+Compiling architecture arch_trap of entity xil_defaultlib.Trap [trap_default]
+Compiling architecture arch_comparator of entity xil_defaultlib.Comparator [comparator_default]
+Compiling architecture arch_binary_to_bcd of entity xil_defaultlib.Binary_to_BCD [binary_to_bcd_default]
+Compiling architecture arch_timer of entity xil_defaultlib.Timer [timer_default]
+Compiling architecture arch_game_module of entity xil_defaultlib.Game_Module [game_module_default]
+Compiling architecture arch_sseg_select of entity xil_defaultlib.SSEG_Select [sseg_select_default]
+Compiling architecture behavioral of entity xil_defaultlib.Game_State_Machine [game_state_machine_default]
+Compiling architecture behavioral of entity xil_defaultlib.button_fsm [button_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.End_Driver [end_driver_default]
+Compiling architecture behavioral of entity xil_defaultlib.Word_Key [word_key_default]
+Compiling architecture behavioral of entity xil_defaultlib.Generate_Word [generate_word_default]
+Compiling architecture behavioral of entity xil_defaultlib.Display_Key [display_key_default]
+Compiling architecture behavioral of entity xil_defaultlib.State_Machine_Wrapper [state_machine_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.sim_hell
+Built simulation snapshot sim_hell_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1245.258 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1245.258 ; gain = 0.000
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+Stopped at time : 10 ns : File "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd" Line 51
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 1245.258 ; gain = 0.000
+run 20 ms
+Stopped at time : 10 ns : File "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd" Line 51
+remove_bps -file {C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd} -line 51
+add_bp {C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd} 52
+run 20 ms
+Stopped at time : 50010 ns : File "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd" Line 52
+run 20 ms
+Stopped at time : 50010 ns : File "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd" Line 52
+remove_bps -file {C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd} -line 52
+run 20 ms
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1245.258 ; gain = 0.000
+add_wave {{/sim_hell/UUT/Generate_Word_Init}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 20 ms
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1245.258 ; gain = 0.000
+add_bp {C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd} 42
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 20 ms
+Stopped at time : 10 ns : File "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd" Line 42
+add_bp {C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd} 43
+remove_bps -file {C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd} -line 42
+run 20 ms
+Stopped at time : 2500010 ns : File "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd" Line 43
+add_bp {C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd} 72
+run 20 ms
+Stopped at time : 2500010 ns : File "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd" Line 72
+run 20 ms
+Stopped at time : 5000020 ns : File "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd" Line 43
+remove_bps -file {C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd} -line 43
+run 20 ms
+Stopped at time : 5000020 ns : File "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd" Line 72
+add_bp {C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd} 42
+run 20 ms
+Stopped at time : 7500030 ns : File "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd" Line 72
+remove_bps -file {C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd} -line 72
+run 20 ms
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1245.258 ; gain = 0.000
+remove_bps -file {C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd} -line 42
+add_bp {C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd} 44
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+relaunch_sim
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'sim_hell' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj sim_hell_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Word_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Word_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Button.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Button
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Trap.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Trap
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Timer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Timer
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Pattern_Gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pattern_Gen
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Comparator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Comparator
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Binary_to_BCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Binary_to_BCD
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/End_Driver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity End_Driver
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SSEG_Select
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_State_Machine.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Game_State_Machine
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Generate_Word
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_splitter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_splitter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_input.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_input
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_fsm
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Game_Module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity State_Machine_Wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.srcs/sim_1/new/sim_hell.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sim_hell
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto a6de33d6223f433e8e1ec502fcb7cc1b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_hell_behav xil_defaultlib.sim_hell -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling architecture arch_button of entity xil_defaultlib.Button [button_default]
+Compiling architecture behavioral of entity xil_defaultlib.button_splitter [button_splitter_default]
+Compiling architecture behavioral of entity xil_defaultlib.button_input [button_input_default]
+Compiling architecture arch_pattern_gen of entity xil_defaultlib.Pattern_Gen [pattern_gen_default]
+Compiling architecture arch_trap of entity xil_defaultlib.Trap [trap_default]
+Compiling architecture arch_comparator of entity xil_defaultlib.Comparator [comparator_default]
+Compiling architecture arch_binary_to_bcd of entity xil_defaultlib.Binary_to_BCD [binary_to_bcd_default]
+Compiling architecture arch_timer of entity xil_defaultlib.Timer [timer_default]
+Compiling architecture arch_game_module of entity xil_defaultlib.Game_Module [game_module_default]
+Compiling architecture arch_sseg_select of entity xil_defaultlib.SSEG_Select [sseg_select_default]
+Compiling architecture behavioral of entity xil_defaultlib.Game_State_Machine [game_state_machine_default]
+Compiling architecture behavioral of entity xil_defaultlib.button_fsm [button_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.End_Driver [end_driver_default]
+Compiling architecture behavioral of entity xil_defaultlib.Word_Key [word_key_default]
+Compiling architecture behavioral of entity xil_defaultlib.Generate_Word [generate_word_default]
+Compiling architecture behavioral of entity xil_defaultlib.Display_Key [display_key_default]
+Compiling architecture behavioral of entity xil_defaultlib.State_Machine_Wrapper [state_machine_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.sim_hell
+Built simulation snapshot sim_hell_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1245.258 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1245.258 ; gain = 0.000
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+Stopped at time : 10 ns : File "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd" Line 44
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1245.258 ; gain = 0.000
+run 20 ms
+Stopped at time : 20 ns : File "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd" Line 44
+remove_bps -file {C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd} -line 44
+add_bp {C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd} 45
+run 20 ms
+Stopped at time : 20 ns : File "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd" Line 45
+run 20 ms
+Stopped at time : 30 ns : File "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd" Line 45
+remove_bps -file {C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd} -line 45
+add_bp {C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd} 52
+run 20 ms
+Stopped at time : 50010 ns : File "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd" Line 52
+run 20 ms
+Stopped at time : 50010 ns : File "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd" Line 52
+run 20 ms
+Stopped at time : 50010 ns : File "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd" Line 52
+remove_bps -file {C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd} -line 52
+add_bp {C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd} 52
+run 20 ms
+Stopped at time : 100020 ns : File "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd" Line 52
+remove_bps -file {C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd} -line 52
+run 20 ms
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 1245.258 ; gain = 0.000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Dec 07 15:09:18 2016] Launched synth_1...
+Run output will be captured here: C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.runs/synth_1/runme.log
+[Wed Dec 07 15:09:18 2016] Launched impl_1...
+Run output will be captured here: C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.2
+  **** Build date : Jun  2 2016-16:57:03
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183713429A
+set_property PROGRAM.FILE {C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.runs/impl_1/State_Machine_Wrapper.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.runs/impl_1/State_Machine_Wrapper.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1245.258 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_hw
+relaunch_sim
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'sim_hell' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj sim_hell_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Word_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Word_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Button.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Button
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Trap.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Trap
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Timer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Timer
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Pattern_Gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pattern_Gen
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Comparator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Comparator
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Binary_to_BCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Binary_to_BCD
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/End_Driver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity End_Driver
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SSEG_Select
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_State_Machine.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Game_State_Machine
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Generate_Word
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_splitter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_splitter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_input.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_input
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_fsm
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Game_Module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity State_Machine_Wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.srcs/sim_1/new/sim_hell.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sim_hell
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto a6de33d6223f433e8e1ec502fcb7cc1b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_hell_behav xil_defaultlib.sim_hell -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling architecture arch_button of entity xil_defaultlib.Button [button_default]
+Compiling architecture behavioral of entity xil_defaultlib.button_splitter [button_splitter_default]
+Compiling architecture behavioral of entity xil_defaultlib.button_input [button_input_default]
+Compiling architecture arch_pattern_gen of entity xil_defaultlib.Pattern_Gen [pattern_gen_default]
+Compiling architecture arch_trap of entity xil_defaultlib.Trap [trap_default]
+Compiling architecture arch_comparator of entity xil_defaultlib.Comparator [comparator_default]
+Compiling architecture arch_binary_to_bcd of entity xil_defaultlib.Binary_to_BCD [binary_to_bcd_default]
+Compiling architecture arch_timer of entity xil_defaultlib.Timer [timer_default]
+Compiling architecture arch_game_module of entity xil_defaultlib.Game_Module [game_module_default]
+Compiling architecture arch_sseg_select of entity xil_defaultlib.SSEG_Select [sseg_select_default]
+Compiling architecture behavioral of entity xil_defaultlib.Game_State_Machine [game_state_machine_default]
+Compiling architecture behavioral of entity xil_defaultlib.button_fsm [button_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.End_Driver [end_driver_default]
+Compiling architecture behavioral of entity xil_defaultlib.Word_Key [word_key_default]
+Compiling architecture behavioral of entity xil_defaultlib.Generate_Word [generate_word_default]
+Compiling architecture behavioral of entity xil_defaultlib.Display_Key [display_key_default]
+Compiling architecture behavioral of entity xil_defaultlib.State_Machine_Wrapper [state_machine_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.sim_hell
+Built simulation snapshot sim_hell_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1245.258 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1245.258 ; gain = 0.000
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+ERROR: [Labtools 27-1832] create_wave_config not a supported tcl command in labtools hardware mode. Default wave configurations are automatically created when triggering an ILA core.
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 1245.258 ; gain = 0.000
+relaunch_sim
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'sim_hell' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj sim_hell_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Word_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Word_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Button.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Button
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Trap.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Trap
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Timer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Timer
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Pattern_Gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pattern_Gen
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Comparator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Comparator
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Binary_to_BCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Binary_to_BCD
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Key.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_Key
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/End_Driver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity End_Driver
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/SSEG_Select.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SSEG_Select
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_State_Machine.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Game_State_Machine
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Display_Word.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Generate_Word
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_splitter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_splitter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_input.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_input
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/button_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_fsm
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/Game_Module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Game_Module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/VHDL_FILES/State_Machine_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity State_Machine_Wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.srcs/sim_1/new/sim_hell.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sim_hell
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ckenner/Desktop/CPE133-NoWinningAllowed-Finale/CPE133-NoWinningAllowed-Finale/Finale/Finale.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto a6de33d6223f433e8e1ec502fcb7cc1b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_hell_behav xil_defaultlib.sim_hell -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling architecture arch_button of entity xil_defaultlib.Button [button_default]
+Compiling architecture behavioral of entity xil_defaultlib.button_splitter [button_splitter_default]
+Compiling architecture behavioral of entity xil_defaultlib.button_input [button_input_default]
+Compiling architecture arch_pattern_gen of entity xil_defaultlib.Pattern_Gen [pattern_gen_default]
+Compiling architecture arch_trap of entity xil_defaultlib.Trap [trap_default]
+Compiling architecture arch_comparator of entity xil_defaultlib.Comparator [comparator_default]
+Compiling architecture arch_binary_to_bcd of entity xil_defaultlib.Binary_to_BCD [binary_to_bcd_default]
+Compiling architecture arch_timer of entity xil_defaultlib.Timer [timer_default]
+Compiling architecture arch_game_module of entity xil_defaultlib.Game_Module [game_module_default]
+Compiling architecture arch_sseg_select of entity xil_defaultlib.SSEG_Select [sseg_select_default]
+Compiling architecture behavioral of entity xil_defaultlib.Game_State_Machine [game_state_machine_default]
+Compiling architecture behavioral of entity xil_defaultlib.button_fsm [button_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.End_Driver [end_driver_default]
+Compiling architecture behavioral of entity xil_defaultlib.Word_Key [word_key_default]
+Compiling architecture behavioral of entity xil_defaultlib.Generate_Word [generate_word_default]
+Compiling architecture behavioral of entity xil_defaultlib.Display_Key [display_key_default]
+Compiling architecture behavioral of entity xil_defaultlib.State_Machine_Wrapper [state_machine_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.sim_hell
+Built simulation snapshot sim_hell_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1245.258 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1245.258 ; gain = 0.000
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+ERROR: [Labtools 27-1832] create_wave_config not a supported tcl command in labtools hardware mode. Default wave configurations are automatically created when triggering an ILA core.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1245.258 ; gain = 0.000
