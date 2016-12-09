@@ -47,7 +47,7 @@ begin
            Letter_Out3 <= "111111";
            Letter_Out2 <= "111111";
            Letter_Out1 <= "111111";
-        elsif(bin_in = "011") then--medium
+        elsif(bin_in = "011") then--fair
            Letter_Out8 <= "001111";
            Letter_Out7 <= "001010";
            Letter_Out6 <= "010010";
