@@ -1,3 +1,13 @@
+----------------------------------------------
+-- Project : CPE 133 Final Project
+
+-- Module Name : Word_Key
+-- Authors : Collin Kenner, Brett Glidden
+
+-- Description : converts word selects into words
+--      that can be driven by the seven segment
+----------------------------------------------
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 

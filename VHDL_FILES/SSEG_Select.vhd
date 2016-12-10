@@ -1,14 +1,18 @@
+----------------------------------------------
+-- Project : CPE 133 Final Project
+
+-- Module Name : SSEG_Select
+-- Authors : Collin Kenner, Brett Glidden
+
+-- Description : determines which sseg_out from which
+--      module to display based on the current state
+----------------------------------------------
+
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
 use IEEE.NUMERIC_STD.ALL;
 
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity SSEG_Select is
     Port (clk : in STD_LOGIC;
@@ -67,26 +71,5 @@ begin
                 to_display2 <= "001110"; -- E
                 to_display3 <= "111111"; -- nothing
             end if;
-            --if ((state AND "0001") = "0001") then
-                --to_display0 <= "000001";
-            --else
-                --to_display0 <= "000000";
-            --end if;
-            --if ((state AND "0010") = "0010") then
-                --to_display1 <= "000001";
-            --else
-                --to_display1 <= "000000";
-            --end if;
-            --if ((state AND "0100") = "0100") then
-                --to_display2 <= "000001";
-            --else
-                --to_display2 <= "000000";
-            --end if;
-            --if ((state AND "1000") = "1000") then
-                --to_display3 <= "000001";
-            --else
-                --to_display3 <= "000000";
-            --end if;
-        
     end process;    
 end arch_SSEG_Select;

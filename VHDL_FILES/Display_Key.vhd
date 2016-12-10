@@ -1,12 +1,16 @@
-----------------------------------------------------------------------------------
---Seven Seg Display output key
--- by Collin kenner and Brett Glidden
---This device takes in binary inputs from several different modules in the device
---depending on the input value the seven seg then displays a word
---rather than actually send over the 48 bit word bus we opted to just have the key values map to 
---the desired output words.
-----------------------------------------------------------------------------------
+----------------------------------------------
+-- Project : CPE 133 Final Project
 
+-- Module Name : Display_Key 
+-- Authors : Collin Kenner, Brett Glidden
+
+-- Description : This device takes in binary inputs from 
+--      several different modules in the device depending 
+--      on the input value the seven seg then displays a word
+--      rather than actually send over the 48 bit word bus 
+--      we opted to just have the key values map to 
+--      the desired output words.
+----------------------------------------------
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;

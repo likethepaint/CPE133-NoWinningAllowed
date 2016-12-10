@@ -1,9 +1,12 @@
-----------------------------------------------------------------------------------
--- CPE 133 Final Project
--- Collin Kenner, Brett Glidden
+----------------------------------------------
+-- Project : CPE 133 Final Project
 
--- Module: Binary to BCD Converter
-----------------------------------------------------------------------------------
+-- Module Name : Binary_To_BCD
+-- Authors : Collin Kenner, Brett Glidden
+
+-- Description : converts timer countdown value into
+--      BCD values to display on the seven segment
+----------------------------------------------
 
 
 library IEEE;
@@ -12,6 +15,14 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 -- Setup 12 bit binary to BCD converter entity
+-- Inputs 
+--      clk : 100 MHz Basys-3 clock
+--      binary_in : current value of the countdown timer in seconds
+-- Outputs
+--      ones : the ones place of the countdown in BCD
+--      tens : the tens place of the countdown in BCD
+--      hundreds : the hundreds place of the countdown in BCD
+--      thousands : the thousands place of the countdown in BCD
 entity Binary_to_BCD is
     Port (clk : in STD_LOGIC;
           binary_in : STD_LOGIC_VECTOR(11 downto 0);
@@ -23,11 +34,15 @@ end Binary_to_BCD;
 
 architecture arch_Binary_to_BCD of Binary_to_BCD is
 
+-- Since BCD conversion takes multiple clock cycles and requires manipulation of inputs
+-- store the value of binary_in to manipulate and compare on new changes
 signal binary_stored : STD_LOGIC_VECTOR(11 downto 0) := "000000000000";
 
 begin
 
+    -- Convert the value on binary_in to BCD
     convertBinary : process (clk)
+        -- Algorithm requires ones, tens, hundreds, thousands to change inside process block
         variable ones_tmp: STD_LOGIC_VECTOR(3 downto 0) := "0000";
         variable tens_tmp: STD_LOGIC_VECTOR(3 downto 0) := "0000";
         variable hundreds_tmp: STD_LOGIC_VECTOR(3 downto 0) := "0000";

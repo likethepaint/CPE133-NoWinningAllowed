@@ -1,3 +1,13 @@
+----------------------------------------------
+-- Project : CPE 133 Final Project
+
+-- Module Name : Init_Driver 
+-- Authors : Collin Kenner, Brett Glidden
+
+-- Description : drives the intial "Hello" state
+----------------------------------------------
+
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;

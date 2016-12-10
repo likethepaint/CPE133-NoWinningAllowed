@@ -1,3 +1,14 @@
+----------------------------------------------
+-- Project : CPE 133 Final Project
+
+-- Module Name : State_Controller 
+-- Authors : Collin Kenner, Brett Glidden
+
+-- Description : determines the top level state of
+--      the game based on the center button and the
+--      game over signal from the sub modules
+----------------------------------------------
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;

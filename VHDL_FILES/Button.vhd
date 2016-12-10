@@ -1,9 +1,11 @@
-----------------------------------------------------------------------------------
--- CPE 133 Final Project
--- Collin Kenner, Brett Glidden
+----------------------------------------------
+-- Project : CPE 133 Final Project
 
--- Debounced button module
-----------------------------------------------------------------------------------
+-- Module Name : Button 
+-- Authors : Collin Kenner, Brett Glidden
+
+-- Description : debounces the button inputs to 100 ms
+----------------------------------------------
 
 
 library IEEE;
@@ -11,9 +13,11 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.numeric_std.ALL;
 
 -- Button entity definition
--- raw_input : direct connection to button
--- clk : Basys-3 10 Mhz clock
--- debounced_output : debounced button state output
+-- Inputs
+--      raw_input : direct connection to button
+--      clk : Basys-3 10 Mhz clock
+-- Outputs
+--      debounced_output : debounced button state output
 entity Button is
     Port (raw_input : in STD_LOGIC;
           clk : in STD_LOGIC;

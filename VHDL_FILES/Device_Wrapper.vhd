@@ -1,3 +1,15 @@
+----------------------------------------------
+-- Project : CPE 133 Final Project
+
+-- Module Name : Device_Wrapper
+-- Authors : Collin Kenner, Brett Glidden
+
+-- Description : top level module which wraps all of the 
+--      states and associated submodules into one large 
+--      module.
+----------------------------------------------
+
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
@@ -117,19 +129,18 @@ architecture arch_Device_Wrapper of Device_Wrapper is
     signal btn_valid_top, btn_valid_bottom, btn_valid_right, btn_valid_left, btn_valid_center : STD_LOGIC;
     
     -- State Controller signals
-    signal state : STD_LOGIC_VECTOR(3 downto 0);   -- State signal from State Controller
+    signal state : STD_LOGIC_VECTOR(3 downto 0);   
     
     -- Difficulty driver signals
-    signal difficulty : STD_LOGIC_VECTOR(15 downto 0);  -- Difficulty bitmask 
+    signal difficulty : STD_LOGIC_VECTOR(15 downto 0);  
     signal difficulty_sseg0, difficulty_sseg1, difficulty_sseg2, difficulty_sseg3 : STD_LOGIC_VECTOR(5 downto 0);
     
     -- Game Driver signals
-    signal game_over : STD_LOGIC;   -- Game over signal from game driver
+    signal game_over : STD_LOGIC;   
     signal win : STD_LOGIC;
     signal lose : STD_LOGIC;
     signal game_sseg0, game_sseg1, game_sseg2, game_sseg3 : STD_LOGIC_VECTOR(5 downto 0); 
-    --signal pattern_debug : STD_LOGIC_VECTOR(15 downto 0);
-    
+     
     -- Init Driver signals
     signal init_sseg0, init_sseg1, init_sseg2, init_sseg3 : STD_LOGIC_VECTOR(5 downto 0);
     
@@ -139,11 +150,12 @@ architecture arch_Device_Wrapper of Device_Wrapper is
     -- SSEG Select signals
     signal to_display0, to_display1, to_display2, to_display3 : STD_LOGIC_VECTOR(5 downto 0);
     
-    
+    -- Signals to display current pattern on LED's to prove the game works    
     signal pattern : STD_LOGIC_VECTOR(15 downto 0);
     signal debug_flag : STD_LOGIC := '0';
 begin
 
+    -- (Show/Not Show) current pattern on the LEDS
     GameResult : process (state, btn_valid_top, debug_flag) 
     begin
         if (rising_edge(btn_valid_top)) then

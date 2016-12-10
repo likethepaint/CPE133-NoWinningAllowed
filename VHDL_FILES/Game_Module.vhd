@@ -1,23 +1,20 @@
-----------------------------------------------------------------------------------
--- CPE 133 Final Project
--- Collin Kenner, Brett Glidden
+----------------------------------------------
+-- Project : CPE 133 Final Project
 
--- Game State Module
-----------------------------------------------------------------------------------
+-- Module Name : Game_Driver
+-- Authors : Collin Kenner, Brett Glidden
+
+-- Description : drives the logic for the actual countdown
+--      and pattern matching portion of the game by mapping
+--      all game components together
+----------------------------------------------
 
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
 use IEEE.NUMERIC_STD.ALL;
 
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
+-- Define Game_Driver entity
 entity Game_Driver is
     Port (clk : in STD_LOGIC;
           state : in STD_LOGIC_VECTOR(3 downto 0);
@@ -104,7 +101,6 @@ begin
         end if;
     end process;
     
--- NEED TO KNOW HOW SSEG DISPLAY DRIVER WILL WORK
     PatternSystem : Pattern_Gen port map (clk => clk, reset => reset, pattern => pattern_adj);
     TrapSystem : Trap port map (reset => reset, clk => clk, user_input => unsigned(user_input), bitmask => unsigned(difficulty), pattern => unsigned(pattern_adj), clk_out => trap_clk_out); 
     CompareSystem : Comparator port map (reset => reset, user_input => user_input, pattern => pattern_adj, bitmask => difficulty, result => win);
