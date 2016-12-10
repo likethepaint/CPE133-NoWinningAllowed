@@ -16,7 +16,13 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-
+-- Define SSEG_Driver entity
+-- Inputs
+--      clk : 100 MHz Basys-3 clock signal
+--      sseg_in* : incoming character to display
+-- Outputs
+--      sseg_an : anode configuration to seven segment
+--      sseg_cat : cathode configuration to seven segment
 entity SSEG_Driver is
   Port (   clk : in STD_LOGIC;
            sseg_in0 : in STD_LOGIC_VECTOR(5 downto 0);
@@ -29,7 +35,7 @@ end SSEG_Driver;
 
 architecture arch_SSEG_Driver of SSEG_Driver is
 
--- The current bin_in_* being sampled
+-- The current sseg_in* being sampled
 signal current_input : STD_LOGIC_VECTOR(5 downto 0);
 
 -- Signal to allow for SSEG_AN to be sampled

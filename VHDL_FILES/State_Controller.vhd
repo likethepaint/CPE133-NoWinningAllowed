@@ -13,6 +13,14 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 
+-- Define State_Controller entity
+-- Inputs
+--      clk : 100 MHz Basys-3 clock
+--      reset : reset signal
+--      center_btn : debounced center button signal
+--      game_over : game_over signal from Game_Module
+-- Outputs
+--      state : the high level system state
 entity State_Controller is
   Port ( clk : in STD_LOGIC;
          reset : in STD_LOGIC;
@@ -23,6 +31,7 @@ end State_Controller;
 
 architecture arch_State_Controller of State_Controller is  
     
+    -- Define the system states and assign an initial state
     type state_type is (init, difficulty, game, finish);
     signal PS: state_type := init;
     signal NS: state_type := init;
@@ -37,7 +46,8 @@ begin
             PS <= NS;
         end if;
     end process;
-    
+   
+    -- Choose NS based on center_btn press and game_over signal
     comb_proc : process (center_btn, game_over)
     begin
         case PS is
@@ -69,7 +79,8 @@ begin
                 NS <= init;
         end case;
     end process;
-    
+   
+    -- Assign state signal based on PS
     with PS select 
         state <= "0001" when init,
                  "0010" when difficulty,

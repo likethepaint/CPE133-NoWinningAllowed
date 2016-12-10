@@ -13,7 +13,10 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-
+-- Define SSEG_Select entity
+-- clock and state inputs
+-- connects to all sseg_in* from other modules
+-- outputs correct sseg_in* based on current state
 entity SSEG_Select is
     Port (clk : in STD_LOGIC;
           state : in STD_LOGIC_VECTOR(3 downto 0);

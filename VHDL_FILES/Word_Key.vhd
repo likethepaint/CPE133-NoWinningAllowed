@@ -11,7 +11,11 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-
+-- Define Word_Key entity
+-- Inputs
+--      bin_in : the word select signal
+-- Outputs
+--      Letter_Out* : the binary representation of the desired character
 entity Word_Key is
   Port ( 
         bin_in : in STD_LOGIC_VECTOR(2 downto 0);

@@ -12,6 +12,10 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 
+-- Define Init_Driver entity
+-- Inputs
+--      clk : 100 MHz Basys-3 clock
+--      sseg_out* : character to display on the seven segment
 entity Init_Driver is
   Port ( clk : in STD_LOGIC;
          sseg_out0 : out STD_LOGIC_VECTOR(5 downto 0);
@@ -31,6 +35,7 @@ component Display_Word is
          sseg_out3 : out STD_LOGIC_VECTOR(5 downto 0));
 end component;
 
+-- set word select to "HELLO"
 signal init_word_select : STD_LOGIC_VECTOR(2 downto 0) := "000";
 
 begin

@@ -12,6 +12,14 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
+-- Define Timer entity
+-- Inputs
+--      clk : clk signal from trap module
+--      reset : reset signal
+--      difficulty : bitmask used to determine current difficulty
+-- Outputs
+--      time_remaining : binary output of remaining time
+--      out_of_time : HIGH when timer reaches 0
 entity Timer is
     Port (clk : in STD_LOGIC;
           reset : in STD_LOGIC;

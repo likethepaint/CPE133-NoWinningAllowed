@@ -15,6 +15,17 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 -- Define Game_Driver entity
+-- Inputs
+--      clk : 100 MHz Basys-3 clock
+--      state : current high level system state
+--      difficulty : bitmask representing current difficulty
+--      user_input : Basys-3 switch positions
+-- Outputs
+--      sseg_out* : character output to seven segment
+--      win : HIGH if win condition is met
+--      lose : HIGH if lose condition is met
+--      pattern : the generated pattern to be used in debug mode
+--      buzz : the piezo buzzer for the countdown
 entity Game_Driver is
     Port (clk : in STD_LOGIC;
           state : in STD_LOGIC_VECTOR(3 downto 0);
