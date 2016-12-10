@@ -1,26 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1481296553">
+  <File Type="PA-TCL" Name="Device_Wrapper.tcl"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Device_Wrapper_postroute_physopt.dcp"/>
+  <File Type="INIT-TIMING" Name="Device_Wrapper_timing_summary_init.rpt"/>
+  <File Type="OPT-DCP" Name="Device_Wrapper_opt.dcp"/>
+  <File Type="OPT-DRC" Name="Device_Wrapper_drc_opted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Device_Wrapper_methodology_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Device_Wrapper.hwdef"/>
+  <File Type="OPT-TIMING" Name="Device_Wrapper_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="Device_Wrapper_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Device_Wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Device_Wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Device_Wrapper_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Device_Wrapper_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Device_Wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Device_Wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Device_Wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Device_Wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Device_Wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Device_Wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="Device_Wrapper_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Device_Wrapper_postplace_pwropt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Device_Wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="Device_Wrapper.bit"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Device_Wrapper_timing_summary_routed.rpt"/>
+  <File Type="BG-BIN" Name="Device_Wrapper.bin"/>
+  <File Type="ROUTE-SIMILARITY" Name="Device_Wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="Device_Wrapper.msk"/>
+  <File Type="ROUTE-CLK" Name="Device_Wrapper_clock_utilization_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="Device_Wrapper.rbt"/>
+  <File Type="BITSTR-NKY" Name="Device_Wrapper.nky"/>
+  <File Type="BITSTR-BMM" Name="Device_Wrapper_bd.bmm"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Device_Wrapper_postroute_physopt_bb.dcp"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="RDI-RDI" Name="Device_Wrapper.vdi"/>
-  <File Type="BG-DRC" Name="Device_Wrapper.drc"/>
-  <File Type="BG-BGN" Name="Device_Wrapper.bgn"/>
-  <File Type="BITSTR-SYSDEF" Name="Device_Wrapper.sysdef"/>
-  <File Type="BITSTR-MMI" Name="Device_Wrapper.mmi"/>
-  <File Type="BITSTR-BMM" Name="Device_Wrapper_bd.bmm"/>
-  <File Type="BITSTR-NKY" Name="Device_Wrapper.nky"/>
-  <File Type="BITSTR-RBT" Name="Device_Wrapper.rbt"/>
-  <File Type="BITSTR-MSK" Name="Device_Wrapper.msk"/>
-  <File Type="BG-BIN" Name="Device_Wrapper.bin"/>
-  <File Type="BG-BIT" Name="Device_Wrapper.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Device_Wrapper_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Device_Wrapper_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Device_Wrapper_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Device_Wrapper_postroute_physopt_bb.dcp"/>
-  <File Type="ROUTE-CLK" Name="Device_Wrapper_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-SIMILARITY" Name="Device_Wrapper_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-TIMING-RPX" Name="Device_Wrapper_timing_summary_routed.rpx"/>
+  <File Type="BG-DRC" Name="Device_Wrapper.drc"/>
   <File Type="ROUTE-TIMING-PB" Name="Device_Wrapper_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="Device_Wrapper_timing_summary_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="Device_Wrapper.mmi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Device_Wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BGN" Name="Device_Wrapper.bgn"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Device_Wrapper_timing_summary_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="Device_Wrapper.sysdef"/>
   <File Type="ROUTE-STATUS-PB" Name="Device_Wrapper_route_status.pb"/>
   <File Type="ROUTE-STATUS" Name="Device_Wrapper_route_status.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="Device_Wrapper_power_routed.rpx"/>
@@ -36,27 +57,6 @@
   <File Type="PHYSOPT-DRC" Name="Device_Wrapper_drc_physopted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="Device_Wrapper_physopt.dcp"/>
   <File Type="POSTPLACE-PWROPT-TIMING" Name="Device_Wrapper_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="Device_Wrapper_postplace_pwropt.dcp"/>
-  <File Type="PLACE-TIMING" Name="Device_Wrapper_timing_summary_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="Device_Wrapper_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="Device_Wrapper_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-CTRL" Name="Device_Wrapper_control_sets_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="Device_Wrapper_utilization_placed.pb"/>
-  <File Type="PLACE-UTIL" Name="Device_Wrapper_utilization_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="Device_Wrapper_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-IO" Name="Device_Wrapper_io_placed.rpt"/>
-  <File Type="PLACE-DCP" Name="Device_Wrapper_placed.dcp"/>
-  <File Type="PWROPT-TIMING" Name="Device_Wrapper_timing_summary_pwropted.rpt"/>
-  <File Type="PWROPT-DRC" Name="Device_Wrapper_drc_pwropted.rpt"/>
-  <File Type="PWROPT-DCP" Name="Device_Wrapper_pwropt.dcp"/>
-  <File Type="OPT-TIMING" Name="Device_Wrapper_timing_summary_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="Device_Wrapper.hwdef"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="Device_Wrapper_methodology_drc_opted.rpt"/>
-  <File Type="OPT-DRC" Name="Device_Wrapper_drc_opted.rpt"/>
-  <File Type="OPT-DCP" Name="Device_Wrapper_opt.dcp"/>
-  <File Type="INIT-TIMING" Name="Device_Wrapper_timing_summary_init.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Device_Wrapper_postroute_physopt.dcp"/>
-  <File Type="PA-TCL" Name="Device_Wrapper.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../VHDL_FILES/Word_Key.vhd">
