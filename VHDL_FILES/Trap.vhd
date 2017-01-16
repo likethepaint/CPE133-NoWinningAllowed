@@ -1,20 +1,28 @@
-----------------------------------------------------------------------------------
--- CPE 133 Final Project
--- Collin Kenner, Brett Glidden
+----------------------------------------------
+-- Project : CPE 133 Final Project
 
--- Trap Module
-----------------------------------------------------------------------------------
+-- Module Name : Trap 
+-- Authors : Collin Kenner, Brett Glidden
+
+-- Description : determines if a trap should be set
+--      based off of user inputs and if so, increases
+--      the clock rate sent to the timer
+----------------------------------------------
+
 
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.numeric_std.ALL;
 
--- clk : Basys-3 clock signal
--- bitmask : bitmask based on difficulty
--- pattern : generated pattern to match
--- user_input : switch positions on basys board
--- clk_out : countdown timer clk signal 
+-- Define Trap entity
+-- Inputs
+--      clk : Basys-3 clock signal
+--      bitmask : bitmask based on difficulty
+--      pattern : generated pattern to match
+--      user_input : switch positions on basys board
+-- Outputs
+--      clk_out : countdown timer clk signal 
 entity Trap is
     Port (reset : in STD_LOGIC;
           clk: in STD_LOGIC;
@@ -58,15 +66,6 @@ begin
                  error_magnitude(15 downto 15);
 
     
-    -- Adjust clk_out_count based on user failures
---   errorCheck : process (error_sum) 
---   begin
-       -- Increase clk_out rate by factor of 2
---        if (error_sum >= 2) then
---            clk_out_top <= STD_LOGIC_VECTOR(unsigned(clk_out_top) srl 1);
---        end if;
---    end process;
-
     -- Simple clock divider
     genClkOut : process (clk, reset)
         variable prev_error_sum : unsigned(4 downto 0);
@@ -76,6 +75,7 @@ begin
                     --clk_out_top <= x"0100000";
                     clk_out_top <= x"2FAF080";
         elsif rising_edge(clk) then
+           -- trigger trap if user has 2 or more bad switch positions
            if (error_sum >= 2 AND prev_error_sum < error_sum) then
                     clk_out_top <= STD_LOGIC_VECTOR(unsigned(clk_out_top) srl 1);
                     clk_out_count <= x"0000000";

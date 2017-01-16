@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Dec  9 07:15:53 2016
+# Process ID: 32700
+# Current directory: /home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Finale/Finale.runs/synth_1
+# Command line: vivado -log Device_Wrapper.vds -mode batch -messageDb vivado.pb -notrace -source Device_Wrapper.tcl
+# Log file: /home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Finale/Finale.runs/synth_1/Device_Wrapper.vds
+# Journal file: /home/brett/Programming/School/CPE_133/CPE133-NoWinningAllowed/Finale/Finale.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source Device_Wrapper.tcl -notrace

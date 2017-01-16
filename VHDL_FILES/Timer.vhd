@@ -1,36 +1,25 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 12/05/2016 12:22:20 PM
--- Design Name: 
--- Module Name: Timer - arch_Timer
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
+----------------------------------------------
+-- Project : CPE 133 Final Project
+
+-- Module Name : Timer 
+-- Authors : Collin Kenner, Brett Glidden
+
+-- Description : drives the countdown timer 
+----------------------------------------------
 
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
 use IEEE.NUMERIC_STD.ALL;
 
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
+-- Define Timer entity
+-- Inputs
+--      clk : clk signal from trap module
+--      reset : reset signal
+--      difficulty : bitmask used to determine current difficulty
+-- Outputs
+--      time_remaining : binary output of remaining time
+--      out_of_time : HIGH when timer reaches 0
 entity Timer is
     Port (clk : in STD_LOGIC;
           reset : in STD_LOGIC;
@@ -50,7 +39,6 @@ signal time_counter : STD_LOGIC_VECTOR(11 downto 0);
 begin
 
     Countdown: process (clk, reset)
-        --variable time_counter : STD_LOGIC_VECTOR(11 downto 0) := x"000";
     begin
         if (reset = '1') then
             if (difficulty = easy) then

@@ -79,7 +79,7 @@ signal debounced_reset : STD_LOGIC;
 begin
     Game : Game_Module port map (clk => clk,
                                  reset => debounced_reset,
-                                 bitmask => x"00FF",
+                                 bitmask => x"FFFF",
                                  user_input => user_input,
                                  timer_out_0 => timer_out_0,
                                  timer_out_1 => timer_out_1,
